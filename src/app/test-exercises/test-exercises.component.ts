@@ -9,15 +9,9 @@ import { Exercise } from '../types/Exercise';
 })
 export class TestExercisesComponent {
   @Input() exercises: Exercise = {
-    strength: {
-      easy: [
-        {
-          name: '',
-          description: '',
-          repetitions: '',
-          tips: '',
-        },
-      ],
-    },
+    name: '',
+    description: '',
+    repetitions: '',
+    tips: '',
   };
 }

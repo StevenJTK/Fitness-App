@@ -4,7 +4,11 @@
     <p>Under Construction</p>
     <!-- button to go to exercise page -->
   </section>
-
+  <section>
+    <div *ngFor="let exercises of exerciseData">
+      <app-test-exercises [exercises]="exercises" />
+    </div>
+  </section>
 </main>
 
 <router-outlet />

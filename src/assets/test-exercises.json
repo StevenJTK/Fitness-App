@@ -1,24 +1,22 @@
 {
-  "strength": {
-    "easy": [
-      {
-        "name": "Knäböj till stol",
-        "description": "Sätt dig långsamt ner på en stol och res dig upp igen.",
-        "repetitions": "5-10",
-        "tips": "Håll ryggen rak och spänn bålen."
-      },
-      {
-        "name": "Tåhävningar",
-        "description": "Stå upp och lyft hälarna från marken, sänk dem långsamt tillbaka.",
-        "repetitions": "10-15",
-        "tips": "Håll balansen genom att stödja dig mot en stol eller vägg om det behövs."
-      },
-      {
-        "name": "Sidosteg",
-        "description": "Ta långsamma steg åt sidan och håll en lätt böj i knäna.",
-        "repetitions": "8-12 per sida",
-        "tips": "Håll överkroppen rak och blicken framåt."
-      }
-    ]
-  }
+  "exercise": [
+    {
+      "name": "Knäböj till stol",
+      "description": "Sätt dig långsamt ner på en stol och res dig upp igen.",
+      "repetitions": "5-10",
+      "tips": "Håll ryggen rak och spänn bålen."
+    },
+    {
+      "name": "Tåhävningar",
+      "description": "Stå upp och lyft hälarna från marken, sänk dem långsamt tillbaka.",
+      "repetitions": "10-15",
+      "tips": "Håll balansen genom att stödja dig mot en stol eller vägg om det behövs."
+    },
+    {
+      "name": "Sidosteg",
+      "description": "Ta långsamma steg åt sidan och håll en lätt böj i knäna.",
+      "repetitions": "8-12 per sida",
+      "tips": "Håll överkroppen rak och blicken framåt."
+    }
+  ]
 }
