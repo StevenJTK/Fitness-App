@@ -25,9 +25,9 @@ export class AppComponent {
 
     
     this.httpClient
-      .get<Exercise[]>('/assets/test-exercises.json')
-      .subscribe((response: Exercise[]) => {
-        this.exerciseData = response;
+      .get<{ exercise: Exercise[]}>('/assets/test-exercises.json')
+      .subscribe((response) => {
+        this.exerciseData = response.exercise;
       });
   }
 }
