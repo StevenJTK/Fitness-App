@@ -1,3 +1,12 @@
+.exerciseGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+  max-width: 80%;
+  margin: auto;
+}
+
 .exerciseCard {
   display: flex;
   justify-content: center;
@@ -19,5 +28,9 @@
 
 .exerciseCardSection {
   padding: 1.5rem;
+  text-align: center;
+}
+
+h2 {
   text-align: center;
 }

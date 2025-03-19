@@ -3,14 +3,16 @@
     Övningar för {{ filteredExercises[0].category }} -
     {{ filteredExercises[0].difficulty }}
   </h2>
+  <div class="exerciseGrid">
   <div *ngFor="let exercise of filteredExercises">
-    <div class="exercise-card">
+    <div class="exerciseCard">
       <h3>{{ exercise.name }}</h3>
       <p>{{ exercise.description }}</p>
       <p><strong>Repetitioner:</strong> {{ exercise.repetitions }}</p>
       <p><strong>Tips:</strong> {{ exercise.tips }}</p>
     </div>
   </div>
+</div>
 </div>
 
 <ng-template #noExercises>
