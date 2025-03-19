@@ -5,6 +5,7 @@ import { RouterOutlet } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
 import { Exercise } from './types/Exercise';
 import { TestExercisesComponent } from './test-exercises/test-exercises.component';
+import { jsonConnector } from './types/jsonConnector';
 
 @Component({
   selector: 'app-root',
@@ -20,7 +21,7 @@ export class AppComponent {
 
   constructor(private httpClient: HttpClient) {}
 
-  ngOnInit() {
+  /*ngOnInit() {
     console.log('Hello World');
 
     // http GET-request to json-file
@@ -30,5 +31,11 @@ export class AppComponent {
         // listens for the anwser from the http-request
         this.exerciseData = response.exercise;
       });
-  }
+  }*/
+ ngOnInit(){
+  new jsonConnector().getExercises("lätt");
+ }
+ test(){
+  //new jsonConnector().getExercises("lätt");
+ }
 }
