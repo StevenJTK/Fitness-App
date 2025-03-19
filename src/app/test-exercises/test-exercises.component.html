@@ -1,8 +1,18 @@
-<main class="exerciseCard">
-  <section class="exerciseCardSection">
-    <h3>{{ exercises.name }}</h3>
-    <p>{{ exercises.description }}</p>
-    <p>Antal repetitioner: {{ exercises.repetitions }}</p>
-    <p>{{ exercises.tips }}</p>
-  </section>
-</main>
+<div *ngIf="filteredExercises.length > 0; else noExercises">
+  <h2>
+    Övningar för {{ filteredExercises[0].category }} -
+    {{ filteredExercises[0].difficulty }}
+  </h2>
+  <div *ngFor="let exercise of filteredExercises">
+    <div class="exercise-card">
+      <h3>{{ exercise.name }}</h3>
+      <p>{{ exercise.description }}</p>
+      <p><strong>Repetitioner:</strong> {{ exercise.repetitions }}</p>
+      <p><strong>Tips:</strong> {{ exercise.tips }}</p>
+    </div>
+  </div>
+</div>
+
+<ng-template #noExercises>
+  <p>Ingen övning hittades för de valda kriterierna.</p>
+</ng-template>

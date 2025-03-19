@@ -1,27 +1,19 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-
-import { HttpClient } from '@angular/common/http';
-import { Exercise } from './types/Exercise';
+import { Router, RouterOutlet } from '@angular/router';
 import { TestExercisesComponent } from './test-exercises/test-exercises.component';
+import { TrainingFormComponent } from "./training-form/training-form.component";
 import { jsonConnector } from './types/jsonConnector';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, CommonModule, TestExercisesComponent],
+  imports: [RouterOutlet, CommonModule, TrainingFormComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
 export class AppComponent {
   title = 'fitness-app';
 
-  // prepare API
-  exerciseData: Exercise[] = [];
-
+  constructor(private router: Router) {}
   
- ngOnInit(){
-    this.exerciseData = jsonConnector.getExercises("Medel");
-    console.log(this.exerciseData);
- }
 }

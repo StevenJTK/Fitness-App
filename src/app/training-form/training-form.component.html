@@ -1,0 +1,12 @@
+<form (ngSubmit)="handleOnSubmit()" [formGroup]="trainingForm">
+  <label>Kategori:</label>
+  <label>
+    <input type="radio" formControlName="category" value="styrka" /> Styrka
+  </label>
+
+  <label>Nivå:</label>
+  <label>
+    <input type="radio" formControName="level" value="enkel" /> Enkel
+  </label>
+  <button type="submit">Skicka</button>
+</form>
