@@ -19,23 +19,9 @@ export class AppComponent {
   // prepare API
   exerciseData: Exercise[] = [];
 
-  constructor(private httpClient: HttpClient) {}
-
-  /*ngOnInit() {
-    console.log('Hello World');
-
-    // http GET-request to json-file
-    this.httpClient
-      .get<{ exercise: Exercise[] }>('/assets/test-exercises.json') // expect response as an object with an 'exercise'-property as an array of Exercise-object
-      .subscribe((response) => {
-        // listens for the anwser from the http-request
-        this.exerciseData = response.exercise;
-      });
-  }*/
+  
  ngOnInit(){
-  new jsonConnector().getExercises("Svår");
- }
- test(){
-  //new jsonConnector().getExercises("lätt");
+    this.exerciseData = jsonConnector.getExercises("Medel");
+    console.log(this.exerciseData);
  }
 }
