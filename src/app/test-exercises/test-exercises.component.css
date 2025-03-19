@@ -1,0 +1,23 @@
+.exerciseCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: calc(50% + 1.5rem);
+  padding: 1.5rem;
+  margin: 1.5rem auto;
+  box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.821);
+}
+
+.exerciseCard:hover {
+  transform: scale(1.05);
+}
+
+.exerciseCard > h3 {
+  font-size: min(2vw, 50px);
+}
+
+.exerciseCardSection {
+  padding: 1.5rem;
+  text-align: center;
+}
