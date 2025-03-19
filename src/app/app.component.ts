@@ -33,7 +33,7 @@ export class AppComponent {
       });
   }*/
  ngOnInit(){
-  new jsonConnector().getExercises("lätt");
+  new jsonConnector().getExercises("Svår");
  }
  test(){
   //new jsonConnector().getExercises("lätt");
