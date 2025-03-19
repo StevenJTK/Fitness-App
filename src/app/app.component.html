@@ -1,10 +1,13 @@
 <main>
   <section class="appSection">
-    <h3>Fitness App</h3>
+    <h1>Starka År</h1>
     <p>Under Construction</p>
     <!-- button to go to exercise page -->
   </section>
   <section>
+    <div class="appSection">
+      <h3>Benövningar</h3>
+    </div>
     <div *ngFor="let exercises of exerciseData">
       <app-test-exercises [exercises]="exercises" />
     </div>
