@@ -5,6 +5,16 @@
   justify-content: center;
   height: 100%;
 }
+.appSection h1 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  background-color: cadetblue;
+  max-width: calc(50% + 1.5rem);
+  padding: 3rem 3rem;
+  margin: 5rem;
+  box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.821);
+}
+
 .appSection h3 {
   font-family: "Courier New", Courier, monospace;
   text-align: center;
