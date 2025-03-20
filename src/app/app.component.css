@@ -4,32 +4,23 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  background-color: #d2c8bc;
+  font-family: Hanken Grotesk;
+  color: #ffffff;
 }
 .appSection h1 {
-  font-family: "Courier New", Courier, monospace;
   text-align: center;
-  background-color: cadetblue;
   max-width: calc(50% + 1.5rem);
   padding: 3rem 3rem;
   margin: 5rem;
   box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.821);
-}
-
-.appSection h3 {
-  font-family: "Courier New", Courier, monospace;
-  text-align: center;
-  background-color: cadetblue;
-  max-width: calc(50% + 1.5rem);
-  padding: 3rem 3rem;
-  margin: 5rem;
-  box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.821);
+  border-radius: 10%;
 }
 
 .appSection p {
-  font-family: "Courier New", Courier, monospace;
   text-align: center;
-  background-color: cadetblue;
   padding: 3rem;
   margin: 2rem;
   box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.821);
+  border-radius: 10%;
 }
