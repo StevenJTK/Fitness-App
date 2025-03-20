@@ -1,4 +1,19 @@
+.exerciseGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  justify-content: center;
+  max-width: 80%;
+  margin: auto;
+}
+
 .exerciseCard {
+  background-color: #686C55;
+  color: #ECE2D5;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -8,6 +23,14 @@
   margin: 1.5rem auto;
   box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.821);
 }
+
+.exerciseTitle {
+  font-family: 'Hanken Grotesk' !important; /* important behaves like override */
+  font-weight: 0 !important;
+  font-style:normal !important;
+  font-size: 46px !important;
+}
+
 
 .exerciseCard:hover {
   transform: scale(1.05);
@@ -19,5 +42,9 @@
 
 .exerciseCardSection {
   padding: 1.5rem;
+  text-align: center;
+}
+
+h2 {
   text-align: center;
 }
