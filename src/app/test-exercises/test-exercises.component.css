@@ -8,6 +8,12 @@
 }
 
 .exerciseCard {
+  background-color: #686C55;
+  color: #ECE2D5;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: 600;
+  font-style: italic;
+  font-size: 24px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,6 +23,14 @@
   margin: 1.5rem auto;
   box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.821);
 }
+
+.exerciseTitle {
+  font-family: 'Hanken Grotesk' !important; /* important behaves like override */
+  font-weight: 0 !important;
+  font-style:normal !important;
+  font-size: 46px !important;
+}
+
 
 .exerciseCard:hover {
   transform: scale(1.05);

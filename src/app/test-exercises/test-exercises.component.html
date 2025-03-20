@@ -6,7 +6,7 @@
   <div class="exerciseGrid">
   <div *ngFor="let exercise of filteredExercises">
     <div class="exerciseCard">
-      <h3>{{ exercise.name }}</h3>
+      <h3 class="exerciseTitle">{{ exercise.name }}</h3>
       <p>{{ exercise.description }}</p>
       <p><strong>Repetitioner:</strong> {{ exercise.repetitions }}</p>
       <p><strong>Tips:</strong> {{ exercise.tips }}</p>
