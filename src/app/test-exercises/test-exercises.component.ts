@@ -3,6 +3,7 @@ import { ActivatedRoute } from '@angular/router';
 import { Exercise } from '../types/Exercise';
 import { HttpClient } from '@angular/common/http';
 import { CommonModule } from '@angular/common';
+import { jsonConnector } from '../types/jsonConnector';
 
 @Component({
   selector: 'app-test-exercises',
@@ -11,31 +12,23 @@ import { CommonModule } from '@angular/common';
   styleUrl: './test-exercises.component.css',
 })
 export class TestExercisesComponent implements OnInit {
-  exercises: Exercise[] = []; // all exercises
   filteredExercises: Exercise[] = []; // exercises matching values from form
 
   constructor(private route: ActivatedRoute, private http: HttpClient) {}
 
   ngOnInit(): void {
-    // fetch exeries som .json
-    this.http
-      .get<{ exercise: Exercise[] }>('/assets/test-exercises.json')
-      .subscribe((data) => {
-        this.exercises = data.exercise;
-        console.log(data.exercise);
-        // fetch query params (category and level)
-        this.route.queryParams.subscribe((params) => {
-          const selectedCategory = params['category'];
-          const selectedLevel = params['level'];
+    this.fetchExercises();
+  }
 
-          // filter exercsies based on category and level
-          this.filteredExercises = this.exercises.filter(
-            (exercise) =>
-              { return exercise.category == selectedCategory &&
-              exercise.difficulty == selectedLevel
-              }
-          );
-        });
-      });
+  //fetches filtered exercises based on queries
+  async fetchExercises(){
+    var selectedCategory:string = "";
+    var selectedLevel:string = "";
+    await(this.route.queryParams.subscribe((params) => {
+      selectedCategory = params['category'];
+      selectedLevel = params['level'];
+    }));
+    this.filteredExercises = await(jsonConnector.getExercises(selectedLevel, selectedCategory));
+    console.log("exercises loaded");
   }
 }

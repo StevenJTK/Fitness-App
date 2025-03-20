@@ -3,7 +3,6 @@ import { Component } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 import { TestExercisesComponent } from './test-exercises/test-exercises.component';
 import { TrainingFormComponent } from "./training-form/training-form.component";
-import { jsonConnector } from './types/jsonConnector';
 
 @Component({
   selector: 'app-root',
