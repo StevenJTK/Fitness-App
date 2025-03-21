@@ -1,6 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;600&display=swap');
+/* You can add global styles to this file, and also import other style files */
+
 
 body {
-  background-color: #d2c8bc;
-  font-family: 'Hanken Grotesk', sans-serif;
+    background-color: #D2C8BC;
 }
