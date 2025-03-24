@@ -71,14 +71,29 @@ h1 {
   font-weight: bold;
 }
 
+.firstText {
+  font-family: "Hanken Grotesk";
+  text-align: center;
+  color: #310b02;
+}
+
+.firstText h2 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.firstText p {
+    font-size: 25px;
+    margin: 0;
+}
 
 @media (max-width: 1024px) {
   .hero-image {
-    height: 40vh; 
+    height: 40vh;
   }
 
   .hero-text {
-    font-size: 4vw; 
+    font-size: 4vw;
     padding: 5%;
   }
 
@@ -87,17 +102,16 @@ h1 {
   }
 }
 
-
 @media (max-width: 768px) {
   .hero-image {
-    height: 30vh; 
+    height: 30vh;
   }
 
   .hero-text {
-    font-size: 4vw; 
+    font-size: 4vw;
   }
 
   h1 {
-    font-size: 1rem; 
+    font-size: 1rem;
   }
 }
