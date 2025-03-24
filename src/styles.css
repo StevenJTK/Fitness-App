@@ -1,6 +1,72 @@
 /* You can add global styles to this file, and also import other style files */
 
+body,
+html {
+  height: 100%;
+  background-color: #d2c8bc;
+  margin: 0;
+  padding: 0;
+}
 
-body {
-    background-color: #D2C8BC;
+.hero-image {
+  background-image: linear-gradient(
+      rgba(210, 200, 188, 0) 95%,
+      rgba(210, 200, 188, 1) 100%
+    ),
+    url("assets/header.jpg");
+  height: 50vh;
+  width: 100vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.hero-text {
+  font-family: "Hanken Grotesk";
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 2%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 30px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+  margin-right: 8px;
+}
+
+h1 {
+  font-family: "Hanken Grotesk";
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 0;
+}
+
+.light {
+  font-style: italic;
+  font-weight: 100;
+}
+
+.bold {
+  font-style: italic;
+  font-weight: bold;
+}
+
+.bold-text {
+  font-weight: bold;
 }
