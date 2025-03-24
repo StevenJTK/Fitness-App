@@ -24,15 +24,17 @@ export class AppComponent {
   difficultyChoice(value:string, buttonNumber: number):void{
     this.chosenDifficulty = value;
     this.selectedDifficultyIndex = buttonNumber;
-    location.hash = "#ExerciseChoice";
+    //location.hash = "#ExerciseChoice";
+    const scrollElement = document.getElementById("ExerciseChoice");
+    if (scrollElement) {
+      scrollElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+    }
   }
 
   exerciseTypeChoice(value:string, buttonNumber: number):void{
     this.chosenExerciseType = value;
     this.selectedExerciseDifficultyIndex = buttonNumber;
     
-    const formValues:string = this.chosenExerciseType;
-
     // navigate to /exercises + send values as query parameters
     this.router.navigate(['/exercises'], {
       queryParams: {level:this.chosenDifficulty, category:this.chosenExerciseType},
