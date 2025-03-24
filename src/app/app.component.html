@@ -4,18 +4,18 @@
     <p>Välj kategori och nivå för att få övningar!</p>
   </section>
   <!--<app-training-form></app-training-form>-->
-  <button class="choiceButton" [ngClass]="{'selected': selectedDifficultyIndex === 1}" (click) = "difficultyChoice('Enkel', 1)">Enkel</button>
-  <button class="choiceButton" [ngClass]="{'selected': selectedDifficultyIndex === 2}" (click) = "difficultyChoice('Medel', 2)">Medel</button>
-  <button class="choiceButton" [ngClass]="{'selected': selectedDifficultyIndex === 3}" (click) = "difficultyChoice('Svår', 3)">Svår</button>
-  <button class="choiceButton" [ngClass]="{'selected': selectedDifficultyIndex === 4}" (click) = "difficultyChoice('Extrem', 4)">Extrem</button>
+  <button class="choiceButton" [ngClass]="{'selected': selectedDifficultyIndex === 1}" (click) = "difficultyChoice('beginner', 1)">Enkel</button>
+  <button class="choiceButton" [ngClass]="{'selected': selectedDifficultyIndex === 2}" (click) = "difficultyChoice('easy', 2)">Medel</button>
+  <button class="choiceButton" [ngClass]="{'selected': selectedDifficultyIndex === 3}" (click) = "difficultyChoice('intermediate', 3)">Svår</button>
+  <button class="choiceButton" [ngClass]="{'selected': selectedDifficultyIndex === 4}" (click) = "difficultyChoice('advanced', 4)">Extrem</button>
   <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
   
   <div id="ExerciseChoice">
-    <button class="choiceButton" [ngClass]="{'selected': selectedExerciseDifficultyIndex === 1}" (click) = "exerciseTypeChoice('Styrka', 1)">Styrka</button>
-    <button class="choiceButton" [ngClass]="{'selected': selectedExerciseDifficultyIndex === 2}" (click) = "exerciseTypeChoice('Kondition', 2)">Kondition</button>
-    <button class="choiceButton" [ngClass]="{'selected': selectedExerciseDifficultyIndex === 3}" (click) = "exerciseTypeChoice('Rörlighet', 3)">Rörlighet</button>
-    <button class="choiceButton" [ngClass]="{'selected': selectedExerciseDifficultyIndex === 4}" (click) = "exerciseTypeChoice('Vardagsmotion', 4)">Vardagsmotion</button>
+    <button class="choiceButton" [ngClass]="{'selected': selectedExerciseDifficultyIndex === 1}" (click) = "exerciseTypeChoice('strength', 1)">Styrka</button>
+    <button class="choiceButton" [ngClass]="{'selected': selectedExerciseDifficultyIndex === 2}" (click) = "exerciseTypeChoice('cardio', 2)">Kondition</button>
+    <button class="choiceButton" [ngClass]="{'selected': selectedExerciseDifficultyIndex === 3}" (click) = "exerciseTypeChoice('balance', 3)">Rörlighet</button>
+    <button class="choiceButton" [ngClass]="{'selected': selectedExerciseDifficultyIndex === 4}" (click) = "exerciseTypeChoice('everydayExercise', 4)">Vardagsmotion</button>
   </div>
 
   <p id="testDisplay"></p>

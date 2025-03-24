@@ -1,7 +1,7 @@
 import { Exercise } from './Exercise';
 
 export class jsonConnector {
-  private static exerciseData: Exercise[] = [];
+  private static workouts: Exercise[] = [];
   private static classInitialized:boolean = false;
 
   //fetches data from our "API" ONCE
@@ -9,7 +9,7 @@ export class jsonConnector {
     try {
       const response = await fetch('/assets/test-exercises.json');
       const data = await response.json();
-      jsonConnector.exerciseData = data.exercise;
+      jsonConnector.workouts = data.workouts;
     } catch (error) {
       console.error('Error fetching JSON data:', error);
     }
@@ -24,11 +24,12 @@ export class jsonConnector {
     }
     var filteredData: Exercise[] = [];
     //loops through all exercises
-    for (const item of jsonConnector.exerciseData) {
+    for (const item of jsonConnector.workouts) {
       //filtering of exercises
-      if (item.difficulty.toLowerCase() == difficulty.toLowerCase() && 
+      if (item.level.toLowerCase() == difficulty.toLowerCase() && 
       item.category.toLowerCase() == category.toLowerCase()) {
         filteredData.push(item);
+        console.log("exercise found!");
       }
     }
     return filteredData;

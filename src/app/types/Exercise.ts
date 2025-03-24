@@ -3,6 +3,6 @@ export interface Exercise {
   description: string;
   repetitions: string;
   tips: string;
-  difficulty: string;
+  level: string;
   category: string;
 }

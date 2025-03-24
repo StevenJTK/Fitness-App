@@ -30,7 +30,6 @@ export class AppComponent {
   exerciseTypeChoice(value:string, buttonNumber: number):void{
     this.chosenExerciseType = value;
     this.selectedExerciseDifficultyIndex = buttonNumber;
-    location.hash = "#ExerciseList";
 
     document.getElementById('testDisplay')!.innerHTML = this.chosenDifficulty + " | " + this.chosenExerciseType;
     
@@ -40,5 +39,6 @@ export class AppComponent {
     this.router.navigate(['/exercises'], {
       queryParams: {level:this.chosenDifficulty, category:this.chosenExerciseType},
     });
+  
   }
 }
