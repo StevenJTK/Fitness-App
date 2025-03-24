@@ -27,6 +27,12 @@
   max-width: 350px; /* Anpassa storlek */
   max-height: 350px;
   padding: 20px;
+  overflow: hidden;
+}
+.button-img{
+ width: 100px;
+ height: 100px;
+ object-fit: cover;
 }
 
 .small-text {

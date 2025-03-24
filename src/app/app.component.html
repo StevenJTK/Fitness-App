@@ -82,32 +82,29 @@
       [ngClass]="{ selected: selectedExerciseDifficultyIndex === 1 }"
       (click)="exerciseTypeChoice('strength', 1)"
     >
-      Styrka
-      <span class="small-text">Text för styrka</span>
+     <img src="/assets/Fysik.png" class="button-img">
     </button>
     <button
       class="choiceButton"
       [ngClass]="{ selected: selectedExerciseDifficultyIndex === 2 }"
-      (click)="exerciseTypeChoice('cardio', 2)"
-    >
-      Kondition
-      <span class="small-text">Text för kondition</span>
+      (click)="exerciseTypeChoice('cardio', 2)">
+   
     </button>
+    <img src="/assets/Cardio.png" class="button-img">
+    
     <button
       class="choiceButton"
       [ngClass]="{ selected: selectedExerciseDifficultyIndex === 3 }"
-      (click)="exerciseTypeChoice('balance', 3)"
+      (click)="exerciseTypeChoice('Vardagsmotion', 3)"
     >
-      Rörlighet
-      <span class="small-text">Text för rörlighet</span>
+      <img src="/assets/Vardagsmotion.png" class="button-img">
     </button>
     <button
       class="choiceButton"
       [ngClass]="{ selected: selectedExerciseDifficultyIndex === 4 }"
-      (click)="exerciseTypeChoice('everydayExercise', 4)"
+      (click)="exerciseTypeChoice('balance', 4)"
     >
-      Vardagsmotion
-      <span class="small-text">Text för vardagsmotion</span>
+     <img src="/assets/Rorlighet.png" class="button-img"> 
     </button>
   </div>
 </main>
