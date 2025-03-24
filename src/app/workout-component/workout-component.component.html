@@ -1,0 +1,18 @@
+<div *ngIf="filteredExercises.length > 0; else noExercises">
+    <h2>
+      Övningar för {{ filteredExercises[0].category }} -
+      {{ filteredExercises[0].level }}
+    </h2>
+    <div class="exerciseGrid">
+    <div *ngFor="let exercise of filteredExercises">
+      <div class="exerciseCard">
+        <h3 class="exerciseTitle">{{ exercise.name }}</h3>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+  <ng-template #noExercises>
+    <p>Ingen övning hittades för de valda kriterierna.</p>
+  </ng-template>
+  
