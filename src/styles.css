@@ -71,33 +71,33 @@ h1 {
   font-weight: bold;
 }
 
-/* Media Query för Tablets */
+
 @media (max-width: 1024px) {
   .hero-image {
-    height: 40vh; /* Minska höjden på hero image på tabletter */
+    height: 40vh; 
   }
 
   .hero-text {
-    font-size: 4vw; /* Justera textstorleken för tabletter */
+    font-size: 4vw; 
     padding: 5%;
   }
 
   h1 {
-    font-size: 1.2rem; /* Minska storleken på h1 */
+    font-size: 1.2rem;
   }
 }
 
-/* Media Query för mindre skärmar, t.ex. mobiler */
+
 @media (max-width: 768px) {
   .hero-image {
-    height: 30vh; /* Minska höjden på hero image på mobiler */
+    height: 30vh; 
   }
 
   .hero-text {
-    font-size: 4vw; /* Justera textstorleken för små skärmar */
+    font-size: 4vw; 
   }
 
   h1 {
-    font-size: 1rem; /* Ytterligare justering för mobil */
+    font-size: 1rem; 
   }
 }
