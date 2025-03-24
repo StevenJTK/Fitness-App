@@ -1,152 +1,208 @@
 {
-  "exercise": [
+  "workouts": [
     {
-      "name": "Knäböj till stol",
-      "description": "Sätt dig långsamt ner på en stol och res dig upp igen.",
-      "repetitions": "5-10",
-      "tips": "Håll ryggen rak och spänn bålen.",
-      "difficulty": "Lätt",
-      "category": "styrka"
+      "category": "strength",
+      "level": "beginner",
+      "name": "Upper Body",
+      "exercises": [
+        {
+          "name": "Vägg-armhävningar",
+          "description": "Stå en bit från en vägg och sätt händerna på väggen. Sänk kroppen mot väggen och tryck upp igen.",
+          "repetitions": "5-8",
+          "tips": "Håll kroppen rak och spänn bålen."
+        },
+        {
+          "name": "Planka på knä med stöd av händer",
+          "description": "Ligg på magen och stöd på händerna och knäna. Håll kroppen rak och håll positionen så länge du kan.",
+          "repetitions": "5-10 sekunder",
+          "tips": "Spänn bålen och håll höfterna i linje med kroppen."
+        }
+      ]
     },
     {
-      "name": "Tåhävningar",
-      "description": "Stå upp och lyft hälarna från marken, sänk dem långsamt tillbaka.",
-      "repetitions": "10-15",
-      "tips": "Håll balansen genom att stödja dig mot en stol eller vägg om det behövs.",
-      "difficulty": "Lätt",
-      "category": "styrka"
+      "category": "strength",
+      "level": "beginner",
+      "name": "Lower Body",
+      "exercises": [
+        {
+          "name": "Knäböj till stol",
+          "description": "Sätt dig långsamt ner på en stol och res dig upp igen.",
+          "repetitions": "5-10",
+          "tips": "Håll ryggen rak och spänn bålen."
+        },
+        {
+          "name": "Tåhävningar",
+          "description": "Stå upp och lyft hälarna från marken, sänk dem långsamt tillbaka.",
+          "repetitions": "10-15",
+          "tips": "Håll balansen genom att stödja dig mot en stol eller vägg om det behövs."
+        }
+      ]
     },
     {
-      "name": "Sidosteg",
-      "description": "Ta långsamma steg åt sidan och håll en lätt böj i knäna.",
-      "repetitions": "8-12 per sida",
-      "tips": "Håll överkroppen rak och blicken framåt.",
-      "difficulty": "Lätt",
-      "category": "styrka"
-    },
-
-    {
-      "name": "Knäböj utan stol",
-      "description": "Stå med fötterna axelbrett, böj knäna och sänk kroppen som om du skulle sätta dig på en stol, utan att använda en stol. Res dig upp igen.",
-      "repetitions": "10-15",
-      "tips": "Håll ryggen rak och se till att knäna inte går förbi tårna.",
-      "difficulty": "Medel",
-      "category": "styrka"
-    },
-    {
-      "name": "Tåhävningar på ett ben",
-      "description": "Stå på ett ben och lyft hälen från marken, sänk den långsamt tillbaka. Byt ben efter varje set.",
-      "repetitions": "6-10 per ben",
-      "tips": "Håll balansen och stöd dig vid en vägg eller stol om det behövs.",
-      "difficulty": "Medel",
-      "category": "styrka"
+      "category": "strength",
+      "level": "easy",
+      "name": "Upper Body",
+      "exercises": [
+        {
+          "name": "Stol-dips med fotstödet",
+          "description": "Sätt händerna på en stol och håll fötterna på golvet. Böj armbågarna och sänk kroppen, tryck upp igen.",
+          "repetitions": "5-8",
+          "tips": "Håll knäna böjda och undvik att luta framåt."
+        },
+        {
+          "name": "Knästående armhävningar",
+          "description": "Stå på knäna istället för tårna för att göra armhävningen enklare. Sänk kroppen mot marken och tryck upp igen.",
+          "repetitions": "5-8",
+          "tips": "Håll kroppen rak och engagera bålen för bättre kontroll."
+        }
+      ]
     },
     {
-      "name": "Sidosteg med gummiband",
-      "description": "Placera ett gummiband runt benen och ta långsamma sidosteg, håll hela tiden spänning i bandet.",
-      "repetitions": "8-12 per sida",
-      "tips": "Håll blicken framåt och överkroppen rak.",
-      "difficulty": "Medel",
-      "category": "styrka"
+      "category": "strength",
+      "level": "easy",
+      "name": "Lower Body",
+      "exercises": [
+        {
+          "name": "Sidosteg",
+          "description": "Ta långsamma steg åt sidan och håll en lätt böj i knäna.",
+          "repetitions": "8-12 per sida",
+          "tips": "Håll överkroppen rak och blicken framåt."
+        },
+        {
+          "name": "Tåhävningar på ett ben",
+          "description": "Stå på ett ben och lyft hälen från marken, sänk den långsamt tillbaka. Byt ben efter varje set.",
+          "repetitions": "6-10 per ben",
+          "tips": "Håll balansen och stöd dig vid en vägg eller stol om det behövs."
+        }
+      ]
     },
     {
-      "name": "Djupa knäböj",
-      "description": "Stå med fötterna lite bredare än axelbrett, böj knäna och sänk kroppen så djupt som möjligt. Kom upp igen.",
-      "repetitions": "12-20",
-      "tips": "Håll blicken framåt och knäna över tårna.",
-      "difficulty": "Svårt",
-      "category": "styrka"
+      "category": "strength",
+      "level": "intermediate",
+      "name": "Upper Body",
+      "exercises": [
+        {
+          "name": "Armhävningar på knä",
+          "description": "Stöd på knäna och sänk kroppen som vid en vanlig armhävning.",
+          "repetitions": "8-12",
+          "tips": "Håll kroppen rak och undvik att svanka."
+        },
+        {
+          "name": "Planka",
+          "description": "Ligg på magen och stöd på underarmarna och tårna, håll kroppen rak.",
+          "repetitions": "20-30 sekunder",
+          "tips": "Spänn bålen och håll höfterna i linje."
+        }
+      ]
     },
     {
-      "name": "Tåhävningar på trappsteg",
-      "description": "Stå på ett trappsteg med hälarna hängande över kanten och lyft upp hälarna så högt som möjligt, sänk långsamt tillbaka.",
-      "repetitions": "10-15",
-      "tips": "Fokusera på att hålla balansen och göra rörelsen långsamt.",
-      "difficulty": "Svårt",
-      "category": "styrka"
+      "category": "strength",
+      "level": "intermediate",
+      "name": "Lower Body",
+      "exercises": [
+        {
+          "name": "Sidosteg med gummiband",
+          "description": "Placera ett gummiband runt benen och ta långsamma sidosteg, håll hela tiden spänning i bandet.",
+          "repetitions": "8-12 per sida",
+          "tips": "Håll blicken framåt och överkroppen rak."
+        },
+        {
+          "name": "Djupa knäböj",
+          "description": "Stå med fötterna lite bredare än axelbrett, böj knäna och sänk kroppen så djupt som möjligt. Kom upp igen.",
+          "repetitions": "12-20",
+          "tips": "Håll blicken framåt och knäna över tårna."
+        }
+      ]
     },
     {
-      "name": "Sidosteg med hoppsidosteg",
-      "description": "Ta ett stort sidosteg och hoppa till nästa steg på motsatt sida. Upprepa utan att stanna.",
-      "repetitions": "8-12 per sida",
-      "tips": "Håll ett bra tempo och landa mjukt för att minska belastning på knäna.",
-      "difficulty": "Svårt",
-      "category": "styrka"
-    },
-
-    {
-      "name": "Vägg-armhävningar",
-      "description": "Stå en bit från en vägg och sätt händerna på väggen. Sänk kroppen mot väggen och tryck upp igen.",
-      "repetitions": "5-8",
-      "tips": "Håll kroppen rak och spänn bålen när du gör rörelsen.",
-      "difficulty": "Lätt",
-      "category": "styrka"
-    },
-    {
-      "name": "Planka på knä med stöd av händer",
-      "description": "Ligg på magen och stöd på händerna och knäna. Håll kroppen rak och håll positionen så länge du kan.",
-      "repetitions": "5-10 sekunder",
-      "tips": "Spänn bålen och håll höfterna i linje med kroppen.",
-      "difficulty": "Lätt",
-      "category": "styrka"
+      "category": "strength",
+      "level": "advanced",
+      "name": "Upper Body",
+      "exercises": [
+        {
+          "name": "Armhävningar",
+          "description": "Gör klassiska armhävningar med kroppen rak.",
+          "repetitions": "10-15",
+          "tips": "Se till att kroppen hålls stabil och undvik att sänka höfterna."
+        },
+        {
+          "name": "Dips mot stol",
+          "description": "Sätt händerna på en stol bakom dig och sänk kroppen ner, tryck upp igen.",
+          "repetitions": "8-12",
+          "tips": "Håll armbågarna nära kroppen och undvik att luta framåt."
+        }
+      ]
     },
     {
-      "name": "Stol-dips med fotstödet",
-      "description": "Sätt händerna på en stol och håll fötterna på golvet. Böj armbågarna och sänk kroppen, tryck upp igen.",
-      "repetitions": "5-8",
-      "tips": "Håll knäna böjda och undvik att luta framåt.",
-      "difficulty": "Lätt",
-      "category": "styrka"
-    },
-
-    {
-      "name": "Knästående armhävningar",
-      "description": "Stå på knäna istället för tårna för att göra armhävningen enklare. Sänk kroppen mot marken och tryck upp igen.",
-      "repetitions": "5-8",
-      "tips": "Håll kroppen rak och engagera bålen för bättre kontroll.",
-      "difficulty": "Medel",
-      "category": "styrka"
-    },
-    {
-      "name": "Planka på knä",
-      "description": "Ligg på magen och stöd på underarmarna och knäna istället för tårna. Håll kroppen rak och håll positionen.",
-      "repetitions": "10-20 sekunder",
-      "tips": "Spänn bålen och håll höfterna i linje med kroppen.",
-      "difficulty": "Medel",
-      "category": "styrka"
+      "category": "strength",
+      "level": "advanced",
+      "name": "Lower Body",
+      "exercises": [
+        {
+          "name": "Sidosteg med hoppsidosteg",
+          "description": "Ta ett stort sidosteg och hoppa till nästa steg på motsatt sida. Upprepa utan att stanna.",
+          "repetitions": "8-12 per sida",
+          "tips": "Håll ett bra tempo och landa mjukt för att minska belastning på knäna."
+        },
+        {
+          "name": "Tåhävningar på trappsteg",
+          "description": "Stå på ett trappsteg med hälarna hängande över kanten och lyft upp hälarna så högt som möjligt, sänk långsamt tillbaka.",
+          "repetitions": "10-15",
+          "tips": "Fokusera på att hålla balansen och göra rörelsen långsamt."
+        }
+      ]
     },
     {
-      "name": "Dips mot stol (med knäna böjda)",
-      "description": "Sätt händerna på en stol och håll knäna böjda för att minska belastningen. Sänk långsamt kroppen och tryck upp igen.",
-      "repetitions": "5-8",
-      "tips": "Håll armbågarna nära kroppen och undvik att luta framåt.",
-      "difficulty": "Medel",
-      "category": "styrka"
-    },
-
-    {
-      "name": "Armhävningar",
-      "description": "Lägg händerna på golvet i axelbredd och sänk kroppen mot marken, tryck upp igen.",
-      "repetitions": "8-12",
-      "tips": "Håll kroppen rak från huvudet till fötterna och undvik att sänka höfterna.",
-      "difficulty": "Svår",
-      "category": "styrka"
+      "category": "everydayExercise",
+      "level": "beginner",
+      "name": "Everyday Exercise Routine",
+      "exercises": [
+        {
+          "name": "Gå på stället",
+          "description": "Gå på stället med mjuka rörelser.",
+          "repetitions": "30 sekunder",
+          "tips": "Håll en upprätt hållning och andas lugnt."
+        }
+      ]
     },
     {
-      "name": "Plankan",
-      "description": "Ligg på magen och lyft kroppen upp så att du stödjer på underarmarna och tårna, håll kroppen rak.",
-      "repetitions": "20-30 sekunder",
-      "tips": "Spänn bålen och håll kroppen i en rak linje från huvud till fötter.",
-      "difficulty": "Svår",
-      "category": "styrka"
+      "category": "everydayExercise",
+      "level": "easy",
+      "name": "Everyday Exercise Routine",
+      "exercises": [
+        {
+          "name": "Sidosteg",
+          "description": "Ta långsamma steg åt sidan och håll en lätt böj i knäna.",
+          "repetitions": "8-12 per sida",
+          "tips": "Håll överkroppen rak och blicken framåt."
+        }
+      ]
     },
     {
-      "name": "Dips mot stol",
-      "description": "Sätt händerna på en stol bakom dig och sänk långsamt kroppen ner, tryck upp igen.",
-      "repetitions": "8-12",
-      "tips": "Håll armbågarna nära kroppen och undvik att luta framåt.",
-      "difficulty": "Svår",
-      "category": "styrka"
+      "category": "everydayExercise",
+      "level": "intermediate",
+      "name": "Everyday Exercise Routine",
+      "exercises": [
+        {
+          "name": "Sidosteg med gummiband",
+          "description": "Placera ett gummiband runt benen och ta långsamma sidosteg, håll hela tiden spänning i bandet.",
+          "repetitions": "8-12 per sida",
+          "tips": "Håll blicken framåt och överkroppen rak."
+        }
+      ]
+    },
+    {
+      "category": "everydayExercise",
+      "level": "advanced",
+      "name": "Everyday Exercise Routine",
+      "exercises": [
+        {
+          "name": "Höga knän",
+          "description": "Spring på stället med höga knän.",
+          "repetitions": "20 sekunder",
+          "tips": "Håll en jämn takt och lyft knäna högt."
+        }
+      ]
     }
   ]
 }
