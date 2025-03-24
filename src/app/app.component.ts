@@ -30,8 +30,6 @@ export class AppComponent {
   exerciseTypeChoice(value:string, buttonNumber: number):void{
     this.chosenExerciseType = value;
     this.selectedExerciseDifficultyIndex = buttonNumber;
-
-    document.getElementById('testDisplay')!.innerHTML = this.chosenDifficulty + " | " + this.chosenExerciseType;
     
     const formValues:string = this.chosenExerciseType;
 
