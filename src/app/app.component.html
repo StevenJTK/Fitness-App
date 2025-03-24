@@ -4,7 +4,6 @@
       <img src="assets/logga.png" alt="logo" class="logo" />
       <h1>
         <span class="light">Starka</span>
-
         <br />
         <span class="bold">År</span>
       </h1>
@@ -16,25 +15,96 @@
       </p>
     </div>
   </section>
-  <!--<app-training-form></app-training-form>-->
-  <button class="choiceButton" [ngClass]="{'selected': selectedDifficultyIndex === 1}" (click) = "difficultyChoice('beginner', 1)">Enkel</button>
-  <button class="choiceButton" [ngClass]="{'selected': selectedDifficultyIndex === 2}" (click) = "difficultyChoice('easy', 2)">Medel</button>
-  <button class="choiceButton" [ngClass]="{'selected': selectedDifficultyIndex === 3}" (click) = "difficultyChoice('intermediate', 3)">Svår</button>
-  <button class="choiceButton" [ngClass]="{'selected': selectedDifficultyIndex === 4}" (click) = "difficultyChoice('advanced', 4)">Extrem</button>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <section class="firstText">
+    <h2>
+      <span class="bold-text">Enkla</span> tränings-övningar i <br /><span
+        class="bold-text"
+        >hemmet</span
+      >
+    </h2>
+    <p>Välj din nivå</p>
+  </section>
 
-
-  
-  <div id="ExerciseChoice">
-    <button class="choiceButton" [ngClass]="{'selected': selectedExerciseDifficultyIndex === 1}" (click) = "exerciseTypeChoice('strength', 1)">Styrka</button>
-    <button class="choiceButton" [ngClass]="{'selected': selectedExerciseDifficultyIndex === 2}" (click) = "exerciseTypeChoice('cardio', 2)">Kondition</button>
-    <button class="choiceButton" [ngClass]="{'selected': selectedExerciseDifficultyIndex === 3}" (click) = "exerciseTypeChoice('balance', 3)">Rörlighet</button>
-    <button class="choiceButton" [ngClass]="{'selected': selectedExerciseDifficultyIndex === 4}" (click) = "exerciseTypeChoice('everydayExercise', 4)">Vardagsmotion</button>
+  <div class="buttonContainer">
+    <button
+      class="choiceButton"
+      [ngClass]="{ selected: selectedDifficultyIndex === 1 }"
+      (click)="difficultyChoice('beginner', 1)"
+    >
+      Nybörjare
+      <span class="small-text"
+        >Är du precis i startgroparna att förbättra din hälsa? Börja här!</span
+      >
+    </button>
+    <button
+      class="choiceButton"
+      [ngClass]="{ selected: selectedDifficultyIndex === 2 }"
+      (click)="difficultyChoice('easy', 2)"
+    >
+      Lätt
+      <span class="small-text"
+        >Du är igång - bra jobbat! Här hittar du skonsamma övningar som stärker
+        kroppen.</span
+      >
+    </button>
+    <button
+      class="choiceButton"
+      [ngClass]="{ selected: selectedDifficultyIndex === 3 }"
+      (click)="difficultyChoice('intermediate', 3)"
+    >
+      Medel
+      <span class="small-text"
+        >Redo för nästa steg? Här får du en lagom utmaning för styrka och
+        uthållighet</span
+      >
+    </button>
+    <button
+      class="choiceButton"
+      [ngClass]="{ selected: selectedDifficultyIndex === 4 }"
+      (click)="difficultyChoice('advanced', 4)"
+    >
+      Avancerad
+      <span class="small-text"
+        >Du är stark och vill ha mer! Utmaningar för att behålla kraft och
+        rörlighet</span
+      >
+    </button>
   </div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+  <section class="firstText">
+    <p>Välj hur du vill stärka dig</p>
+  </section>
+  <div id="ExerciseChoice">
+    <button
+      class="choiceButton"
+      [ngClass]="{ selected: selectedExerciseDifficultyIndex === 1 }"
+      (click)="exerciseTypeChoice('strength', 1)"
+    >
+     <img src="/assets/Fysik.png" class="button-img">
+    </button>
+    <button
+      class="choiceButton"
+      [ngClass]="{ selected: selectedExerciseDifficultyIndex === 2 }"
+      (click)="exerciseTypeChoice('cardio', 2)">
+   
+    </button>
+    <img src="/assets/Cardio.png" class="button-img">
+    
+    <button
+      class="choiceButton"
+      [ngClass]="{ selected: selectedExerciseDifficultyIndex === 3 }"
+      (click)="exerciseTypeChoice('Vardagsmotion', 3)"
+    >
+      <img src="/assets/Vardagsmotion.png" class="button-img">
+    </button>
+    <button
+      class="choiceButton"
+      [ngClass]="{ selected: selectedExerciseDifficultyIndex === 4 }"
+      (click)="exerciseTypeChoice('balance', 4)"
+    >
+     <img src="/assets/Rorlighet.png" class="button-img"> 
+    </button>
+  </div>
 </main>
-
-<router-outlet />

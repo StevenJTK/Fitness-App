@@ -1,43 +1,51 @@
-.appSection {
+.buttonContainer,
+#ExerciseChoice {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Två kolumner */
+  gap: 20px; /* Mellanrum mellan knappar */
+  max-width: 500px; /* Anpassa till innehållet */
+  margin: auto; /* Centrera sektionen */
+  padding: 40px 0; /* Lite luft ovanför och under */
+}
+
+.choiceButton {
+  /*aspect-ratio: 1/1; /* Kvadratisk form */
+  background-color: #686c55;
+  color: #ece2d5;
+  border: none;
+  border-radius: 15px; /* Rundade hörn */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
   display: flex;
-  flex-direction: column;
+  flex-direction: column; /* För att placera texten vertikalt */
   align-items: center;
   justify-content: center;
-  height: 100%;
-}
-.appSection h1 {
-  font-family: "Courier New", Courier, monospace;
   text-align: center;
-  background-color: cadetblue;
-  max-width: calc(50% + 1.5rem);
-  padding: 3rem 3rem;
-  margin: 5rem;
-  box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.821);
+  font-size: 24px; /* Justera textstorlek */
+  font-family: "Hanken Grotesk", sans-serif; /* Typsnitt enligt design */
+  font-weight: bold;
+  max-width: 350px; /* Anpassa storlek */
+  max-height: 350px;
+  padding: 20px;
+  overflow: hidden;
+}
+.button-img{
+ width: 100px;
+ height: 100px;
+ object-fit: cover;
 }
 
-.appSection h3 {
-  font-family: "Courier New", Courier, monospace;
-  text-align: center;
-  background-color: cadetblue;
-  max-width: calc(50% + 1.5rem);
-  padding: 3rem 3rem;
-  margin: 5rem;
-  box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.821);
+.small-text {
+  font-size: 12px; /* Mindre text */
+  color: #ece2d5; /* Samma färg som huvudtexten */
+  margin-top: 8px; /* Lite avstånd från huvudtexten */
 }
 
-.appSection p {
-  font-family: "Courier New", Courier, monospace;
-  text-align: center;
-  background-color: cadetblue;
-  padding: 3rem;
-  margin: 2rem;
-  box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.821);
+.choiceButton:hover {
+  background-color: #568045; /* Ljusare grön vid hover */
+  transform: scale(1.05); /* Liten effekt vid hover */
 }
 
-.choiceButton{
-  background-color: aqua;
-}
-
-.selected{
-  background-color: blueviolet !important;
+.selected {
+  background-color: rgb(44, 41, 24) !important; /* Mörkare vid val */
 }

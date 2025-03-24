@@ -41,7 +41,7 @@ html {
   padding: 2%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 30px;
+  font-size: 2vw;
 }
 
 .logo {
@@ -69,4 +69,49 @@ h1 {
 
 .bold-text {
   font-weight: bold;
+}
+
+.firstText {
+  font-family: "Hanken Grotesk";
+  text-align: center;
+  color: #310b02;
+}
+
+.firstText h2 {
+  font-size: 30px;
+  font-weight: lighter;
+}
+
+.firstText p {
+    font-size: 25px;
+    margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .hero-image {
+    height: 40vh;
+  }
+
+  .hero-text {
+    font-size: 4vw;
+    padding: 5%;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-image {
+    height: 30vh;
+  }
+
+  .hero-text {
+    font-size: 4vw;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
 }
