@@ -41,7 +41,7 @@ html {
   padding: 2%;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 30px;
+  font-size: 2vw;
 }
 
 .logo {
@@ -69,4 +69,35 @@ h1 {
 
 .bold-text {
   font-weight: bold;
+}
+
+/* Media Query för Tablets */
+@media (max-width: 1024px) {
+  .hero-image {
+    height: 40vh; /* Minska höjden på hero image på tabletter */
+  }
+
+  .hero-text {
+    font-size: 4vw; /* Justera textstorleken för tabletter */
+    padding: 5%;
+  }
+
+  h1 {
+    font-size: 1.2rem; /* Minska storleken på h1 */
+  }
+}
+
+/* Media Query för mindre skärmar, t.ex. mobiler */
+@media (max-width: 768px) {
+  .hero-image {
+    height: 30vh; /* Minska höjden på hero image på mobiler */
+  }
+
+  .hero-text {
+    font-size: 4vw; /* Justera textstorleken för små skärmar */
+  }
+
+  h1 {
+    font-size: 1rem; /* Ytterligare justering för mobil */
+  }
 }
