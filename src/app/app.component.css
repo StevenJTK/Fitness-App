@@ -9,7 +9,7 @@
 }
 
 .choiceButton {
-  aspect-ratio: 1/1; /* Kvadratisk form */
+  /*aspect-ratio: 1/1; /* Kvadratisk form */
   background-color: #686c55;
   color: #ece2d5;
   border: none;
@@ -17,14 +17,22 @@
   cursor: pointer;
   transition: background-color 0.3s, transform 0.1s;
   display: flex;
+  flex-direction: column; /* För att placera texten vertikalt */
   align-items: center;
   justify-content: center;
   text-align: center;
   font-size: 24px; /* Justera textstorlek */
   font-family: "Hanken Grotesk", sans-serif; /* Typsnitt enligt design */
   font-weight: bold;
-  max-width: 200px; /* Anpassa storlek */
-  max-height: 200px;
+  max-width: 350px; /* Anpassa storlek */
+  max-height: 350px;
+  padding: 20px;
+}
+
+.small-text {
+  font-size: 12px; /* Mindre text */
+  color: #ece2d5; /* Samma färg som huvudtexten */
+  margin-top: 8px; /* Lite avstånd från huvudtexten */
 }
 
 .choiceButton:hover {
