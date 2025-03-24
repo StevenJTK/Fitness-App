@@ -16,12 +16,16 @@
       </p>
     </div>
   </section>
-  <!--<app-training-form></app-training-form>-->
-  <button class="choiceButton" [ngClass]="{'selected': selectedDifficultyIndex === 1}" (click) = "difficultyChoice('beginner', 1)">Enkel</button>
-  <button class="choiceButton" [ngClass]="{'selected': selectedDifficultyIndex === 2}" (click) = "difficultyChoice('easy', 2)">Medel</button>
-  <button class="choiceButton" [ngClass]="{'selected': selectedDifficultyIndex === 3}" (click) = "difficultyChoice('intermediate', 3)">Svår</button>
-  <button class="choiceButton" [ngClass]="{'selected': selectedDifficultyIndex === 4}" (click) = "difficultyChoice('advanced', 4)">Extrem</button>
-  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div class="buttonContainer"> 
+
+  <button class="choiceButton" [ngClass]="{'selected': selectedDifficultyIndex === 1}" (click) = "difficultyChoice('beginner', 1)">Nybörjare</button>
+ 
+  <button class="choiceButton" [ngClass]="{'selected': selectedDifficultyIndex === 2}" (click) = "difficultyChoice('easy', 2)">Lätt</button>
+  <button class="choiceButton" [ngClass]="{'selected': selectedDifficultyIndex === 3}" (click) = "difficultyChoice('intermediate', 3)">Medel</button>
+  <button class="choiceButton" [ngClass]="{'selected': selectedDifficultyIndex === 4}" (click) = "difficultyChoice('advanced', 4)">Avancerad</button>
+ 
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
   
   <div id="ExerciseChoice">

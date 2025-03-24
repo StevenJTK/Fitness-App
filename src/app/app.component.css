@@ -1,8 +1,37 @@
-
-.choiceButton{
-  background-color: aqua;
+.buttonContainer,
+#ExerciseChoice {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Två kolumner */
+  gap: 20px; /* Mellanrum mellan knappar */
+  max-width: 500px; /* Anpassa till innehållet */
+  margin: auto; /* Centrera sektionen */
+  padding: 40px 0; /* Lite luft ovanför och under */
 }
 
-.selected{
-  background-color: blueviolet !important;
+.choiceButton {
+  aspect-ratio: 1/1; /* Kvadratisk form */
+  background-color: #686c55;
+  color: #ece2d5;
+  border: none;
+  border-radius: 15px; /* Rundade hörn */
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 24px; /* Justera textstorlek */
+  font-family: "Hanken Grotesk", sans-serif; /* Typsnitt enligt design */
+  font-weight: bold;
+  max-width: 200px; /* Anpassa storlek */
+  max-height: 200px;
+}
+
+.choiceButton:hover {
+  background-color: #568045; /* Ljusare grön vid hover */
+  transform: scale(1.05); /* Liten effekt vid hover */
+}
+
+.selected {
+  background-color: rgb(44, 41, 24) !important; /* Mörkare vid val */
 }
