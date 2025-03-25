@@ -28,11 +28,34 @@ export class AppComponent {
   //för timern som väntar innan den skrollar
   waitTimer:number = 200;
 
+
+  buttonChoice():void{
+
+
+  
+
+    setTimeout(() => {
+      //gör så att vid klick så åker man ner långsamt till det valda idt, du kan ändra center till start eller end 
+      //om man vill landa på ett annat ställe/EMMA
+      const scrollElement = document.getElementById("StartButton");
+      if (scrollElement) {
+      scrollElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      };
+    }, 200);
+  }
+  
+  
+  
+  
+  
+  
   difficultyChoice(value:string, buttonNumber: number):void{
     this.chosenDifficulty = value;
     this.selectedDifficultyIndex = buttonNumber;
 
     this.fetchExercises();
+
+  
 
     setTimeout(() => {
       //gör så att vid klick så åker man ner långsamt till det valda idt, du kan ändra center till start eller end 

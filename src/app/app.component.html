@@ -17,8 +17,8 @@
     </div>
     
   </section>
-  <div id="startButton">
-    <button>Starta här</button>
+  <div>
+    <button (click)="buttonChoice()">Starta här</button>
   </div>
   
   <section class="firstText">
@@ -28,11 +28,11 @@
         >hemmet</span
       >
     </h2>
-    
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <p>Välj din nivå</p>
   </section>
 
-  <div class="buttonContainer">
+  <div class="buttonContainer"id="StartButton">
     <button
       class="choiceButton"
       [ngClass]="{ selected: selectedDifficultyIndex === 1 }"
