@@ -3,13 +3,14 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Två kolumner */
   gap: 20px; /* Mellanrum mellan knappar */
+  justify-content: center;
+  align-items: center;
   max-width: 500px; /* Anpassa till innehållet */
   margin: auto; /* Centrera sektionen */
   padding: 40px 0; /* Lite luft ovanför och under */
 }
 
 .choiceButton {
-  /*aspect-ratio: 1/1; /* Kvadratisk form */
   background-color: #686c55;
   color: #ece2d5;
   border: none;
@@ -24,21 +25,81 @@
   font-size: 24px; /* Justera textstorlek */
   font-family: "Hanken Grotesk", sans-serif; /* Typsnitt enligt design */
   font-weight: bold;
-  max-width: 350px; /* Anpassa storlek */
-  max-height: 350px;
+  width: 350px; /* Anpassa storlek */
+  height: 200px;
   padding: 20px;
   overflow: hidden;
 }
-.button-img{
- width: 100px;
- height: 100px;
- object-fit: cover;
+
+.dots {
+  display: flex;
+  gap: 5px;
+  justify-content: center;
+  margin-top: 10px;
+  padding-top: 10px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius: 50%;
+  display: inline-block;
+  
+}
+
+.dot.active {
+  background-color: #ece2d5;
+}
+
+
+.exerciseButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 350px; /* Anpassa storlek */
+  height: 200px;
+  background-size: cover; /* Se till att bilden täcker hela knappen */
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  border-radius: 15px; /* Rundade hörn */
+  cursor: pointer;
+  transition: transform 0.1s;
+  font-size: 24px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: bold;
+  color: #ece2d5;
+}
+
+#spanText {
+  padding-top: 10px;
+  
+}
+
+.strength {
+  background-image: url("/assets/Fysik.png");
+}
+
+.cardio {
+  background-image: url("/assets/Cardio.png");
+}
+
+.everyday-exercise {
+  background-image: url("/assets/Vardagsmotion.png");
+}
+
+.balance {
+  background-image: url("/assets/Rorlighet.png");
 }
 
 .small-text {
   font-size: 12px; /* Mindre text */
   color: #ece2d5; /* Samma färg som huvudtexten */
   margin-top: 8px; /* Lite avstånd från huvudtexten */
+  font-style: italic;
+  font-weight: lighter;
 }
 
 .choiceButton:hover {
