@@ -4,6 +4,13 @@
       "category": "strength",
       "level": "beginner",
       "name": "Upper Body",
+      "description":"Väldigt enkla övningar för överkroppsstyrka",
+      "backgroundIcon":"",
+      "estTime":"10 min",
+      "categoryIcons":[
+        "strength",
+        "heart"
+      ],
       "exercises": [
         {
           "name": "Vägg-armhävningar",
@@ -23,6 +30,13 @@
       "category": "strength",
       "level": "beginner",
       "name": "Lower Body",
+      "description":"väldigt enkla övningar för benstyrka och balans",
+      "backgroundIcon":"",
+      "estTime":"15 min",
+      "categoryIcons":[
+        "strength",
+        "bone strength"
+      ],
       "exercises": [
         {
           "name": "Knäböj till stol",
@@ -42,6 +56,13 @@
       "category": "strength",
       "level": "easy",
       "name": "Upper Body",
+      "description": "Enkla övningar för överkroppsstyrka anpassade för nybörjare.",
+      "backgroundIcon": "",
+      "estTime": "10-15 min",
+      "categoryIcons": [
+        "strength",
+        "heart"
+      ],
       "exercises": [
         {
           "name": "Stol-dips med fotstödet",
@@ -61,6 +82,13 @@
       "category": "strength",
       "level": "easy",
       "name": "Lower Body",
+      "description": "Enkla övningar för att stärka benen och förbättra balans.",
+      "backgroundIcon": "",
+      "estTime": "15 min",
+      "categoryIcons": [
+        "strength",
+        "bone strength"
+      ],
       "exercises": [
         {
           "name": "Sidosteg",
@@ -80,6 +108,13 @@
       "category": "strength",
       "level": "intermediate",
       "name": "Upper Body",
+      "description": "Utmanande övningar för att stärka överkroppen och förbättra styrka.",
+      "backgroundIcon": "",
+      "estTime": "20 min",
+      "categoryIcons": [
+        "strength",
+        "heart"
+      ],
       "exercises": [
         {
           "name": "Armhävningar på knä",
@@ -99,6 +134,13 @@
       "category": "strength",
       "level": "intermediate",
       "name": "Lower Body",
+      "description": "Stärk underkroppen med dessa övningar för bättre balans och styrka.",
+      "backgroundIcon": "",
+      "estTime": "25 min",
+      "categoryIcons": [
+        "strength",
+        "bone strength"
+      ],
       "exercises": [
         {
           "name": "Sidosteg med gummiband",
@@ -118,6 +160,13 @@
       "category": "strength",
       "level": "advanced",
       "name": "Upper Body",
+      "description": "Avancerade övningar för att bygga överkroppsstyrka och muskeldefinition.",
+      "backgroundIcon": "",
+      "estTime": "20 min",
+      "categoryIcons": [
+        "strength",
+        "heart"
+      ],
       "exercises": [
         {
           "name": "Armhävningar",
@@ -137,6 +186,13 @@
       "category": "strength",
       "level": "advanced",
       "name": "Lower Body",
+      "description": "Avancerade övningar för att stärka ben och bål, samt förbättra balans och stabilitet.",
+      "backgroundIcon": "",
+      "estTime": "25 min",
+      "categoryIcons": [
+        "strength",
+        "bone strength"
+      ],
       "exercises": [
         {
           "name": "Sidosteg med hoppsidosteg",
@@ -156,6 +212,13 @@
       "category": "everydayExercise",
       "level": "beginner",
       "name": "Everyday Exercise Routine",
+      "description": "En enkel och effektiv rutin för att komma igång med vardaglig rörelse och förbättra grundläggande kondition.",
+      "backgroundIcon": "",
+      "estTime": "5 min",
+      "categoryIcons": [
+        "everyday exercise",
+        "heart"
+      ],
       "exercises": [
         {
           "name": "Gå på stället",
@@ -169,6 +232,13 @@
       "category": "everydayExercise",
       "level": "easy",
       "name": "Everyday Exercise Routine",
+      "description": "En lätt och avkopplande rutin för att förbättra rörlighet och styrka genom enkla sidosteg.",
+      "backgroundIcon": "",
+      "estTime": "5 min",
+      "categoryIcons": [
+        "everyday exercise",
+        "heart"
+      ],
       "exercises": [
         {
           "name": "Sidosteg",
@@ -182,6 +252,13 @@
       "category": "everydayExercise",
       "level": "intermediate",
       "name": "Everyday Exercise Routine",
+      "description": "En träningsrutin som stärker muskler och förbättrar rörlighet genom sidosteg med gummiband.",
+      "backgroundIcon": "",
+      "estTime": "10 min",
+      "categoryIcons": [
+        "everyday exercise",
+        "muscle"
+      ],
       "exercises": [
         {
           "name": "Sidosteg med gummiband",
@@ -195,6 +272,13 @@
       "category": "everydayExercise",
       "level": "advanced",
       "name": "Everyday Exercise Routine",
+      "description": "En utmanande träningsrutin för att förbättra konditionen och stärka benen genom höga knän.",
+      "backgroundIcon": "",
+      "estTime": "5-10 min",
+      "categoryIcons": [
+        "everyday exercise",
+        "cardio"
+      ],
       "exercises": [
         {
           "name": "Höga knän",
@@ -203,6 +287,6 @@
           "tips": "Håll en jämn takt och lyft knäna högt."
         }
       ]
-    }
+    }    
   ]
 }
