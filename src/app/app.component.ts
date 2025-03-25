@@ -42,11 +42,10 @@ export class AppComponent {
     }, 200);
   }
 
-  difficultyChoice(value: string, buttonNumber: number): void {
+  async difficultyChoice(value: string, buttonNumber: number): Promise<void> {
     this.chosenDifficulty = value;
     this.selectedDifficultyIndex = buttonNumber;
-
-    this.fetchExercises();
+    await this.fetchExercises();
 
     setTimeout(() => {
       //gör så att vid klick så åker man ner långsamt till det valda idt, du kan ändra center till start eller end
@@ -75,11 +74,11 @@ export class AppComponent {
   }
 
   fetchExercises(): void {
-    if (this.chosenDifficulty != '' && this.chosenExerciseType != '') {
+    //if (this.chosenDifficulty != '' && this.chosenExerciseType != '') {
       this.workoutComponent.fetchExercises(
         this.chosenDifficulty,
         this.chosenExerciseType
       );
-    }
+    //}
   }
 }

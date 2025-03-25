@@ -44,6 +44,45 @@
     padding: 1.5rem;
     text-align: center;
   }
+
+  .userGuideText {
+    font-family: 'Hanken Grotesk';
+    text-align: center;
+    color: #310b02;
+    font-size: 25px;
+  }
+
+  .goBackToTopButtonHolder {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+  }
+
+  .hidden {
+    display: none;
+  }
+
+  .goBackToTopButton {
+    background-color: #535740;
+    color: #ffffff;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: "Hanken Grotesk", sans-serif;
+    font-weight: bold;
+    width: 350px;
+    height: 200px;
+    padding: 20px;
+    margin-bottom: 50px;
+  }
+
+  .choiceButton:hover {
+    background-color: #568045; /* Ljusare grön vid hover */
+    transform: scale(1.05); /* Liten effekt vid hover */
+  }
   
   h2 {
     text-align: center;

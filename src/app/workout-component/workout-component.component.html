@@ -13,6 +13,13 @@
   </div>
   
   <ng-template #noExercises>
-    <p>Ingen övning hittades för de valda kriterierna.</p>
+    <p class = "userGuideText"> Det finns inga övningar att hämta än </p>
+    <div class="goBackToTopButtonHolder">
+      <button
+        class="goBackToTopButton hidden"
+        (click)="jumpToId('StartButton')">
+        Välj en svårighetsgrad först
+      </button>
+    </div>
   </ng-template>
   
