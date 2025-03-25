@@ -4,6 +4,7 @@ import { Router, RouterOutlet } from '@angular/router';
 //import { TestExercisesComponent } from './test-exercises/test-exercises.component';
 import { TrainingFormComponent } from "./training-form/training-form.component";
 import { WorkoutComponent } from './workout-component/workout-component.component';
+import { apiQuotes } from './types/apiQuotes';
 
 @Component({
   selector: 'app-root',
@@ -27,6 +28,13 @@ export class AppComponent {
 
   //för timern som väntar innan den skrollar
   waitTimer:number = 200;
+
+
+  //kommer från apiQuotes.ts
+  ngOnInit(): void {
+    console.log("fetching quote");
+    console.log(apiQuotes.apiFetch());
+  }
 
   difficultyChoice(value:string, buttonNumber: number):void{
     this.chosenDifficulty = value;
