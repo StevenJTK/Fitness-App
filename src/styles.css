@@ -10,7 +10,7 @@ html {
 
 .hero-image {
   background-image: linear-gradient(
-      rgba(210, 200, 188, 0) 95%,
+      rgba(210, 200, 188, 0) 70%,
       rgba(210, 200, 188, 1) 100%
     ),
     url("assets/header.jpg");
@@ -38,10 +38,17 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  padding: 2%;
+  padding: 5px 10px;
   transform: translate(-50%, -50%);
   color: white;
-  font-size: 2vw;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  font-size: 20px;
+  border-radius: 30px;
+}
+
+.hero-text strong {
+  font-style: italic;
 }
 
 .logo {
@@ -89,9 +96,46 @@ h1 {
   font-weight: lighter;
 }
 
+.firstText strong {
+  font-weight: bold;
+}
+
 .firstText p {
-  font-size: 25px;
+  font-size: 1.4rem;
   margin: 0;
+  padding-top: 3rem;
+  font-weight: bold;
+}
+
+.startButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -20px;
+}
+
+.startButton button {
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: large;
+}
+
+
+.arrow {
+  border: solid #ffffff;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 7px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 @media (max-width: 1024px) {
@@ -100,12 +144,16 @@ h1 {
   }
 
   .hero-text {
-    font-size: 4vw;
+    font-size: 2vw;
     padding: 5%;
   }
 
   h1 {
     font-size: 1.2rem;
+  }
+
+  .firstText h2 {
+    font-size: 1.5rem;
   }
 }
 
@@ -120,5 +168,10 @@ h1 {
 
   h1 {
     font-size: 1rem;
+  }
+
+  .firstText h2 {
+    font-size: 1rem;
+    padding: 10px;
   }
 }

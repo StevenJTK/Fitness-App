@@ -11,8 +11,8 @@
 }
 
 .choiceButton {
-  background-color: #686c55;
-  color: #ece2d5;
+  background-color: #535740;
+  color: #ffffff;
   border: none;
   border-radius: 15px; /* Rundade hörn */
   cursor: pointer;
@@ -42,16 +42,14 @@
 .dot {
   width: 10px;
   height: 10px;
-  background-color: black;
+  background-color: #1e2014;
   border-radius: 50%;
   display: inline-block;
-  
 }
 
 .dot.active {
-  background-color: #ece2d5;
+  background-color: #ffffff;
 }
-
 
 .exerciseButton {
   display: flex;
@@ -70,14 +68,30 @@
   font-size: 24px;
   font-family: "Hanken Grotesk", sans-serif;
   font-weight: bold;
-  color: #ece2d5;
+  color: #ffffff;
 }
 
+@media (max-width: 768px) {
+  .buttonContainer,
+  #ExerciseChoice {
+    grid-template-columns: 1fr; /* Endast en kolumn på små skärmar */
+  }
 
+  .choiceButton {
+    width: 100%; /* Gör knapparna responsiva och tar hela bredden */
+    max-width: 350px; /* Men begränsa maxstorleken */
+    margin: auto; /* Centrera knapparna */
+  }
+
+  .exerciseButton {
+    width: 100%; /* Gör knapparna responsiva och tar hela bredden */
+    max-width: 350px; /* Men begränsa maxstorleken */
+    margin: auto; /* Centrera knapparna */
+  }
+}
 
 #spanText {
   padding-top: 10px;
-  
 }
 
 .strength {
@@ -98,7 +112,7 @@
 
 .small-text {
   font-size: 12px; /* Mindre text */
-  color: #ece2d5; /* Samma färg som huvudtexten */
+  color: #ffffff; /* Samma färg som huvudtexten */
   margin-top: 8px; /* Lite avstånd från huvudtexten */
   font-style: italic;
   font-weight: lighter;

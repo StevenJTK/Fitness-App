@@ -10,20 +10,21 @@
       </h1>
     </div>
     <div class="hero-text">
-      <p>
-        Dina handlingar idag <br />
-        <span class="bold-text">formar din morgondag</span>
-      </p>
+      <p>Dina handlingar idag <strong>formar din morgondag</strong></p>
     </div>
   </section>
+  <div class="startButton">
+    <button (click)="buttonChoice()">Starta här <br>
+      <i class="arrow down"></i>
+    </button>
+  </div>
+
   <section class="firstText">
     <h2>
-      <span class="bold-text">Enkla</span> tränings-övningar i <br /><span
-        class="bold-text"
-        >hemmet</span
-      >
+      <strong>Enkla</strong> övningar som hjälper dig att stärka din kropp och
+      öka din rörlighetsförmåga i vardagen
     </h2>
-    <p>Välj din nivå</p>
+    <p>Välj din intensitet</p>
   </section>
 
   <div class="buttonContainer">
@@ -37,12 +38,12 @@
         >Är du precis i startgroparna att förbättra din hälsa? <br />
         Börja här!
       </span>
-      <div class="dots">
+      <div class="dots"  id="StartButton">
         <span class="dot active"></span>
         <span class="dot"></span>
         <span class="dot"></span>
         <span class="dot"></span>
-    </div>
+      </div>
     </button>
     <button
       class="choiceButton"
@@ -59,7 +60,7 @@
         <span class="dot active"></span>
         <span class="dot"></span>
         <span class="dot"></span>
-    </div>
+      </div>
     </button>
     <button
       class="choiceButton"
@@ -76,14 +77,14 @@
         <span class="dot active"></span>
         <span class="dot active"></span>
         <span class="dot"></span>
-    </div>
+      </div>
     </button>
     <button
       class="choiceButton"
       [ngClass]="{ selected: selectedDifficultyIndex === 4 }"
       (click)="difficultyChoice('advanced', 4)"
     >
-      Avancerad
+      Utmanande
       <span class="small-text"
         >Du är stark och vill ha mer! Utmaningar för att behålla kraft och
         rörlighet</span
@@ -93,7 +94,7 @@
         <span class="dot active"></span>
         <span class="dot active"></span>
         <span class="dot active"></span>
-    </div>
+      </div>
     </button>
   </div>
 
@@ -108,7 +109,7 @@
       [ngClass]="{ selected: selectedExerciseDifficultyIndex === 1 }"
       (click)="exerciseTypeChoice('strength', 1)"
     >
-      <span id="spanText">Styrka</span>
+      <span id="spanText">Fysik</span>
     </button>
 
     <button
@@ -116,7 +117,7 @@
       [ngClass]="{ selected: selectedExerciseDifficultyIndex === 2 }"
       (click)="exerciseTypeChoice('cardio', 2)"
     >
-      <span id="spanText">Kondition</span>
+      <span id="spanText">Uthållighet</span>
     </button>
 
     <button
