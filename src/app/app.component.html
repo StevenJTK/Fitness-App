@@ -114,7 +114,7 @@
       [ngClass]="{ selected: selectedExerciseDifficultyIndex === 1 }"
       (click)="exerciseTypeChoice('strength', 1)"
     >
-      <span>Styrka</span>
+      <span id="spanText">Styrka</span>
     </button>
 
     <button
@@ -130,14 +130,16 @@
       [ngClass]="{ selected: selectedExerciseDifficultyIndex === 3 }"
       (click)="exerciseTypeChoice('Vardagsmotion', 3)"
     >
-      <span>Vardagsmotion</span>
+      <span id="spanText">Vardagsmotion</span>
     </button>
     <button
       class="exerciseButton balance"
       [ngClass]="{ selected: selectedExerciseDifficultyIndex === 4 }"
       (click)="exerciseTypeChoice('balance', 4)"
     >
-      <span>Balans & Rörlighet</span>
+      <span id="spanText">Balans & Rörlighet</span>
     </button>
   </div>
+
+  <app-workout-component id="workoutComponent"></app-workout-component>
 </main>

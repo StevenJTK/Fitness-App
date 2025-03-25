@@ -22,7 +22,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 24px; /* Justera textstorlek */
+  font-size: 1.5rem; /* Justera textstorlek */
   font-family: "Hanken Grotesk", sans-serif; /* Typsnitt enligt design */
   font-weight: bold;
   width: 350px; /* Anpassa storlek */
@@ -58,8 +58,8 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 350px; /* Anpassa storlek */
-  height: 200px;
+  width: 21.875rem; /* Anpassa storlek */
+  height: 12.5rem;
   background-size: cover; /* Se till att bilden täcker hela knappen */
   background-position: center;
   background-repeat: no-repeat;
