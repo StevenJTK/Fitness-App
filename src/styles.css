@@ -83,8 +83,8 @@ h1 {
 }
 
 .firstText p {
-    font-size: 25px;
-    margin: 0;
+  font-size: 25px;
+  margin: 0;
 }
 
 @media (max-width: 1024px) {

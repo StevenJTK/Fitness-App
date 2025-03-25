@@ -33,8 +33,9 @@
     >
       Nybörjare
       <span class="small-text"
-        >Är du precis i startgroparna att förbättra din hälsa? Börja här!</span
-      >
+        >Är du precis i startgroparna att förbättra din hälsa? <br />
+        Börja här!
+      </span>
     </button>
     <button
       class="choiceButton"
@@ -78,33 +79,34 @@
   </section>
   <div id="ExerciseChoice">
     <button
-      class="choiceButton"
+      class="exerciseButton strength"
       [ngClass]="{ selected: selectedExerciseDifficultyIndex === 1 }"
       (click)="exerciseTypeChoice('strength', 1)"
     >
-     <img src="/assets/Fysik.png" class="button-img">
+      <span>Styrka</span>
     </button>
+
     <button
-      class="choiceButton"
+      class="exerciseButton cardio"
       [ngClass]="{ selected: selectedExerciseDifficultyIndex === 2 }"
-      (click)="exerciseTypeChoice('cardio', 2)">
-   
+      (click)="exerciseTypeChoice('cardio', 2)"
+    >
+      <span>Kondition</span>
     </button>
-    <img src="/assets/Cardio.png" class="button-img">
-    
+
     <button
-      class="choiceButton"
+      class="exerciseButton everyday-exercise"
       [ngClass]="{ selected: selectedExerciseDifficultyIndex === 3 }"
       (click)="exerciseTypeChoice('Vardagsmotion', 3)"
     >
-      <img src="/assets/Vardagsmotion.png" class="button-img">
+      <span>Vardagsmotion</span>
     </button>
     <button
-      class="choiceButton"
+      class="exerciseButton balance"
       [ngClass]="{ selected: selectedExerciseDifficultyIndex === 4 }"
       (click)="exerciseTypeChoice('balance', 4)"
     >
-     <img src="/assets/Rorlighet.png" class="button-img"> 
+      <span>Balans & Rörlighet</span>
     </button>
   </div>
 </main>
