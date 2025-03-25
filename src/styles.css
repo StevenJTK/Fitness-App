@@ -50,9 +50,16 @@ html {
   margin-right: 8px;
 }
 
+.separator {
+  width: 1px;
+  height: 60px;
+  background-color: white;
+  margin-right: 9px;
+}
+
 h1 {
   font-family: "Hanken Grotesk";
-  font-size: 1.5rem;
+  font-size: 1rem;
   color: #ffffff;
   margin: 0;
 }

@@ -2,10 +2,11 @@
   <section class="hero-image">
     <div class="hero-content">
       <img src="assets/logga.png" alt="logo" class="logo" />
+      <div class="separator"></div>
       <h1>
-        <span class="light">Starka</span>
+        <span class="light">STARKA</span>
         <br />
-        <span class="bold">År</span>
+        <span class="bold">ÅR</span>
       </h1>
     </div>
     <div class="hero-text">
@@ -36,6 +37,12 @@
         >Är du precis i startgroparna att förbättra din hälsa? <br />
         Börja här!
       </span>
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
     </button>
     <button
       class="choiceButton"
@@ -47,6 +54,12 @@
         >Du är igång - bra jobbat! Här hittar du skonsamma övningar som stärker
         kroppen.</span
       >
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+    </div>
     </button>
     <button
       class="choiceButton"
@@ -58,6 +71,12 @@
         >Redo för nästa steg? Här får du en lagom utmaning för styrka och
         uthållighet</span
       >
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot active"></span>
+        <span class="dot active"></span>
+        <span class="dot"></span>
+    </div>
     </button>
     <button
       class="choiceButton"
@@ -69,6 +88,12 @@
         >Du är stark och vill ha mer! Utmaningar för att behålla kraft och
         rörlighet</span
       >
+      <div class="dots">
+        <span class="dot active"></span>
+        <span class="dot active"></span>
+        <span class="dot active"></span>
+        <span class="dot active"></span>
+    </div>
     </button>
   </div>
 
@@ -91,7 +116,7 @@
       [ngClass]="{ selected: selectedExerciseDifficultyIndex === 2 }"
       (click)="exerciseTypeChoice('cardio', 2)"
     >
-      <span>Kondition</span>
+      <span id="spanText">Kondition</span>
     </button>
 
     <button
