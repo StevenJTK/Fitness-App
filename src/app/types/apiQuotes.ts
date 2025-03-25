@@ -4,36 +4,39 @@
 
 export class apiQuotes {
 
-  static apiFetch(): string {
-    fetch('https://thequoteshub.com/api/')
-      .then((response) => response.json())
-      .then((data) => {
-        // Hämta citatet från svaret
-        const englishQuote = data.text;
-        console.log('Engelskt citat:', englishQuote);
+  //metod som hämtar data från api
+  static async apiFetch(): Promise<string> {
 
-        // Steg 2: Översätt citatet till svenska
+    try{
+        const response = await(fetch("https://thequoteshub.com/api/"));
+        const data = await(response.json());
+        const englishQuote = data.text;
+        //översätter till svenska mha translateQuote metod
         return this.translateQuote(englishQuote);
-      })
-      .catch((error) => console.error('Error fetching quote:', error));
-      return "Error in quote fetch";
+    }
+    //felmeddelande
+    catch (error){
+        console.error('Error translating quote:', error);
+        return "Error in quote fetch";
+    }
   }
 
-  // Steg 2: Funktion för att översätta citatet med Google Translate API
-  private static translateQuote(quote: string):string {
+  // funktion för att översätta citatet med myMemory
+  private static async translateQuote(quote: string):Promise<string> {
 
     const url = "https://api.mymemory.translated.net/get?q="+quote+"&langpair=en|sv";
 
-    // Gör en POST-förfrågan till Google Translate API
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
+    //gör om till json format och översätter till svenska
+    try{
+        const response = await(fetch(url));
+        const data = await(response.json());
         const translatedQuote = data.responseData.translatedText;
-        console.log('Översatt citat:', translatedQuote);
         return translatedQuote;
-        
-      })
-      .catch((error) => console.error('Error translating quote:', error));
-      return "Error in quote fetch";
+    }
+    //felmeddelande
+    catch (error){
+        console.error('Error translating quote:', error);
+        return "Error in quote fetch";
+    }
   }
 }

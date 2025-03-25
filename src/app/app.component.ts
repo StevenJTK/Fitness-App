@@ -33,7 +33,13 @@ export class AppComponent {
   //kommer från apiQuotes.ts
   ngOnInit(): void {
     console.log("fetching quote");
-    console.log(apiQuotes.apiFetch());
+    this.test();
+  }
+
+  async test(){
+    var data:string = await(apiQuotes.apiFetch());
+    console.log("Fetched data: " + data);
+
   }
 
   difficultyChoice(value:string, buttonNumber: number):void{
