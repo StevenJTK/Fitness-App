@@ -73,6 +73,25 @@
   color: #ece2d5;
 }
 
+@media (max-width: 768px) {
+  .buttonContainer,
+  #ExerciseChoice {
+    grid-template-columns: 1fr; /* Endast en kolumn på små skärmar */
+  }
+
+  .choiceButton {
+    width: 100%; /* Gör knapparna responsiva och tar hela bredden */
+    max-width: 350px; /* Men begränsa maxstorleken */
+    margin: auto; /* Centrera knapparna */
+  }
+
+  .exerciseButton {
+    width: 100%; /* Gör knapparna responsiva och tar hela bredden */
+    max-width: 350px; /* Men begränsa maxstorleken */
+    margin: auto; /* Centrera knapparna */
+  }
+}
+
 #spanText {
   padding-top: 10px;
   
@@ -110,3 +129,19 @@
 .selected {
   background-color: rgb(44, 41, 24) !important; /* Mörkare vid val */
 }
+
+.startButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -20px;
+}
+
+.startButton button {
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+}
+
