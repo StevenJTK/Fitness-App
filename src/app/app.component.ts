@@ -4,6 +4,7 @@ import { Router, RouterOutlet } from '@angular/router';
 //import { TestExercisesComponent } from './test-exercises/test-exercises.component';
 import { TrainingFormComponent } from './training-form/training-form.component';
 import { WorkoutComponent } from './workout-component/workout-component.component';
+import { SwiperComponent } from './swiper/swiper.component';
 
 @Component({
   selector: 'app-root',
@@ -11,6 +12,7 @@ import { WorkoutComponent } from './workout-component/workout-component.componen
     RouterOutlet,
     CommonModule,
     WorkoutComponent /*TrainingFormComponent*/,
+    SwiperComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',

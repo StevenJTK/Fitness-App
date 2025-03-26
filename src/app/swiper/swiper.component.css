@@ -1,0 +1,71 @@
+/* översta texten */
+.swiperHeader {
+  font-family: "Hanken Grotesk";
+  text-align: center;
+  color: #310b02;
+  font-size: 25px;
+}
+
+/* container som innehåller alla komponenter */
+.swiperContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* pil som pekar åt höger */
+.arrowRight {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 40px solid #310b02;
+}
+
+/* pil som pekar åt vänster */
+.arrowLeft {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-right: 40px solid #310b02;
+}
+
+/* centrerade innehållet emellan pilarna */
+.selectedContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #535740;
+  color: #ffffff;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.1s;
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: bold;
+  width: 250px;
+  height: 100px;
+  padding: 20px;
+  margin: 0 50px;
+  position: absolute;
+}
+
+/* mask innehållet emellan pilarna */
+.contentMask {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ca190c44;
+  width: 350px;
+  height: 200px;
+  margin: 0 10px;
+  /*clip-path: inset(0px);*/
+}
+/* innehåll som roterar */
+.waitingContent {
+  position: absolute;
+  transform: translateX(350px);
+}
