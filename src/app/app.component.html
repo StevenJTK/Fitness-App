@@ -14,16 +14,17 @@
     </div>
   </section>
   <div class="startButton">
-    <button (click)="buttonChoice()">Starta här <br>
+    <button (click)="buttonChoice()">
+      Starta här <br />
       <i class="arrow down"></i>
     </button>
   </div>
 
   <section class="firstText">
     <h2>
-      <strong>Enkla</strong> övningar som hjälper dig att stärka din kropp <br> 
-      och
-      öka din rörlighetsförmåga i vardagen
+      <strong>Enkla</strong> övningar som hjälper dig att stärka din kropp
+      <br />
+      och öka din rörlighetsförmåga i vardagen
     </h2>
     <p>Välj din intensitet</p>
   </section>
@@ -39,10 +40,7 @@
         >Är du precis i startgroparna att förbättra din hälsa? <br />
         Börja här!
       </span>
-      <div class="dots"  id="StartButton">
-        <span class="dot active"></span>
-        <span class="dot"></span>
-        <span class="dot"></span>
+      <div class="dots" id="StartButton">
         <span class="dot"></span>
       </div>
     </button>
@@ -57,8 +55,6 @@
         kroppen.</span
       >
       <div class="dots">
-        <span class="dot active"></span>
-        <span class="dot active"></span>
         <span class="dot"></span>
         <span class="dot"></span>
       </div>
@@ -71,12 +67,11 @@
       Medel
       <span class="small-text"
         >Redo för nästa steg? Här får du en lagom utmaning för styrka och
-        uthållighet</span
+        uthållighet.</span
       >
       <div class="dots">
-        <span class="dot active"></span>
-        <span class="dot active"></span>
-        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
         <span class="dot"></span>
       </div>
     </button>
@@ -88,13 +83,13 @@
       Utmanande
       <span class="small-text"
         >Du är stark och vill ha mer! Utmaningar för att behålla kraft och
-        rörlighet</span
+        rörlighet.</span
       >
       <div class="dots">
-        <span class="dot active"></span>
-        <span class="dot active"></span>
-        <span class="dot active"></span>
-        <span class="dot active"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
+        <span class="dot"></span>
       </div>
     </button>
   </div>
@@ -138,5 +133,9 @@
   </div>
 
   <app-workout-component id="workoutComponent"></app-workout-component>
-  <app-footer></app-footer>
+  <app-about></app-about>
 </main>
+
+<footer>
+  <app-footer></app-footer>
+</footer>

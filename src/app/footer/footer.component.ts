@@ -17,9 +17,9 @@ export class FooterComponent {
     const windowHeight = window.innerHeight;
     const documentHeight = document.documentElement.scrollHeight;
 
-    console.log(
+    /*console.log(
       `ScrollY: ${scrollY}, WindowHeight: ${windowHeight}, DocumentHeight: ${documentHeight}`
-    );
+    );*/
 
     // check if it's scrolled to the bottom
     this.isVisible = scrollY + windowHeight >= documentHeight - 10;

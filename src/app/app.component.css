@@ -42,13 +42,9 @@
 .dot {
   width: 10px;
   height: 10px;
-  background-color: #1e2014;
+  background-color: #ffffff;
   border-radius: 50%;
   display: inline-block;
-}
-
-.dot.active {
-  background-color: #ffffff;
 }
 
 .exerciseButton {
@@ -111,11 +107,11 @@
 }
 
 .small-text {
-  font-size: 12px; /* Mindre text */
+  font-size: 19px; /* Mindre text */
   color: #ffffff; /* Samma färg som huvudtexten */
   margin-top: 8px; /* Lite avstånd från huvudtexten */
   font-style: italic;
-  font-weight: lighter;
+  font-weight: bold;
 }
 
 .choiceButton:hover {
