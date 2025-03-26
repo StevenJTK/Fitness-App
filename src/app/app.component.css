@@ -66,6 +66,9 @@
   font-weight: bold;
   color: #ffffff;
 }
+.exerciseButton:hover {
+  transform: scale(1.05);
+}
 
 @media (max-width: 768px) {
   .buttonContainer,
@@ -83,6 +86,7 @@
     width: 100%; /* Gör knapparna responsiva och tar hela bredden */
     max-width: 350px; /* Men begränsa maxstorleken */
     margin: auto; /* Centrera knapparna */
+    
   }
 }
 
@@ -122,3 +126,4 @@
 .selected {
   background-color: rgb(44, 41, 24) !important; /* Mörkare vid val */
 }
+
