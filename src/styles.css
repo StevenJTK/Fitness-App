@@ -85,6 +85,27 @@ h1 {
   font-weight: bold;
 }
 
+.about-us {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  position: relative;
+  height: 100vh;
+  padding-top: 3rem;
+  padding-right: 5rem;
+}
+
+.about-us button {
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: x-large;
+
+}
+
 .firstText {
   font-family: "Hanken Grotesk";
   text-align: center;

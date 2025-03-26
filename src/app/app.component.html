@@ -12,6 +12,9 @@
     <div class="hero-text">
       <p>Dina handlingar idag <strong>formar din morgondag</strong></p>
     </div>
+    <div class="about-us">
+      <button (click)="aboutUs()">Om oss</button>
+    </div>
   </section>
   <div class="startButton">
     <button (click)="buttonChoice()">
@@ -133,9 +136,9 @@
   </div>
 
   <app-workout-component id="workoutComponent"></app-workout-component>
-  <app-about></app-about>
+  <app-about ></app-about>
 </main>
 
-<footer>
+<footer id="AboutUs">
   <app-footer></app-footer>
 </footer>
