@@ -4,6 +4,8 @@ import { Router, RouterOutlet } from '@angular/router';
 //import { TestExercisesComponent } from './test-exercises/test-exercises.component';
 import { TrainingFormComponent } from './training-form/training-form.component';
 import { WorkoutComponent } from './workout-component/workout-component.component';
+import { FooterComponent } from "./footer/footer.component";
+import { AboutComponent } from "./about/about.component";
 
 @Component({
   selector: 'app-root',
@@ -11,7 +13,9 @@ import { WorkoutComponent } from './workout-component/workout-component.componen
     RouterOutlet,
     CommonModule,
     WorkoutComponent /*TrainingFormComponent*/,
-  ],
+    FooterComponent,
+    AboutComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
 })
@@ -30,6 +34,17 @@ export class AppComponent {
 
   //för timern som väntar innan den skrollar
   waitTimer: number = 200;
+
+  aboutUs(): void {
+    setTimeout(() => {
+      //gör så att vid klick så åker man ner långsamt till det valda idt, du kan ändra center till start eller end
+      //om man vill landa på ett annat ställe/EMMA
+      const scrollElement = document.getElementById('AboutUs');
+      if (scrollElement) {
+        scrollElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }, 200);
+  }
 
   buttonChoice(): void {
     setTimeout(() => {
