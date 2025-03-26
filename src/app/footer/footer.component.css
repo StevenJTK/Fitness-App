@@ -1,0 +1,18 @@
+.footer {
+  background-color: #535740;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.footer.show {
+  display: block;
+}
+
+.footer p {
+  font-family: "Hanken Grotesk";
+}
