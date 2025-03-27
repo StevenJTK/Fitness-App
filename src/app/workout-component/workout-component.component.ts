@@ -28,7 +28,7 @@ filteredExercises: Exercise[] = []; // exercises matching values from form
       document.getElementsByClassName('goBackToTopButton')[0].classList.add("hidden");
       console.log(document.getElementsByClassName('choiceButton')[0].classList)
     }
-    this.filteredExercises = await(jsonConnector.getExercises(level, category));
+    //this.filteredExercises = await(jsonConnector.getExercises(level, category));
     console.log("exercises loaded");
   }
 
