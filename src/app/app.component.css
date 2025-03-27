@@ -66,6 +66,9 @@
   font-weight: bold;
   color: #ffffff;
 }
+.exerciseButton:hover {
+  transform: scale(1.05);
+}
 
 @media (max-width: 768px) {
   .buttonContainer,
