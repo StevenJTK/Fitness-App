@@ -5,9 +5,11 @@
   </h2>
   <div class="exerciseGrid">
   <div *ngFor="let exercise of filteredExercises">
-    <div class="exerciseCard">
-      <h3 class="exerciseTitle">{{ exercise.name }}</h3>
-    </div>
+    <button (click)="test()">
+      <div class="exerciseCard">
+        <h3 class="exerciseTitle">{{ exercise.name }}</h3>
+      </div>
+    </button>
   </div>
 </div>
 </div>

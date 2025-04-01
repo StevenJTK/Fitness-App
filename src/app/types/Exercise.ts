@@ -7,12 +7,7 @@ export interface Exercise {
   estTime:string;
   categoryItems:string[];
 
-  exercises:{
-    name:string;
-    description:string;
-    repititions:string;
-    tips:string;
-  }[]
+  exercises:Exercises[]
 
   /*name: string;
   description: string;
@@ -20,4 +15,10 @@ export interface Exercise {
   tips: string;
   level: string;
   category: string;*/
+}
+export interface Exercises{
+  name:string;
+  description:string;
+  repetitions:string;
+  tips:string;
 }

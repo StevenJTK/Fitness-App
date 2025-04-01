@@ -5,9 +5,17 @@
     </h2>
     <div class="exerciseGrid">
     <div *ngFor="let exercise of filteredExercises">
-      <div class="exerciseCard">
+      <div class="exerciseCard" (click)="test(exercise)">
         <h3 class="exerciseTitle">{{ exercise.name }}</h3>
       </div>
+    </div>
+
+    <!--alla övningar från det valda passet-->
+    <div *ngFor="let e of selectedExercises">
+        <h2>{{e.name}}</h2>
+        <p>{{e.description}}</p>
+        <p>{{e.repetitions}}</p>
+        <p>{{e.tips}}</p>
     </div>
   </div>
   </div>

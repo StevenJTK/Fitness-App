@@ -1,22 +1,19 @@
+
 import { CommonModule } from '@angular/common';
 import { ChangeDetectorRef, Component, ViewChild } from '@angular/core';
-import { Router, RouterOutlet } from '@angular/router';
-import { WorkoutComponent } from './workout-component/workout-component.component';
-import { FooterComponent } from "./footer/footer.component";
-import { AboutComponent } from "./about/about.component";
+import { Router } from '@angular/router';
+import { WorkoutComponent } from '../workout-component/workout-component.component';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-landing-page',
   imports: [
-    RouterOutlet,
     CommonModule,
-    FooterComponent,
-    AboutComponent
-],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css',
+    WorkoutComponent /*TrainingFormComponent*/,
+    ],
+  templateUrl: './landing-page.component.html',
+  styleUrl: './landing-page.component.css'
 })
-export class AppComponent {
+export class LandingPageComponent {
   @ViewChild(WorkoutComponent) workoutComponent!: WorkoutComponent;
 
   title = 'fitness-app';
@@ -94,3 +91,4 @@ export class AppComponent {
     //}
   }
 }
+

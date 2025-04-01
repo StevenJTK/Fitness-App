@@ -31,4 +31,8 @@ export class TestExercisesComponent implements OnInit {
     this.filteredExercises = await(jsonConnector.getExercises(selectedLevel, selectedCategory));
     console.log("exercises loaded");
   }
+
+  test(){
+    console.log("hej");
+  }
 }

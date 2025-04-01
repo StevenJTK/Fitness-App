@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Exercise } from '../types/Exercise';
+import { Exercise, Exercises } from '../types/Exercise';
 import { jsonConnector } from '../types/jsonConnector';
 import { CommonModule } from '@angular/common';
 
@@ -13,7 +13,7 @@ export class WorkoutComponent {
 
 
 filteredExercises: Exercise[] = []; // exercises matching values from form
-
+  selectedExercises: Exercises[] = [];
 
   //fetches filtered exercises based on queries
   async fetchExercises(level: string, category: string){
@@ -28,7 +28,7 @@ filteredExercises: Exercise[] = []; // exercises matching values from form
       document.getElementsByClassName('goBackToTopButton')[0].classList.add("hidden");
       console.log(document.getElementsByClassName('choiceButton')[0].classList)
     }
-    //this.filteredExercises = await(jsonConnector.getExercises(level, category));
+    this.filteredExercises = await(jsonConnector.getExercises(level, category));
     console.log("exercises loaded");
   }
 
@@ -43,5 +43,8 @@ filteredExercises: Exercise[] = []; // exercises matching values from form
       };
     }, 200);
 
+  }
+  test(exercise: Exercise){
+      this.selectedExercises = exercise.exercises;
   }
 }

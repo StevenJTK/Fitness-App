@@ -106,27 +106,7 @@ h1 {
 
 }
 
-.firstText {
-  font-family: "Hanken Grotesk";
-  text-align: center;
-  color: #310b02;
-}
 
-.firstText h2 {
-  font-size: 30px;
-  font-weight: lighter;
-}
-
-.firstText strong {
-  font-weight: bold;
-}
-
-.firstText p {
-  font-size: 30px;
-  margin: 0;
-  padding-top: 5rem;
-  font-weight: bold;
-}
 
 .startButton {
   display: flex;
@@ -172,10 +152,6 @@ h1 {
   h1 {
     font-size: 1.2rem;
   }
-
-  .firstText h2 {
-    font-size: 1.5rem;
-  }
 }
 
 @media (max-width: 768px) {
@@ -191,8 +167,4 @@ h1 {
     font-size: 1rem;
   }
 
-  .firstText h2 {
-    font-size: 1rem;
-    padding: 10px;
-  }
 }
