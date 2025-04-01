@@ -90,9 +90,8 @@ h1 {
   justify-content: flex-end;
   align-items: flex-start;
   position: relative;
-  /*height: 100vh;*/
-  padding-top: 3rem;
-  padding-right: 5rem;
+  padding-top: 3vh;
+  padding-right: 5vh;
 }
 
 .about-us button {

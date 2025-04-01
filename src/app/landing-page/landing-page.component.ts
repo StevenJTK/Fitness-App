@@ -1,4 +1,3 @@
-
 import { CommonModule } from '@angular/common';
 import { ChangeDetectorRef, Component, ViewChild } from '@angular/core';
 import { Router } from '@angular/router';
@@ -6,12 +5,9 @@ import { WorkoutComponent } from '../workout-component/workout-component.compone
 
 @Component({
   selector: 'app-landing-page',
-  imports: [
-    CommonModule,
-    WorkoutComponent /*TrainingFormComponent*/,
-    ],
+  imports: [CommonModule, WorkoutComponent /*TrainingFormComponent*/],
   templateUrl: './landing-page.component.html',
-  styleUrl: './landing-page.component.css'
+  styleUrl: './landing-page.component.css',
 })
 export class LandingPageComponent {
   @ViewChild(WorkoutComponent) workoutComponent!: WorkoutComponent;
@@ -61,7 +57,7 @@ export class LandingPageComponent {
       //om man vill landa på ett annat ställe/EMMA
       const scrollElement = document.getElementById('ExerciseChoice');
       if (scrollElement) {
-        scrollElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        scrollElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     }, 200);
   }
@@ -84,11 +80,10 @@ export class LandingPageComponent {
 
   fetchExercises(): void {
     //if (this.chosenDifficulty != '' && this.chosenExerciseType != '') {
-      this.workoutComponent.fetchExercises(
-        this.chosenDifficulty,
-        this.chosenExerciseType
-      );
+    this.workoutComponent.fetchExercises(
+      this.chosenDifficulty,
+      this.chosenExerciseType
+    );
     //}
   }
 }
-

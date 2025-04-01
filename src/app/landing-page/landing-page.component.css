@@ -1,5 +1,4 @@
-.buttonContainer,
-#ExerciseChoice {
+.buttonContainer {
   display: grid;
   grid-template-columns: repeat(2, 1fr); /* Två kolumner */
   gap: 20px; /* Mellanrum mellan knappar */
@@ -126,7 +125,6 @@
   background-color: rgb(44, 41, 24) !important; /* Mörkare vid val */
 }
 
-
 .firstText {
   font-family: "Hanken Grotesk";
   text-align: center;
@@ -149,9 +147,7 @@
   font-weight: bold;
 }
 
-
 @media (max-width: 1024px) {
-
   .firstText h2 {
     font-size: 1.5rem;
   }

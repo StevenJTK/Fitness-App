@@ -1,7 +1,8 @@
 <main>
-<section class="firstText">
+  <section class="firstText">
     <h2>
-      <strong>Enkla övningar</strong> som hjälper dig att <strong>må bra</strong>
+      <strong>Enkla övningar</strong> som hjälper dig att
+      <strong>må bra</strong>
       <br />
       och stärka din kropp i <strong>vardagen</strong>
     </h2>
@@ -75,10 +76,10 @@
 
   <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
-  <section class="firstText">
+  <section class="firstText" id="ExerciseChoice">
     <p>Välj hur du vill stärka dig</p>
   </section>
-  <div id="ExerciseChoice">
+  <div class="buttonContainer">
     <button
       class="exerciseButton strength"
       [ngClass]="{ selected: selectedExerciseDifficultyIndex === 1 }"
@@ -112,5 +113,5 @@
   </div>
 
   <app-workout-component id="workoutComponent"></app-workout-component>
-  <br><br><br><br><br>
+  <br /><br /><br /><br /><br />
 </main>
