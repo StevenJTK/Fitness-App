@@ -17,15 +17,3 @@
   font-family: "Hanken Grotesk";
 }
 
-.about-btn {
-  background-color: white;
-  color: black;
-  border: none;
-  padding: 5px 10px;
-  cursor: pointer;
-  text-decoration: underline;
-}
-
-.about-btn:hover {
-  color: #007bff;
-}
