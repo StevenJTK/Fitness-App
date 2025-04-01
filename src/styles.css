@@ -103,10 +103,7 @@ h1 {
   font-weight: bold;
   cursor: pointer;
   font-size: x-large;
-
 }
-
-
 
 .startButton {
   display: flex;
@@ -126,12 +123,22 @@ h1 {
   font-size: large;
 }
 
+@keyframes bounce {
+  0%,
+  100% {
+    transform: rotate(45deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+}
 
 .arrow {
   border: solid #ffffff;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 7px;
+  animation: bounce 1s infinite ease-in-out;
 }
 
 .down {
@@ -166,5 +173,4 @@ h1 {
   h1 {
     font-size: 1rem;
   }
-
 }
