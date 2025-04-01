@@ -1,17 +1,23 @@
 .about-container {
   max-width: 50rem;
-  margin: 0 auto;
+  margin: auto;
   padding: 1.25rem;
   text-align: center;
   color: #535740;
 }
 
-.about-container h1,
-p {
+.about-container h1 {
   color: #535740;
   font-family: "Hanken Grotesk";
   font-weight: bold;
   font-size: x-large;
+}
+
+.about-container p {
+  color: #535740;
+  font-family: "Hanken Grotesk";
+  font-weight: lighter;
+  font-size: large;
 }
 
 #header {
