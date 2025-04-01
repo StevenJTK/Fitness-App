@@ -58,11 +58,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #ca190c44;
   width: 350px;
   height: 200px;
   margin: 0 10px;
-  /*clip-path: inset(0px);*/
+  clip-path: inset(0px);
 }
 /* innehåll som roterar */
 .waitingContent {

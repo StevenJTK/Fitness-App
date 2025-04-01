@@ -12,7 +12,10 @@ export class SwiperComponent {
   swipeOnClick(valueChange: number): void {
     this.value += valueChange;
 
-    (document.getElementsByClassName('selectedContent')[1] as HTMLElement).style.transform 
+    const e:HTMLElement = (document.getElementsByClassName('selectedContent')[1] as HTMLElement)
+
+    e.style.transition = 'none';
+    e.style.transform 
     = 'translateX(' + (valueChange * 350) + 'px)';
 
     Array.prototype.forEach.call(
@@ -27,18 +30,20 @@ export class SwiperComponent {
   moveObject(slide: HTMLElement, direction: number): void {
     slide.innerHTML = this.value + '';
     const newTranslateX = this.getTranslateX(slide) - (350 * direction);
-
+    slide.style.transition = 'transform 0.1s';
     slide.style.transform = 'translateX(' + newTranslateX + 'px)';
     
   }
 
   positionHandler(): void{
-    let middleObject = document.getElementsByClassName('selectedContent')[0] as HTMLElement;
-    let sideObject = document.getElementsByClassName('selectedContent')[1] as HTMLElement;
+    const middleObject = document.getElementsByClassName('selectedContent')[0] as HTMLElement;
+    const sideObject = document.getElementsByClassName('selectedContent')[1] as HTMLElement;
+
+    middleObject.style.transition = 'none';
+    sideObject.style.transition = 'none';
 
     sideObject.style.transform = 'translateX(' + this.getTranslateX(middleObject) + 'px)';
     middleObject.style.transform = 'translateX(0px)';
-
   }
 
   getTranslateX(element: HTMLElement): number {
