@@ -4,13 +4,6 @@
       "category": "strength",
       "level": "beginner",
       "name": "Upper Body",
-      "description":"Väldigt enkla övningar för överkroppsstyrka",
-      "backgroundIcon":"",
-      "estTime":"10 min",
-      "categoryIcons":[
-        "strength",
-        "heart"
-      ],
       "exercises": [
         {
           "name": "Vägg-armhävningar",
@@ -30,13 +23,6 @@
       "category": "strength",
       "level": "beginner",
       "name": "Lower Body",
-      "description":"väldigt enkla övningar för benstyrka och balans",
-      "backgroundIcon":"",
-      "estTime":"15 min",
-      "categoryIcons":[
-        "strength",
-        "bone strength"
-      ],
       "exercises": [
         {
           "name": "Knäböj till stol",
@@ -54,67 +40,8 @@
     },
     {
       "category": "strength",
-      "level": "easy",
-      "name": "Upper Body",
-      "description": "Enkla övningar för överkroppsstyrka anpassade för nybörjare.",
-      "backgroundIcon": "",
-      "estTime": "10-15 min",
-      "categoryIcons": [
-        "strength",
-        "heart"
-      ],
-      "exercises": [
-        {
-          "name": "Stol-dips med fotstödet",
-          "description": "Sätt händerna på en stol och håll fötterna på golvet. Böj armbågarna och sänk kroppen, tryck upp igen.",
-          "repetitions": "5-8",
-          "tips": "Håll knäna böjda och undvik att luta framåt."
-        },
-        {
-          "name": "Knästående armhävningar",
-          "description": "Stå på knäna istället för tårna för att göra armhävningen enklare. Sänk kroppen mot marken och tryck upp igen.",
-          "repetitions": "5-8",
-          "tips": "Håll kroppen rak och engagera bålen för bättre kontroll."
-        }
-      ]
-    },
-    {
-      "category": "strength",
-      "level": "easy",
-      "name": "Lower Body",
-      "description": "Enkla övningar för att stärka benen och förbättra balans.",
-      "backgroundIcon": "",
-      "estTime": "15 min",
-      "categoryIcons": [
-        "strength",
-        "bone strength"
-      ],
-      "exercises": [
-        {
-          "name": "Sidosteg",
-          "description": "Ta långsamma steg åt sidan och håll en lätt böj i knäna.",
-          "repetitions": "8-12 per sida",
-          "tips": "Håll överkroppen rak och blicken framåt."
-        },
-        {
-          "name": "Tåhävningar på ett ben",
-          "description": "Stå på ett ben och lyft hälen från marken, sänk den långsamt tillbaka. Byt ben efter varje set.",
-          "repetitions": "6-10 per ben",
-          "tips": "Håll balansen och stöd dig vid en vägg eller stol om det behövs."
-        }
-      ]
-    },
-    {
-      "category": "strength",
       "level": "intermediate",
       "name": "Upper Body",
-      "description": "Utmanande övningar för att stärka överkroppen och förbättra styrka.",
-      "backgroundIcon": "",
-      "estTime": "20 min",
-      "categoryIcons": [
-        "strength",
-        "heart"
-      ],
       "exercises": [
         {
           "name": "Armhävningar på knä",
@@ -134,13 +61,6 @@
       "category": "strength",
       "level": "intermediate",
       "name": "Lower Body",
-      "description": "Stärk underkroppen med dessa övningar för bättre balans och styrka.",
-      "backgroundIcon": "",
-      "estTime": "25 min",
-      "categoryIcons": [
-        "strength",
-        "bone strength"
-      ],
       "exercises": [
         {
           "name": "Sidosteg med gummiband",
@@ -160,13 +80,6 @@
       "category": "strength",
       "level": "advanced",
       "name": "Upper Body",
-      "description": "Avancerade övningar för att bygga överkroppsstyrka och muskeldefinition.",
-      "backgroundIcon": "",
-      "estTime": "20 min",
-      "categoryIcons": [
-        "strength",
-        "heart"
-      ],
       "exercises": [
         {
           "name": "Armhävningar",
@@ -186,13 +99,6 @@
       "category": "strength",
       "level": "advanced",
       "name": "Lower Body",
-      "description": "Avancerade övningar för att stärka ben och bål, samt förbättra balans och stabilitet.",
-      "backgroundIcon": "",
-      "estTime": "25 min",
-      "categoryIcons": [
-        "strength",
-        "bone strength"
-      ],
       "exercises": [
         {
           "name": "Sidosteg med hoppsidosteg",
@@ -209,16 +115,200 @@
       ]
     },
     {
+      
+        "category": "strength",
+        "level": "easy",
+        "name": "Upper Body",
+        "exercises": [
+          {
+            "name": "Stående knälyft",
+            "description": "Stå upp och lyft ett knä i taget mot bröstet, håll några sekunder och sänk långsamt.",
+            "repetitions": "5-10 per ben",
+            "tips": "Håll balansen genom att stödja dig på en stol eller vägg om det behövs."
+          },
+          {
+            "name": "Armcirklar",
+            "description": "Stå upp och gör små cirklar med armarna, först i en riktning och sedan i den andra.",
+            "repetitions": "8-10 per riktning",
+            "tips": "Tänk på att hålla axlarna avslappnade och röra armarna långsamt."
+          }
+        ]
+      },
+    {
+      "category": "strength",
+      "level": "easy",
+      "name": "Lower Body",
+      "exercises": [
+        {
+          "name": "Stols-steg",
+          "description": "Stå bakom en stol och lyft ena benet rakt bakåt, håll i några sekunder och sänk långsamt.",
+          "repetitions": "5-10 per ben",
+          "tips": "Håll överkroppen rak och byt ben efter varje set."
+        },
+        {
+          "name": "Höftlyft från liggande",
+          "description": "Ligg på rygg med böjda knän, lyft höfterna mot taket och sänk långsamt tillbaka.",
+          "repetitions": "8-12",
+          "tips": "Spänn bålen och håll höfterna i linje med kroppen."
+        }
+      ]
+    },
+    {
+      "category": "cardio",
+      "level": "beginner",
+      "name": "Cardio Routine",
+      "exercises": [
+        {
+          "name": "Lätt jogging på plats",
+          "description": "Jogga långsamt på stället för att öka pulsen.",
+          "repetitions": "30 sekunder",
+          "tips": "Håll en avslappnad hållning och andas jämnt."
+        },
+        {
+          "name": "Arm- och bensträckningar",
+          "description": "Stå upp och sträck armar och ben i motsatt riktning, växla sida.",
+          "repetitions": "10-15 repetitioner",
+          "tips": "Rör dig kontrollerat och håll tempot jämnt."
+        }
+      ]
+    },
+    {
+      "category": "cardio",
+      "level": "beginner",
+      "name": "Walking Routine",
+      "exercises": [
+        {
+          "name": "Marching on the Spot",
+          "description": "Stå på plats och gå långsamt på stället. Lyft knäna i en lugn takt.",
+          "repetitions": "1-3 minuter",
+          "tips": "Håll en upprätt hållning och andas lugnt och jämnt."
+        },
+        {
+          "name": "Gå i lugn takt",
+          "description": "Ta en kort promenad utomhus eller på en säker plats inomhus. Håll ett lugnt tempo.",
+          "repetitions": "5-10 minuter",
+          "tips": "Håll händerna avslappnade vid sidorna och fokusera på att ta långsamma, jämna steg."
+        }
+      ]
+    },
+    {
+      "category": "cardio",
+      "level": "easy",
+      "name": "Upper Body Endurance",
+      "exercises": [
+        {
+          "name": "Arm Raises",
+          "description": "Stå upprätt och håll armarna rakt framför dig. Lyft dem långsamt upp till axelhöjd och sänk tillbaka.",
+          "repetitions": "10-12",
+          "tips": "Håll armarna rakt och gör rörelsen långsamt och kontrollerat."
+        },
+        {
+          "name": "Seated Shoulder Press",
+          "description": "Sitt på en stol och pressa armarna uppåt, som om du håller en vikt i varje hand. Sänk tillbaka långsamt.",
+          "repetitions": "8-10",
+          "tips": "Håll ryggen rak och håll bålens stabilitet under hela rörelsen."
+        }
+      ]
+    },
+    {
+      "category": "cardio",
+      "level": "easy",
+      "name": "Lower Body Endurance",
+      "exercises": [
+        {
+          "name": "Standing Leg Extensions",
+          "description": "Stå stadigt och sträck ut ena benet rakt framför dig, håll några sekunder och sänk tillbaka. Växla ben.",
+          "repetitions": "8-10 per ben",
+          "tips": "Håll kroppen rak och spänn bålen för bättre stabilitet."
+        },
+        {
+          "name": "Calf Raises",
+          "description": "Stå upprätt och lyft långsamt upp på tårna, håll några sekunder och sänk långsamt tillbaka.",
+          "repetitions": "10-12",
+          "tips": "Håll balansen genom att hålla i en stol eller vägg om det behövs."
+        }
+      ]
+    },
+    {
+      "category": "cardio",
+      "level": "intermediate",
+      "name": "Upper Body Endurance",
+      "exercises": [
+        {
+          "name": "Arm Circles",
+          "description": "Stå upprätt och sträck ut armarna åt sidorna. Gör små cirklar med armarna och gradvis öka storleken på cirklarna.",
+          "repetitions": "30 sekunder åt varje håll",
+          "tips": "Håll armarna rakt och spänn bålen för bättre stabilitet."
+        },
+        {
+          "name": "Push-Ups against a Wall",
+          "description": "Stå ett steg bort från en vägg och sätt händerna på väggen. Sänk kroppen mot väggen och tryck tillbaka till startposition.",
+          "repetitions": "8-12",
+          "tips": "Håll kroppen rak och undvik att svanka i ryggen."
+        }
+      ]
+    },
+    {
+      "category": "cardio",
+      "level": "intermediate",
+      "name": "Lower Body Endurance",
+      "exercises": [
+        {
+          "name": "Step-Ups",
+          "description": "Stå framför en låg stol eller trappsteg och steg upp på det med ett ben, följt av det andra. Sänk långsamt och upprepa.",
+          "repetitions": "10-12 per ben",
+          "tips": "Håll ryggen rak och fokusera på att lyfta knäna högt."
+        },
+        {
+          "name": "Lunges",
+          "description": "Ta ett stort steg framåt med ett ben, böj båda knäna tills båda benen är i 90 graders vinkel, och återgå till startpositionen.",
+          "repetitions": "6-10 per ben",
+          "tips": "Håll knäet över fotleden och undvik att luta för mycket framåt."
+        }
+      ]
+    },
+    {
+      "category": "cardio",
+      "level": "advanced",
+      "name": "Upper Body Endurance",
+      "exercises": [
+        {
+          "name": "Push-Ups",
+          "description": "Utför klassiska armhävningar på knäna eller tårna för att stärka bröst, axlar och armar.",
+          "repetitions": "10-15",
+          "tips": "Se till att kroppen hålls rak och sänk långsamt för att öka belastningen."
+        },
+        {
+          "name": "Dips on a Bench",
+          "description": "Sätt händerna på kanten av en bänk och sänk långsamt kroppen nedåt genom att böja armbågarna, tryck upp igen.",
+          "repetitions": "8-12",
+          "tips": "Håll armbågarna nära kroppen och använd benens hjälp om det behövs för extra stöd."
+        }
+      ]
+    },
+    {
+      "category": "cardio",
+      "level": "advanced",
+      "name": "Lower Body Endurance",
+      "exercises": [
+        {
+          "name": "Lunges with Knee Lift",
+          "description": "Ta ett stort steg framåt, sänk dig i en lunge och lyft knäet på det bakre benet mot bröstet när du kommer tillbaka till startpositionen.",
+          "repetitions": "8-10 per ben",
+          "tips": "Fokusera på att hålla knäet rakt när du lyfter det och engagera bålen för bättre stabilitet."
+        },
+        {
+          "name": "Single Leg Deadlifts",
+          "description": "Stå på ett ben, luta överkroppen framåt medan du sträcker ut det andra benet bakåt, återgå till startposition.",
+          "repetitions": "6-8 per ben",
+          "tips": "Håll ryggen rak och se till att höften förblir stabil under rörelsen."
+        }
+      ]
+    },
+    {
       "category": "everydayExercise",
       "level": "beginner",
       "name": "Everyday Exercise Routine",
-      "description": "En enkel och effektiv rutin för att komma igång med vardaglig rörelse och förbättra grundläggande kondition.",
-      "backgroundIcon": "",
-      "estTime": "5 min",
-      "categoryIcons": [
-        "everyday exercise",
-        "heart"
-      ],
       "exercises": [
         {
           "name": "Gå på stället",
@@ -230,21 +320,58 @@
     },
     {
       "category": "everydayExercise",
-      "level": "easy",
-      "name": "Everyday Exercise Routine",
-      "description": "En lätt och avkopplande rutin för att förbättra rörlighet och styrka genom enkla sidosteg.",
-      "backgroundIcon": "",
-      "estTime": "5 min",
-      "categoryIcons": [
-        "everyday exercise",
-        "heart"
-      ],
+      "level": "beginner",
+      "name": "Övre Kropps Mobilitet",
       "exercises": [
         {
-          "name": "Sidosteg",
-          "description": "Ta långsamma steg åt sidan och håll en lätt böj i knäna.",
-          "repetitions": "8-12 per sida",
-          "tips": "Håll överkroppen rak och blicken framåt."
+          "name": "Axelrotationer",
+          "description": "Sitt eller stå upprätt. Rulla långsamt axlarna framåt i en cirkulär rörelse, och vänd sedan riktning efter 10-15 sekunder.",
+          "repetitions": "10-15 rotationer i varje riktning",
+          "tips": "Fokusera på att göra rörelserna långsamt och jämnt för att lindra eventuell spänning."
+        },
+        {
+          "name": "Armlyft",
+          "description": "Sitt eller stå med armarna längs sidorna. Lyft försiktigt båda armarna till axelhöjd och sänk dem sedan långsamt.",
+          "repetitions": "10-12",
+          "tips": "Håll rörelserna långsamma och kontrollerade, och undvik att belasta axlarna."
+        }
+      ]
+    },
+    {
+      "category": "everydayExercise",
+      "level": "easy",
+      "name": "Balans och Smidighet",
+      "exercises": [
+        {
+          "name": "Enkel viktförflyttning",
+          "description": "Stå med fötterna axelbrett isär och gunga långsamt vikten från ena foten till den andra.",
+          "repetitions": "10 gånger",
+          "tips": "Håll händerna på höfterna för bättre balans."
+        },
+        {
+          "name": "Stå på ett ben",
+          "description": "Stå på ett ben i några sekunder, byt sedan till det andra benet.",
+          "repetitions": "5-10 sekunder per ben",
+          "tips": "Håll i en stol eller vägg om det behövs."
+        }
+      ]
+    },
+    {
+      "category": "everydayExercise",
+      "level": "easy",
+      "name": "Balans och Styrka för Nedre Kroppen",
+      "exercises": [
+        {
+          "name": "Sidosteg med stöd",
+          "description": "Stå upp och ta ett litet steg åt sidan, sätt ihop fötterna och upprepa åt andra hållet.",
+          "repetitions": "10 steg åt varje håll",
+          "tips": "Håll i en stol eller vägg om du känner dig ostadig."
+        },
+        {
+          "name": "Sittande bensträckningar",
+          "description": "Sitt på en stol med rak rygg. Sträck ut ett ben rakt framför dig och håll i några sekunder, sänk långsamt tillbaka. Byt ben.",
+          "repetitions": "10 gånger per ben",
+          "tips": "Spänn låret lätt när du sträcker ut benet för att aktivera musklerna."
         }
       ]
     },
@@ -252,13 +379,6 @@
       "category": "everydayExercise",
       "level": "intermediate",
       "name": "Everyday Exercise Routine",
-      "description": "En träningsrutin som stärker muskler och förbättrar rörlighet genom sidosteg med gummiband.",
-      "backgroundIcon": "",
-      "estTime": "10 min",
-      "categoryIcons": [
-        "everyday exercise",
-        "muscle"
-      ],
       "exercises": [
         {
           "name": "Sidosteg med gummiband",
@@ -270,23 +390,213 @@
     },
     {
       "category": "everydayExercise",
-      "level": "advanced",
-      "name": "Everyday Exercise Routine",
-      "description": "En utmanande träningsrutin för att förbättra konditionen och stärka benen genom höga knän.",
-      "backgroundIcon": "",
-      "estTime": "5-10 min",
-      "categoryIcons": [
-        "everyday exercise",
-        "cardio"
-      ],
+      "level": "intermediate",
+      "name": "Stretch och Rörlighet",
       "exercises": [
         {
-          "name": "Höga knän",
-          "description": "Spring på stället med höga knän.",
-          "repetitions": "20 sekunder",
-          "tips": "Håll en jämn takt och lyft knäna högt."
+          "name": "Axelstretch",
+          "description": "För en arm över bröstet och håll fast med den andra handen för att stretcha axeln.",
+          "repetitions": "Håll i 10 sekunder per sida",
+          "tips": "Slappna av i axlarna och andas lugnt."
+        },
+        {
+          "name": "Fotledscirklar",
+          "description": "Sitt eller stå och rotera fotlederna i cirklar.",
+          "repetitions": "5 cirklar per riktning",
+          "tips": "Gör rörelsen långsamt och kontrollerat."
         }
       ]
-    }    
+    },
+    {
+     "category": "everydayExercise",
+      "level": "advanced",
+      "name": "Uthållighet",
+      "exercises": [
+        {
+          "name": "Armhävningar mot bord",
+          "description": "Stöd händerna mot ett bord och sänk bröstet mot kanten, tryck upp igen.",
+          "repetitions": "10-15",
+          "tips": "Håll kroppen rak och undvik att svanka."
+        },
+        {
+          "name": "Stående rodd med vattenflaskor",
+          "description": "Håll en vattenflaska i varje hand och dra armarna bakåt som om du ror en båt.",
+          "repetitions": "12-15",
+          "tips": "Håll axlarna nere och kläm ihop skulderbladen i rörelsen."
+        }
+      ]
+    },
+    {
+      "category": "everydayExercise",
+      "level": "advanced",
+      "name": "Balans och Koordination",
+      "exercises": [
+        {
+          "name": "Enbensstående",
+          "description": "Stå på ett ben i 20 sekunder, byt sedan ben.",
+          "repetitions": "2 gånger per ben",
+          "tips": "Titta på en fast punkt för bättre balans."
+        },
+        {
+          "name": "Gång med häl-tå kontakt",
+          "description": "Gå framåt genom att placera hälen på ena foten direkt framför tårna på den andra.",
+          "repetitions": "10 steg per sida",
+          "tips": "Använd armarna för balans om det behövs."
+        }
+      ]
+    },
+    {
+      "category": "balance",
+      "level": "beginner",
+      "name": "Balansövningar",
+      "exercises": [
+        {
+          "name": "Häl-till-tå-gång",
+          "description": "Gå långsamt framåt genom att sätta ena fotens häl direkt framför den andra fotens tå.",
+          "repetitions": "8-10 steg",
+          "tips": "Titta rakt fram och håll armarna ut åt sidorna för bättre balans."
+        },
+        {
+          "name": "Knäböj med stöd",
+          "description": "Håll i en stol eller ett bord och böj knäna lätt som om du skulle sätta dig, sedan kom upp igen.",
+          "repetitions": "8-12",
+          "tips": "Håll ryggen rak och knäna över fötterna."
+        }
+      ]
+    },
+    {
+      "category": "balance",
+      "level": "beginner",
+      "name": "Överkroppsrörlighet",
+      "exercises": [
+        {
+          "name": "Axelrullningar",
+          "description": "Sitt eller stå och rulla axlarna i stora cirklar, först framåt och sedan bakåt.",
+          "repetitions": "10 gånger åt varje håll",
+          "tips": "Håll rörelsen mjuk och andas lugnt."
+        },
+        {
+          "name": "Sittande ryggvridning",
+          "description": "Sitt på en stol och vrid överkroppen åt sidan medan du håller i stolens ryggstöd. Byt sida.",
+          "repetitions": "5 per sida",
+          "tips": "Andas ut när du vrider och håll rörelsen kontrollerad."
+        }
+      ]
+    },
+    {
+      "category": "balance",
+      "level": "easy",
+      "name": "Lätta Balansövningar",
+      "exercises": [
+        {
+          "name": "Stå på ett ben med stöd",
+          "description": "Stå upp och håll i en stol eller bord. Lyft ena foten och balansera på det andra benet.",
+          "repetitions": "10 sekunder per ben",
+          "tips": "Håll blicken framåt och slappna av i axlarna."
+        },
+        {
+          "name": "Tågång",
+          "description": "Gå långsamt framåt på tå och försök hålla balansen.",
+          "repetitions": "10 steg",
+          "tips": "Håll armarna ut åt sidorna för bättre stabilitet."
+        }
+      ]
+    },
+    {
+      "category": "balance",
+      "level": "easy",
+      "name": "Överkroppens Rörlighet",
+      "exercises": [
+        {
+          "name": "Mjuka sidostretchningar",
+          "description": "Sitt eller stå och luta kroppen långsamt åt sidan.",
+          "repetitions": "5 per sida",
+          "tips": "Undvik att lyfta axlarna och håll rörelsen kontrollerad."
+        },
+        {
+          "name": "Rotera överkroppen",
+          "description": "Sitt eller stå och vrid långsamt överkroppen från sida till sida.",
+          "repetitions": "5-8 gånger",
+          "tips": "Rör dig långsamt och håll höfterna stilla."
+        }
+      ]
+    },
+    {
+      "category": "balance",
+      "level": "intermediate",
+      "name": "Stärkande Övningar för Hållning",
+      "exercises": [
+        {
+          "name": "Diagonal balans",
+          "description": "Stå med fötterna höftbrett isär. Lyft höger arm och vänster ben samtidigt, håll i några sekunder och byt sida.",
+          "repetitions": "6-8 per sida",
+          "tips": "Försök att inte svaja, och spänn bålen för extra stabilitet."
+        },
+        {
+          "name": "Sittande twist",
+          "description": "Sitt på en stol, vrid överkroppen långsamt åt ena sidan och håll i några sekunder, byt sedan sida.",
+          "repetitions": "8-10 per sida",
+          "tips": "Håll höfterna stilla och vrid endast överkroppen."
+        }
+      ]
+    },
+    {
+      "category": "balance",
+      "level": "intermediate",
+      "name": "Rörlighet och Smidighet",
+      "exercises": [
+        {
+          "name": "Cirklar med fotleder",
+          "description": "Sitt eller stå och rör fotleden i stora cirklar för att förbättra rörlighet och stabilitet.",
+          "repetitions": "5 cirklar per fot, åt båda hållen",
+          "tips": "Gör rörelsen långsamt och kontrollerat."
+        },
+        {
+          "name": "Rörlighetsstretch för bröst och axlar",
+          "description": "Stå eller sitt, knäpp händerna bakom ryggen och sträck armarna bakåt för att öppna upp bröstet.",
+          "repetitions": "Håll i 10-15 sekunder, upprepa 3 gånger",
+          "tips": "Andas djupt och håll en bra hållning genom hela rörelsen."
+        }
+      ]
+    },
+    {
+      "category": "balance",
+      "level": "advanced",
+      "name": "Balans och Styrka",
+      "exercises": [
+        {
+          "name": "Enbensknäböj mot stol",
+          "description": "Stå på ett ben framför en stol, sänk långsamt ner kroppen tills du nuddar stolen och res dig sedan upp igen.",
+          "repetitions": "6-8 per ben",
+          "tips": "Håll balansen genom att spänna bålen och fästa blicken på en punkt framför dig."
+        },
+        {
+          "name": "Gång på tå med armrörelser",
+          "description": "Gå framåt på tå samtidigt som du sträcker armarna upp och ner i takt med stegen.",
+          "repetitions": "15-20 steg",
+          "tips": "Försök att inte vingla och håll en rak hållning."
+        }
+      ]
+    },
+    {
+      "category": "balance",
+      "level": "advanced",
+      "name": "Dynamisk Balans",
+      "exercises": [
+        {
+          "name": "Gång i osynlig linje",
+          "description": "Gå framåt genom att sätta hälen direkt framför tårna på det andra foten, som om du gick på en smal linje.",
+          "repetitions": "10-12 steg framåt och tillbaka",
+          "tips": "Sträck ut armarna åt sidan om du behöver bättre balans."
+        },
+        {
+          "name": "Knälyft med ögon stängda",
+          "description": "Stå på ett ben och lyft det andra knät högt samtidigt som du blundar i några sekunder.",
+          "repetitions": "5-8 sekunder per ben, upprepa 3 gånger",
+          "tips": "Håll gärna något lätt stöd i närheten ifall du tappar balansen."
+        }
+      ]
+    }
+    
   ]
 }
