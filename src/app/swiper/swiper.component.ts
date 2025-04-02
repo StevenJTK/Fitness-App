@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-swiper',
@@ -7,7 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './swiper.component.css',
 })
 export class SwiperComponent {
-  value: number = 1;
+
+  @Input() displayText!:string[];
+  value: number = 0;
+  animSpeed: string = '0.2';
 
   swipeOnClick(valueChange: number): void {
     this.value += valueChange;
@@ -15,8 +18,7 @@ export class SwiperComponent {
     const e:HTMLElement = (document.getElementsByClassName('selectedContent')[1] as HTMLElement)
 
     e.style.transition = 'none';
-    e.style.transform 
-    = 'translateX(' + (valueChange * 350) + 'px)';
+    e.style.transform = 'translateX(' + (valueChange * 350) + 'px)';
 
     Array.prototype.forEach.call(
       document.getElementsByClassName('selectedContent'),
@@ -25,12 +27,27 @@ export class SwiperComponent {
     setTimeout(() => {
       this.positionHandler();
     }, 200);
+
+    if (this.value === 0){
+      (document.getElementsByClassName('arrowLeft')[0] as HTMLElement)
+      .style.visibility = 'hidden';
+
+    } else if (this.value === this.displayText.length-1){
+      (document.getElementsByClassName('arrowRight')[0] as HTMLElement)
+      .style.visibility = 'hidden';
+    }
+    else{
+      (document.getElementsByClassName('arrowLeft')[0] as HTMLElement)
+      .style.visibility = 'visible';
+      (document.getElementsByClassName('arrowRight')[0] as HTMLElement)
+      .style.visibility = 'visible';
+    }
     
   }
   moveObject(slide: HTMLElement, direction: number): void {
-    slide.innerHTML = this.value + '';
+    slide.innerHTML = this.displayText[this.value] + '';
     const newTranslateX = this.getTranslateX(slide) - (350 * direction);
-    slide.style.transition = 'transform 0.1s';
+    slide.style.transition = 'transform ' + this.animSpeed + 's';
     slide.style.transform = 'translateX(' + newTranslateX + 'px)';
     
   }
