@@ -17,16 +17,18 @@ filteredExercises: Exercise[] = []; // exercises matching values from form
 
   //fetches filtered exercises based on queries
   async fetchExercises(level: string, category: string){
-    console.log(level);
-    if(level == "" && category != ""){
-      console.log("show button");
-      document.getElementsByClassName('goBackToTopButton')[0].classList.remove("hidden");
-      console.log(document.getElementsByClassName('choiceButton')[0].classList)
-    }
-    else{
-      console.log("hide button");
-      document.getElementsByClassName('goBackToTopButton')[0].classList.add("hidden");
-      console.log(document.getElementsByClassName('choiceButton')[0].classList)
+    const btn: Element = document.getElementsByClassName('goBackToTopButton')[0];
+    if(btn) {
+      if(level == "" && category != ""){
+        console.log("show button");
+        btn.classList.remove("hidden");
+        console.log(document.getElementsByClassName('choiceButton')[0].classList)
+      }
+      else{
+        console.log("hide button");
+        btn.classList.add("hidden");
+        console.log(document.getElementsByClassName('choiceButton')[0].classList)
+      }
     }
     this.filteredExercises = await(jsonConnector.getExercises(level, category));
     console.log("exercises loaded");
