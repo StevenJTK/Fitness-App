@@ -1,30 +1,30 @@
 .buttonContainer {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Två kolumner */
-  gap: 20px; /* Mellanrum mellan knappar */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
   justify-content: center;
   align-items: center;
-  max-width: 500px; /* Anpassa till innehållet */
-  margin: auto; /* Centrera sektionen */
-  padding: 40px 0; /* Lite luft ovanför och under */
+  max-width: 500px;
+  margin: auto;
+  padding: 40px 0;
 }
 
 .choiceButton {
   background-color: #535740;
   color: #ffffff;
   border: none;
-  border-radius: 15px; /* Rundade hörn */
+  border-radius: 15px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.1s;
   display: flex;
-  flex-direction: column; /* För att placera texten vertikalt */
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  font-size: 1.5rem; /* Justera textstorlek */
-  font-family: "Hanken Grotesk", sans-serif; /* Typsnitt enligt design */
+  font-size: 1.5rem;
+  font-family: "Hanken Grotesk", sans-serif;
   font-weight: bold;
-  width: 350px; /* Anpassa storlek */
+  width: 350px;
   height: 200px;
   padding: 20px;
   overflow: hidden;
@@ -51,13 +51,13 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 21.875rem; /* Anpassa storlek */
+  width: 21.875rem;
   height: 12.5rem;
-  background-size: cover; /* Se till att bilden täcker hela knappen */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border: none;
-  border-radius: 15px; /* Rundade hörn */
+  border-radius: 15px;
   cursor: pointer;
   transition: transform 0.1s;
   font-size: 24px;
@@ -72,19 +72,19 @@
 @media (max-width: 768px) {
   .buttonContainer,
   #ExerciseChoice {
-    grid-template-columns: 1fr; /* Endast en kolumn på små skärmar */
+    grid-template-columns: 1fr;
   }
 
   .choiceButton {
-    width: 100%; /* Gör knapparna responsiva och tar hela bredden */
-    max-width: 350px; /* Men begränsa maxstorleken */
-    margin: auto; /* Centrera knapparna */
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
   }
 
   .exerciseButton {
-    width: 100%; /* Gör knapparna responsiva och tar hela bredden */
-    max-width: 350px; /* Men begränsa maxstorleken */
-    margin: auto; /* Centrera knapparna */
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
   }
 }
 
@@ -109,20 +109,20 @@
 }
 
 .small-text {
-  font-size: 19px; /* Mindre text */
-  color: #ffffff; /* Samma färg som huvudtexten */
-  margin-top: 8px; /* Lite avstånd från huvudtexten */
+  font-size: 19px;
+  color: #ffffff;
+  margin-top: 8px;
   font-style: italic;
   font-weight: bold;
 }
 
 .choiceButton:hover {
-  background-color: #568045; /* Ljusare grön vid hover */
-  transform: scale(1.05); /* Liten effekt vid hover */
+  background-color: #568045;
+  transform: scale(1.05);
 }
 
 .selected {
-  background-color: rgb(44, 41, 24) !important; /* Mörkare vid val */
+  background-color: rgb(44, 41, 24) !important;
 }
 
 .firstText {
