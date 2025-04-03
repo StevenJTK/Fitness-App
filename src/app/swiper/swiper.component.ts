@@ -1,8 +1,9 @@
+import { CommonModule } from '@angular/common';
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-swiper',
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './swiper.component.html',
   styleUrl: './swiper.component.css',
 })

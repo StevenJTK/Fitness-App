@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectorRef, Component, ViewChild } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 import { WorkoutComponent } from './workout-component/workout-component.component';
-import { SwiperComponent } from './swiper/swiper.component';
 import { FooterComponent } from "./footer/footer.component";
 import { AboutComponent } from "./about/about.component";
 
@@ -13,7 +12,6 @@ import { AboutComponent } from "./about/about.component";
     CommonModule,
     FooterComponent,
     AboutComponent,
-    SwiperComponent,
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
