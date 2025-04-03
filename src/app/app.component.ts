@@ -95,4 +95,9 @@ export class AppComponent {
       );
     //}
   }
+
+  //det är så här man gör för att få värdet som slider byter till
+  receiveValue(event: string) {
+    //console.log(event); 
+  }
 }

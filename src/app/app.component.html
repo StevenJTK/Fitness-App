@@ -24,7 +24,9 @@
   </div>
 </main>
 <router-outlet></router-outlet>
-<app-swiper [displayText]="['Nybörjare', 'Lätt', 'Medel', 'Utmanande']">  </app-swiper>
+<!--Man skickar in displayText med alla värden som slidern kan ha och
+currentValue bestämmer vilken metod som ska köras (och ta emot vilket värde som är valt)-->
+<app-swiper [displayText]="['Nybörjare', 'Lätt', 'Medel', 'Utmanande']" (currentValue)="receiveValue($event)">  </app-swiper>
 
 <app-about></app-about>
 <br /><br /><br />

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 
 @Component({
   selector: 'app-swiper',
@@ -9,22 +9,36 @@ import { Component, Input } from '@angular/core';
 export class SwiperComponent {
 
   @Input() displayText!:string[];
+  @Output() currentValue = new EventEmitter<string>();;
   value: number = 0;
   animSpeed: string = '0.2';
+
+  emitValue():void{
+    this.currentValue.emit(this.displayText[this.value]);
+  }
 
   swipeOnClick(valueChange: number): void {
     this.value += valueChange;
 
-    const e:HTMLElement = (document.getElementsByClassName('selectedContent')[1] as HTMLElement)
-
-    e.style.transition = 'none';
-    e.style.transform = 'translateX(' + (valueChange * 350) + 'px)';
+    const elements: HTMLElement[] = [];
 
     Array.prototype.forEach.call(
       document.getElementsByClassName('selectedContent'),
-      (slide) => this.moveObject(slide, valueChange)
+      (slide) => elements.push(slide as HTMLElement)
     );
+
+    elements[1].style.transition = 'none';
+    elements[1].style.transform = 'translateX(' + (valueChange * 350) + 'px)';
+
+    this.emitValue();
+
+    elements[1].innerHTML = this.displayText[this.value];
+    elements.forEach(
+      (element)=>this.moveObject(element, valueChange)
+    );
+
     setTimeout(() => {
+      elements[0].innerHTML = this.displayText[this.value];
       this.positionHandler();
     }, 200);
 
@@ -45,7 +59,6 @@ export class SwiperComponent {
     
   }
   moveObject(slide: HTMLElement, direction: number): void {
-    slide.innerHTML = this.displayText[this.value] + '';
     const newTranslateX = this.getTranslateX(slide) - (350 * direction);
     slide.style.transition = 'transform ' + this.animSpeed + 's';
     slide.style.transform = 'translateX(' + newTranslateX + 'px)';
