@@ -11,6 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 5vw;
 }
 
 /* pil som pekar åt höger */

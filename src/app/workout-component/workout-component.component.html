@@ -1,4 +1,8 @@
 <div *ngIf="filteredExercises.length > 0; else noExercises">
+  <!--Man skickar in displayText med alla värden som slidern kan ha och
+currentValue bestämmer vilken metod som ska köras (och ta emot vilket värde som är valt)-->
+<app-swiper [displayText]="['Beginner', 'Easy', 'Intermediate', 'Advanced']" (currentValue)="receiveValue($event)">  </app-swiper>
+
   <h2>
     Pass för {{ filteredExercises[0].category }} -
     {{ filteredExercises[0].level }}

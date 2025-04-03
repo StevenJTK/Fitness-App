@@ -1,6 +1,6 @@
 .exerciseGrid {
-  display: grid;
-  grid-template-rows: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 1.5rem;
   justify-content: center;
   max-width: 80%;
@@ -8,9 +8,9 @@
 }
 
 .exerciseCard {
-  background-color: #535740;
-  color: #ffffff;
-  font-family: "Open Sans", Arial, sans-serif;
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Hanken Grotesk";
   font-weight: 600;
   font-style: italic;
   font-size: 24px;
@@ -18,7 +18,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: calc(50% + 1.5rem);
+  max-width: 45vw;
   padding: 1.5rem;
   margin: 1.5rem auto;
   box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.821);
@@ -87,12 +87,12 @@
 .workoutText {
   background-color: #ffffff;
   color: #ffffff;
-  font-family: "Open Sans", Arial, sans-serif;
+  font-family: "Hanken Grotesk";
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  max-width: calc(50% + 1.5rem);
+  max-width: 45vw;
   padding: 1.5rem;
   margin: 1.5rem auto;
   box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.821);
