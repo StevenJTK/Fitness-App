@@ -13,7 +13,7 @@
   background-color: #535740;
   color: #ffffff;
   border: none;
-  border-radius: 15px;
+  border-radius: 35px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.1s;
   display: flex;
@@ -57,12 +57,10 @@
   background-position: center;
   background-repeat: no-repeat;
   border: none;
-  border-radius: 15px;
+  border-radius: 35px;
   cursor: pointer;
   transition: transform 0.1s;
-  font-size: 24px;
   font-family: "Hanken Grotesk", sans-serif;
-  font-weight: bold;
   color: #ffffff;
 }
 .exerciseButton:hover {
@@ -88,16 +86,23 @@
   }
 }
 
-#spanText {
+#spanHeader {
   padding-top: 10px;
+  text-align: center;
+  font-size: 24px;
+}
+
+#spanText {
+  font-size: 19px;
+  text-align: center;
 }
 
 .strength {
-  background-image: url("/assets/Fysik.png");
+  background-image: url("/assets/Styrka.png");
 }
 
 .cardio {
-  background-image: url("/assets/Cardio.png");
+  background-image: url("/assets/cardio.png");
 }
 
 .everyday-exercise {
