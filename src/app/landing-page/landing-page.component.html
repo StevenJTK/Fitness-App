@@ -6,7 +6,7 @@
       <br />
       och stärka din kropp i <strong>vardagen</strong>
     </h2>
-    <p>Välj din intensitet</p>
+    <p>Välj din nivå</p>
   </section>
 
   <div class="buttonContainer">
@@ -15,12 +15,12 @@
       [ngClass]="{ selected: selectedDifficultyIndex === 1 }"
       (click)="difficultyChoice('beginner', 1)"
     >
-      Nybörjare
-      <span class="small-text"
+      <h2>Nybörjare</h2>
+      <span
         >Är du precis i startgroparna att förbättra din hälsa? <br />
         Börja här!
       </span>
-      <div class="dots" id="StartButton">
+      <div class="dots" id="scrollToLevelChoice">
         <span class="dot"></span>
       </div>
     </button>
@@ -29,8 +29,8 @@
       [ngClass]="{ selected: selectedDifficultyIndex === 2 }"
       (click)="difficultyChoice('easy', 2)"
     >
-      Lätt
-      <span class="small-text"
+      <h2>Lätt</h2>
+      <span
         >Du är igång - bra jobbat! Här hittar du skonsamma övningar som stärker
         kroppen.</span
       >
@@ -44,8 +44,8 @@
       [ngClass]="{ selected: selectedDifficultyIndex === 3 }"
       (click)="difficultyChoice('intermediate', 3)"
     >
-      Medel
-      <span class="small-text"
+      <h2>Medel</h2>
+      <span
         >Redo för nästa steg? Här får du en lagom utmaning för styrka och
         uthållighet.</span
       >
@@ -60,8 +60,8 @@
       [ngClass]="{ selected: selectedDifficultyIndex === 4 }"
       (click)="difficultyChoice('advanced', 4)"
     >
-      Utmanande
-      <span class="small-text"
+      <h2>Utmanande</h2>
+      <span
         >Du är stark och vill ha mer! Utmaningar för att behålla kraft och
         rörlighet.</span
       >
@@ -77,7 +77,7 @@
   <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
   <section class="firstText" id="ExerciseChoice">
-    <p>Välj hur du vill stärka dig</p>
+    <p>Välj vad du vill fokusera på idag</p>
   </section>
   <div class="buttonContainer">
     <button
@@ -85,7 +85,10 @@
       [ngClass]="{ selected: selectedExerciseDifficultyIndex === 1 }"
       (click)="exerciseTypeChoice('strength', 1)"
     >
-      <span id="spanText">Fysik</span>
+      <div class="spanText">
+        <h2>Styrka</h2>
+        <p>Stärk hela kroppen och känn skillnaden, ett steg åt gången.</p>
+      </div>
     </button>
 
     <button
@@ -93,7 +96,10 @@
       [ngClass]="{ selected: selectedExerciseDifficultyIndex === 2 }"
       (click)="exerciseTypeChoice('cardio', 2)"
     >
-      <span id="spanText">Uthållighet</span>
+      <div class="spanText">
+        <h2>Uthållighet</h2>
+        <p>Bygg uthållighet i ditt eget tempo - och orka mer.</p>
+      </div>
     </button>
 
     <button
@@ -101,17 +107,24 @@
       [ngClass]="{ selected: selectedExerciseDifficultyIndex === 3 }"
       (click)="exerciseTypeChoice('everydayExercise', 3)"
     >
-      <span id="spanText">Vardagsmotion</span>
+      <div class="spanText">
+        <h2>Vardagsmotion</h2>
+        <p>Känn igen din vardagsträning och hitta glädjen att göra mer.</p>
+      </div>
     </button>
     <button
       class="exerciseButton balance"
       [ngClass]="{ selected: selectedExerciseDifficultyIndex === 4 }"
       (click)="exerciseTypeChoice('balance', 4)"
     >
-      <span id="spanText">Balans & Rörlighet</span>
+      <div class="spanText">
+        <h2>Rörlighet</h2>
+        <p>Sköna rörelser som ger dig mer frihet i vardagen.</p>
+      </div>
     </button>
   </div>
 
   <app-workout-component id="workoutComponent"></app-workout-component>
+
   <br /><br /><br /><br /><br />
 </main>

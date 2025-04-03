@@ -1,25 +1,33 @@
 .about-container {
-  max-width: 50rem;
-  margin: auto;
-  padding: 1.25rem;
   text-align: center;
   color: #535740;
+  margin-bottom: 150px;
 }
 
-.about-container h1 {
-  color: #535740;
-  font-family: "Hanken Grotesk";
+.images {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  justify-content: space-between;
+  z-index: -1;
+}
+
+.textHolder {
+  display: flex;
+  color: #310b02;
+  font-family: 'Hanken Grotesk';
+  text-align: left;
+  width: 80%;
+  margin-left: 10%;
+  gap: 50px;
+}
+
+.textHolder h2 {
+  font-size: 32px;
   font-weight: bold;
-  font-size: x-large;
 }
 
-.about-container p {
-  color: #535740;
-  font-family: "Hanken Grotesk";
-  font-weight: lighter;
-  font-size: large;
-}
-
-#header {
-  font-size: xx-large;
+.textHolder p {
+  font-size: 19px;
+  font-weight: bold;
 }

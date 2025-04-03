@@ -9,8 +9,11 @@ currentValue bestämmer vilken metod som ska köras (och ta emot vilket värde s
   </h2>
   <div class="exerciseGrid">
     <div *ngFor="let exercise of filteredExercises">
-      <div class="exerciseCard" (click)="test(exercise)">
-        <h3 class=" exerciseTitle">{{ exercise.name }}</h3>
+      <div
+        class="exerciseCard"
+        (click)="test(exercise); jumpToId('scrollToChosenExercise')"
+      >
+        <h3 class="exerciseTitle">{{ exercise.name }}</h3>
       </div>
     </div>
   </div>
@@ -18,23 +21,23 @@ currentValue bestämmer vilken metod som ska köras (och ta emot vilket värde s
 <!--alla övningar från det valda passet-->
 
 <div *ngFor="let e of selectedExercises" class="workoutText">
-  <div class="icons">
-    <img src="assets/timer.svg" alt="timer">
-    <img src="assets/star.svg" alt="star">
-    <img src="assets/Heart.svg" alt="heart">
-    <img src="assets/jumping-rope.svg" alt="jumping rope">
+  <!--<div class="icons">
+    <img src="assets/timer.svg" alt="timer" />
+    <img src="assets/star.svg" alt="star" />
+    <img src="assets/Heart.svg" alt="heart" />
+    <img src="assets/jumping-rope.svg" alt="jumping rope" />
   </div>
   <div class="iconText">
     <p>Varaktighet</p>
     <p>Vinst</p>
     <p>Intensitet</p>
     <p>Utrustning</p>
-  </div>
-  
+  </div>-->
+
   <h2>{{ e.name }}</h2>
   <h3>Gör såhär:</h3>
   <p>{{ e.description }}</p>
-  <h3>Antal repetitioner eller sekunder:</h3>
+  <h3 id="scrollToChosenExercise">Antal repetitioner eller sekunder:</h3>
   <p>{{ e.repetitions }}</p>
   <h3>Tips!</h3>
   <p>{{ e.tips }}</p>

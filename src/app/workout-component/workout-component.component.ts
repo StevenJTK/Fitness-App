@@ -14,7 +14,7 @@ import { Translator} from '../types/Translator';
 export class WorkoutComponent {
   filteredExercises: Exercise[] = []; // exercises matching values from form
   selectedExercises: Exercises[] = [];
-selectedCategory: string = "";
+  selectedCategory: string = '';
 
   //fetches filtered exercises based on queries
   async fetchExercises(level: string, category: string) {
@@ -54,6 +54,7 @@ selectedCategory: string = "";
       }
     }, 200);
   }
+
   test(exercise: Exercise) {
     this.selectedExercises = exercise.exercises;
   }

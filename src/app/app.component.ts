@@ -32,28 +32,6 @@ export class AppComponent {
   //för timern som väntar innan den skrollar
   waitTimer: number = 200;
 
-  aboutUs(): void {
-    setTimeout(() => {
-      //gör så att vid klick så åker man ner långsamt till det valda idt, du kan ändra center till start eller end
-      //om man vill landa på ett annat ställe/EMMA
-      const scrollElement = document.getElementById('AboutUs');
-      if (scrollElement) {
-        scrollElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-    }, 200);
-  }
-
-  buttonChoice(): void {
-    setTimeout(() => {
-      //gör så att vid klick så åker man ner långsamt till det valda idt, du kan ändra center till start eller end
-      //om man vill landa på ett annat ställe/EMMA
-      const scrollElement = document.getElementById('StartButton');
-      if (scrollElement) {
-        scrollElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-    }, 200);
-  }
-
   async difficultyChoice(value: string, buttonNumber: number): Promise<void> {
     this.chosenDifficulty = value;
     this.selectedDifficultyIndex = buttonNumber;
@@ -85,14 +63,23 @@ export class AppComponent {
     }, 200);
   }
 
-  fetchExercises(): void {
-    //if (this.chosenDifficulty != '' && this.chosenExerciseType != '') {
-      this.workoutComponent.fetchExercises(
-        this.chosenDifficulty,
-        this.chosenExerciseType
-      );
-    //}
+  jumpToId(id: string) {
+    setTimeout(() => {
+      //gör så att vid klick så åker man ner långsamt till det valda idt, du kan ändra center till start eller end
+      //om man vill landa på ett annat ställe/EMMA
+      const scrollElement = document.getElementById(id);
+      if (scrollElement) {
+        scrollElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }
+    }, 200);
   }
 
-  
+  fetchExercises(): void {
+    //if (this.chosenDifficulty != '' && this.chosenExerciseType != '') {
+    this.workoutComponent.fetchExercises(
+      this.chosenDifficulty,
+      this.chosenExerciseType
+    );
+    //}
+  }
 }

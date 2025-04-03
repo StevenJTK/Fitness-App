@@ -24,29 +24,7 @@ export class LandingPageComponent {
 
   //för timern som väntar innan den skrollar
   waitTimer: number = 200;
-
-  aboutUs(): void {
-    setTimeout(() => {
-      //gör så att vid klick så åker man ner långsamt till det valda idt, du kan ändra center till start eller end
-      //om man vill landa på ett annat ställe/EMMA
-      const scrollElement = document.getElementById('AboutUs');
-      if (scrollElement) {
-        scrollElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-    }, 200);
-  }
-
-  buttonChoice(): void {
-    setTimeout(() => {
-      //gör så att vid klick så åker man ner långsamt till det valda idt, du kan ändra center till start eller end
-      //om man vill landa på ett annat ställe/EMMA
-      const scrollElement = document.getElementById('StartButton');
-      if (scrollElement) {
-        scrollElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
-      }
-    }, 200);
-  }
-
+  
   async difficultyChoice(value: string, buttonNumber: number): Promise<void> {
     this.chosenDifficulty = value;
     this.selectedDifficultyIndex = buttonNumber;
@@ -73,7 +51,7 @@ export class LandingPageComponent {
       //om man vill landa på ett annat ställe/EMMA
       const scrollElement = document.getElementById('workoutComponent');
       if (scrollElement) {
-        scrollElement.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        scrollElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     }, 200);
   }
