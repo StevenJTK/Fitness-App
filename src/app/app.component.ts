@@ -2,6 +2,7 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectorRef, Component, ViewChild } from '@angular/core';
 import { Router, RouterOutlet } from '@angular/router';
 import { WorkoutComponent } from './workout-component/workout-component.component';
+import { SwiperComponent } from './swiper/swiper.component';
 import { FooterComponent } from "./footer/footer.component";
 import { AboutComponent } from "./about/about.component";
 
@@ -11,7 +12,8 @@ import { AboutComponent } from "./about/about.component";
     RouterOutlet,
     CommonModule,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    SwiperComponent,
 ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
@@ -92,5 +94,10 @@ export class AppComponent {
         this.chosenExerciseType
       );
     //}
+  }
+
+  //det är så här man gör för att få värdet som slider byter till
+  receiveValue(event: string) {
+    //console.log(event); 
   }
 }
