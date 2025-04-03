@@ -10,7 +10,7 @@
 }
 
 .choiceButton {
-  background-color: #535740;
+  background-color: #415338;
   color: #ffffff;
   border: none;
   border-radius: 35px;
@@ -20,14 +20,24 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  font-size: 1.5rem;
-  font-family: "Hanken Grotesk", sans-serif;
-  font-weight: bold;
   width: 350px;
   height: 200px;
   padding: 20px;
   overflow: hidden;
+}
+
+.choiceButton h2 {
+  text-align: center;
+  font-size: 24px;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-weight: medium;
+  padding-bottom: 0;
+}
+
+.choiceButton span {
+  font-family: "Hanken Grotesk", sans-serif;
+  font-size: 19px;
+  font-weight: bold;
 }
 
 .dots {
@@ -36,6 +46,7 @@
   justify-content: center;
   margin-top: 10px;
   padding-top: 10px;
+  padding-bottom: 15px;
 }
 
 .dot {
@@ -50,7 +61,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align: center;
   width: 21.875rem;
   height: 12.5rem;
   background-size: cover;
@@ -63,38 +73,25 @@
   font-family: "Hanken Grotesk", sans-serif;
   color: #ffffff;
 }
+
 .exerciseButton:hover {
   transform: scale(1.05);
 }
 
-@media (max-width: 768px) {
-  .buttonContainer,
-  #ExerciseChoice {
-    grid-template-columns: 1fr;
-  }
-
-  .choiceButton {
-    width: 100%;
-    max-width: 350px;
-    margin: auto;
-  }
-
-  .exerciseButton {
-    width: 100%;
-    max-width: 350px;
-    margin: auto;
-  }
+.spanText {
+  font-family: "Hanken Grotesk";
+  text-align: center;
+  padding-top: 70px;
 }
 
-#spanHeader {
-  padding-top: 10px;
-  text-align: center;
+.spanText h2 {
   font-size: 24px;
+  font-weight: medium;
 }
 
-#spanText {
+.spanText p {
   font-size: 19px;
-  text-align: center;
+  font-weight: bold;
 }
 
 .strength {
@@ -102,7 +99,7 @@
 }
 
 .cardio {
-  background-image: url("/assets/cardio.png");
+  background-image: url("/assets/Cardio.png");
 }
 
 .everyday-exercise {
@@ -113,21 +110,23 @@
   background-image: url("/assets/Rorlighet.png");
 }
 
-.small-text {
-  font-size: 19px;
-  color: #ffffff;
-  margin-top: 8px;
-  font-style: italic;
-  font-weight: bold;
-}
-
 .choiceButton:hover {
-  background-color: #568045;
   transform: scale(1.05);
 }
 
-.selected {
-  background-color: rgb(44, 41, 24) !important;
+.selected.choiceButton {
+  background-color: rgba(0, 0, 0, 0);
+  border: 5px solid #415338;
+  color: #415338;
+  cursor: default;
+}
+
+.selected:hover {
+  transform: none;
+}
+
+.selected .dot {
+  background-color: #415338;
 }
 
 .firstText {
@@ -150,6 +149,24 @@
   margin: 0;
   padding-top: 5rem;
   font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .buttonContainer {
+    grid-template-columns: 1fr;
+  }
+
+  .choiceButton {
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+  }
+
+  .exerciseButton {
+    width: 100%;
+    max-width: 350px;
+    margin: auto;
+  }
 }
 
 @media (max-width: 1024px) {
