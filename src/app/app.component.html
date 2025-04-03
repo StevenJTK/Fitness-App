@@ -13,11 +13,11 @@
       <p>Dina handlingar idag <strong>formar din morgondag</strong></p>
     </div>
     <div class="about-us">
-      <button (click)="aboutUs()">Om oss</button>
+      <button (click)="jumpToId('scrollToAboutUs')">Om oss</button>
     </div>
   </section>
   <div class="startButton">
-    <button (click)="buttonChoice()">
+    <button (click)="jumpToId('scrollToLevelChoice')">
       Starta här <br />
       <i class="arrow down"></i>
     </button>
@@ -27,6 +27,6 @@
 
 <app-about></app-about>
 <br /><br /><br />
-<footer id="AboutUs">
+<footer id="scrollToAboutUs">
   <app-footer></app-footer>
 </footer>

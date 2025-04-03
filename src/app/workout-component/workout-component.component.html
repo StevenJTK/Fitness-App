@@ -1,7 +1,11 @@
 <div *ngIf="filteredExercises.length > 0; else noExercises">
   <!--Man skickar in displayText med alla värden som slidern kan ha och
 currentValue bestämmer vilken metod som ska köras (och ta emot vilket värde som är valt)-->
-<app-swiper [displayText]="['Beginner', 'Easy', 'Intermediate', 'Advanced']" (currentValue)="receiveValue($event)">  </app-swiper>
+  <app-swiper
+    [displayText]="['Beginner', 'Easy', 'Intermediate', 'Advanced']"
+    (currentValue)="receiveValue($event)"
+  >
+  </app-swiper>
 
   <h2>
     Pass för {{ filteredExercises[0].category }} -
@@ -9,8 +13,11 @@ currentValue bestämmer vilken metod som ska köras (och ta emot vilket värde s
   </h2>
   <div class="exerciseGrid">
     <div *ngFor="let exercise of filteredExercises">
-      <div class="exerciseCard" (click)="test(exercise)">
-        <h3 class=" exerciseTitle">{{ exercise.name }}</h3>
+      <div
+        class="exerciseCard"
+        (click)="test(exercise); jumpToId('scrollToChosenExercise')"
+      >
+        <h3 class="exerciseTitle">{{ exercise.name }}</h3>
       </div>
     </div>
   </div>
@@ -19,10 +26,10 @@ currentValue bestämmer vilken metod som ska köras (och ta emot vilket värde s
 
 <div *ngFor="let e of selectedExercises" class="workoutText">
   <div class="icons">
-    <img src="assets/timer.svg" alt="timer">
-    <img src="assets/star.svg" alt="star">
-    <img src="assets/Heart.svg" alt="heart">
-    <img src="assets/jumping-rope.svg" alt="jumping rope">
+    <img src="assets/timer.svg" alt="timer" />
+    <img src="assets/star.svg" alt="star" />
+    <img src="assets/Heart.svg" alt="heart" />
+    <img src="assets/jumping-rope.svg" alt="jumping rope" />
   </div>
   <div class="iconText">
     <p>Varaktighet</p>
@@ -30,11 +37,11 @@ currentValue bestämmer vilken metod som ska köras (och ta emot vilket värde s
     <p>Intensitet</p>
     <p>Utrustning</p>
   </div>
-  
+
   <h2>{{ e.name }}</h2>
   <h3>Gör såhär:</h3>
   <p>{{ e.description }}</p>
-  <h3>Antal repetitioner eller sekunder:</h3>
+  <h3 id="scrollToChosenExercise">Antal repetitioner eller sekunder:</h3>
   <p>{{ e.repetitions }}</p>
   <h3>Tips!</h3>
   <p>{{ e.tips }}</p>
