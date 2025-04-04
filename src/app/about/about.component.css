@@ -15,7 +15,7 @@
 .textHolder {
   display: flex;
   color: #310b02;
-  font-family: 'Hanken Grotesk';
+  font-family: "Hanken Grotesk";
   text-align: left;
   width: 80%;
   margin-left: 10%;
@@ -30,4 +30,61 @@
 .textHolder p {
   font-size: 19px;
   font-weight: bold;
+}
+
+.logoSmall {
+  display: none;
+}
+
+/* mobil */
+@media (max-width: 600px) {
+  .textHolder {
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+  }
+
+  .textHolder h2 {
+    font-size: 24px;
+  }
+
+  .textHolder p {
+    font-size: 16px;
+  }
+
+  .images {
+   display: none;
+  }
+
+}
+
+/* tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .textHolder {
+    flex-direction: column;
+    gap: 30px;
+    width: 85%;
+    margin-left: 7.5%;
+  }
+
+  .textHolder h2 {
+    font-size: 28px;
+  }
+
+  .textHolder p {
+    font-size: 17px;
+  }
+
+  .images {
+    justify-content: center;
+    /* måste ersättas med annat ? */
+    gap: 330px;
+    
+  }
+
+  .logoSmall {
+    display: none;
+  }
 }

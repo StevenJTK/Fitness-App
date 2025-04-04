@@ -4,7 +4,7 @@
       "category": "strength",
       "level": "beginner",
       "name": "Upper Body",
-      
+
       "exercises": [
         {
           "name": "Vägg-armhävningar",
@@ -116,25 +116,24 @@
       ]
     },
     {
-      
-        "category": "strength",
-        "level": "easy",
-        "name": "Upper Body",
-        "exercises": [
-          {
-            "name": "Stående knälyft",
-            "description": "Stå upp och lyft ett knä i taget mot bröstet, håll några sekunder och sänk långsamt.",
-            "repetitions": "5-10 per ben",
-            "tips": "Håll balansen genom att stödja dig på en stol eller vägg om det behövs."
-          },
-          {
-            "name": "Armcirklar",
-            "description": "Stå upp och gör små cirklar med armarna, först i en riktning och sedan i den andra.",
-            "repetitions": "8-10 per riktning",
-            "tips": "Tänk på att hålla axlarna avslappnade och röra armarna långsamt."
-          }
-        ]
-      },
+      "category": "strength",
+      "level": "easy",
+      "name": "Upper Body",
+      "exercises": [
+        {
+          "name": "Stående knälyft",
+          "description": "Stå upp och lyft ett knä i taget mot bröstet, håll några sekunder och sänk långsamt.",
+          "repetitions": "5-10 per ben",
+          "tips": "Håll balansen genom att stödja dig på en stol eller vägg om det behövs."
+        },
+        {
+          "name": "Armcirklar",
+          "description": "Stå upp och gör små cirklar med armarna, först i en riktning och sedan i den andra.",
+          "repetitions": "8-10 per riktning",
+          "tips": "Tänk på att hålla axlarna avslappnade och röra armarna långsamt."
+        }
+      ]
+    },
     {
       "category": "strength",
       "level": "easy",
@@ -179,7 +178,7 @@
       "name": "Walking Routine",
       "exercises": [
         {
-          "name": "Marching on the Spot",
+          "name": "Marschera på plats",
           "description": "Stå på plats och gå långsamt på stället. Lyft knäna i en lugn takt.",
           "repetitions": "1-3 minuter",
           "tips": "Håll en upprätt hållning och andas lugnt och jämnt."
@@ -198,13 +197,13 @@
       "name": "Upper Body Endurance",
       "exercises": [
         {
-          "name": "Arm Raises",
+          "name": "Armlyft",
           "description": "Stå upprätt och håll armarna rakt framför dig. Lyft dem långsamt upp till axelhöjd och sänk tillbaka.",
           "repetitions": "10-12",
           "tips": "Håll armarna rakt och gör rörelsen långsamt och kontrollerat."
         },
         {
-          "name": "Seated Shoulder Press",
+          "name": "Sittande axelpress",
           "description": "Sitt på en stol och pressa armarna uppåt, som om du håller en vikt i varje hand. Sänk tillbaka långsamt.",
           "repetitions": "8-10",
           "tips": "Håll ryggen rak och håll bålens stabilitet under hela rörelsen."
@@ -217,13 +216,13 @@
       "name": "Lower Body Endurance",
       "exercises": [
         {
-          "name": "Standing Leg Extensions",
+          "name": "Stående benlyft",
           "description": "Stå stadigt och sträck ut ena benet rakt framför dig, håll några sekunder och sänk tillbaka. Växla ben.",
           "repetitions": "8-10 per ben",
           "tips": "Håll kroppen rak och spänn bålen för bättre stabilitet."
         },
         {
-          "name": "Calf Raises",
+          "name": "Vadlyft",
           "description": "Stå upprätt och lyft långsamt upp på tårna, håll några sekunder och sänk långsamt tillbaka.",
           "repetitions": "10-12",
           "tips": "Håll balansen genom att hålla i en stol eller vägg om det behövs."
@@ -236,13 +235,13 @@
       "name": "Upper Body Endurance",
       "exercises": [
         {
-          "name": "Arm Circles",
+          "name": "Armcirklar",
           "description": "Stå upprätt och sträck ut armarna åt sidorna. Gör små cirklar med armarna och gradvis öka storleken på cirklarna.",
           "repetitions": "30 sekunder åt varje håll",
           "tips": "Håll armarna rakt och spänn bålen för bättre stabilitet."
         },
         {
-          "name": "Push-Ups against a Wall",
+          "name": "Vägg-armhävningar",
           "description": "Stå ett steg bort från en vägg och sätt händerna på väggen. Sänk kroppen mot väggen och tryck tillbaka till startposition.",
           "repetitions": "8-12",
           "tips": "Håll kroppen rak och undvik att svanka i ryggen."
@@ -261,7 +260,7 @@
           "tips": "Håll ryggen rak och fokusera på att lyfta knäna högt."
         },
         {
-          "name": "Lunges",
+          "name": "Utfallssteg",
           "description": "Ta ett stort steg framåt med ett ben, böj båda knäna tills båda benen är i 90 graders vinkel, och återgå till startpositionen.",
           "repetitions": "6-10 per ben",
           "tips": "Håll knäet över fotleden och undvik att luta för mycket framåt."
@@ -274,14 +273,14 @@
       "name": "Upper Body Endurance",
       "exercises": [
         {
-          "name": "Push-Ups",
+          "name": "Armhävningar",
           "description": "Utför klassiska armhävningar på knäna eller tårna för att stärka bröst, axlar och armar.",
           "repetitions": "10-15",
           "tips": "Se till att kroppen hålls rak och sänk långsamt för att öka belastningen."
         },
         {
-          "name": "Dips on a Bench",
-          "description": "Sätt händerna på kanten av en bänk och sänk långsamt kroppen nedåt genom att böja armbågarna, tryck upp igen.",
+          "name": "Dips mot en bänk/stol",
+          "description": "Sätt händerna på kanten av en bänk eller stol och sänk långsamt kroppen nedåt genom att böja armbågarna, tryck upp igen.",
           "repetitions": "8-12",
           "tips": "Håll armbågarna nära kroppen och använd benens hjälp om det behövs för extra stöd."
         }
@@ -293,13 +292,13 @@
       "name": "Lower Body Endurance",
       "exercises": [
         {
-          "name": "Lunges with Knee Lift",
+          "name": "Lunges med knälyft",
           "description": "Ta ett stort steg framåt, sänk dig i en lunge och lyft knäet på det bakre benet mot bröstet när du kommer tillbaka till startpositionen.",
           "repetitions": "8-10 per ben",
           "tips": "Fokusera på att hålla knäet rakt när du lyfter det och engagera bålen för bättre stabilitet."
         },
         {
-          "name": "Single Leg Deadlifts",
+          "name": "Marklyft med ett ben",
           "description": "Stå på ett ben, luta överkroppen framåt medan du sträcker ut det andra benet bakåt, återgå till startposition.",
           "repetitions": "6-8 per ben",
           "tips": "Håll ryggen rak och se till att höften förblir stabil under rörelsen."
@@ -409,7 +408,7 @@
       ]
     },
     {
-     "category": "everydayExercise",
+      "category": "everydayExercise",
       "level": "advanced",
       "name": "Uthållighet",
       "exercises": [
@@ -598,6 +597,5 @@
         }
       ]
     }
-    
   ]
 }
