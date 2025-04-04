@@ -3,7 +3,7 @@
     {
       "category": "strength",
       "level": "beginner",
-      "name": "Upper Body",
+      "name": "Överkropp",
 
       "exercises": [
         {
@@ -23,7 +23,7 @@
     {
       "category": "strength",
       "level": "beginner",
-      "name": "Lower Body",
+      "name": "Underkropp",
       "exercises": [
         {
           "name": "Knäböj till stol",
@@ -42,7 +42,7 @@
     {
       "category": "strength",
       "level": "intermediate",
-      "name": "Upper Body",
+      "name": "Överkropp",
       "exercises": [
         {
           "name": "Armhävningar på knä",
@@ -61,7 +61,7 @@
     {
       "category": "strength",
       "level": "intermediate",
-      "name": "Lower Body",
+      "name": "Underkropp",
       "exercises": [
         {
           "name": "Sidosteg med gummiband",
@@ -80,7 +80,7 @@
     {
       "category": "strength",
       "level": "advanced",
-      "name": "Upper Body",
+      "name": "Överkropp",
       "exercises": [
         {
           "name": "Armhävningar",
@@ -99,7 +99,7 @@
     {
       "category": "strength",
       "level": "advanced",
-      "name": "Lower Body",
+      "name": "Underkropp",
       "exercises": [
         {
           "name": "Sidosteg med hoppsidosteg",
@@ -118,7 +118,7 @@
     {
       "category": "strength",
       "level": "easy",
-      "name": "Upper Body",
+      "name": "Överkropp",
       "exercises": [
         {
           "name": "Stående knälyft",
@@ -137,7 +137,7 @@
     {
       "category": "strength",
       "level": "easy",
-      "name": "Lower Body",
+      "name": "Underkropp",
       "exercises": [
         {
           "name": "Stols-steg",
@@ -156,7 +156,7 @@
     {
       "category": "cardio",
       "level": "beginner",
-      "name": "Cardio Routine",
+      "name": "Konditionsrutin",
       "exercises": [
         {
           "name": "Lätt jogging på plats",
@@ -175,7 +175,7 @@
     {
       "category": "cardio",
       "level": "beginner",
-      "name": "Walking Routine",
+      "name": "Promenadrutin",
       "exercises": [
         {
           "name": "Marschera på plats",
@@ -194,7 +194,7 @@
     {
       "category": "cardio",
       "level": "easy",
-      "name": "Upper Body Endurance",
+      "name": "Uthållighet för överkroppen",
       "exercises": [
         {
           "name": "Armlyft",
@@ -213,7 +213,7 @@
     {
       "category": "cardio",
       "level": "easy",
-      "name": "Lower Body Endurance",
+      "name": "Uthållighet för underkroppen",
       "exercises": [
         {
           "name": "Stående benlyft",
@@ -232,7 +232,7 @@
     {
       "category": "cardio",
       "level": "intermediate",
-      "name": "Upper Body Endurance",
+      "name": "Uthållighet för överkroppen",
       "exercises": [
         {
           "name": "Armcirklar",
@@ -251,7 +251,7 @@
     {
       "category": "cardio",
       "level": "intermediate",
-      "name": "Lower Body Endurance",
+      "name": "Uthållighet för underkroppen",
       "exercises": [
         {
           "name": "Step-Ups",
@@ -270,7 +270,7 @@
     {
       "category": "cardio",
       "level": "advanced",
-      "name": "Upper Body Endurance",
+      "name": "Uthållighet för överkroppen",
       "exercises": [
         {
           "name": "Armhävningar",
@@ -289,7 +289,7 @@
     {
       "category": "cardio",
       "level": "advanced",
-      "name": "Lower Body Endurance",
+      "name": "Uthållighet för underkroppen",
       "exercises": [
         {
           "name": "Lunges med knälyft",
@@ -308,7 +308,7 @@
     {
       "category": "everydayExercise",
       "level": "beginner",
-      "name": "Everyday Exercise Routine",
+      "name": "Vardagsövningar",
       "exercises": [
         {
           "name": "Gå på stället",
@@ -321,7 +321,7 @@
     {
       "category": "everydayExercise",
       "level": "beginner",
-      "name": "Övre Kropps Mobilitet",
+      "name": "Rörlighet för överkroppen",
       "exercises": [
         {
           "name": "Axelrotationer",
@@ -340,7 +340,7 @@
     {
       "category": "everydayExercise",
       "level": "easy",
-      "name": "Balans och Smidighet",
+      "name": "Balans och smidighet",
       "exercises": [
         {
           "name": "Enkel viktförflyttning",
@@ -359,7 +359,7 @@
     {
       "category": "everydayExercise",
       "level": "easy",
-      "name": "Balans och Styrka för Nedre Kroppen",
+      "name": "Balans och styrka för underkropp",
       "exercises": [
         {
           "name": "Sidosteg med stöd",
@@ -378,7 +378,7 @@
     {
       "category": "everydayExercise",
       "level": "intermediate",
-      "name": "Everyday Exercise Routine",
+      "name": "Vardagsövningar",
       "exercises": [
         {
           "name": "Sidosteg med gummiband",
@@ -391,7 +391,7 @@
     {
       "category": "everydayExercise",
       "level": "intermediate",
-      "name": "Stretch och Rörlighet",
+      "name": "Stretch och rörlighet",
       "exercises": [
         {
           "name": "Axelstretch",
@@ -467,7 +467,7 @@
     {
       "category": "balance",
       "level": "beginner",
-      "name": "Överkroppsrörlighet",
+      "name": "Rörlighet för överkropp",
       "exercises": [
         {
           "name": "Axelrullningar",
@@ -486,7 +486,7 @@
     {
       "category": "balance",
       "level": "easy",
-      "name": "Lätta Balansövningar",
+      "name": "Balansövningar",
       "exercises": [
         {
           "name": "Stå på ett ben med stöd",
@@ -505,7 +505,7 @@
     {
       "category": "balance",
       "level": "easy",
-      "name": "Överkroppens Rörlighet",
+      "name": "Rörlighet för överkropp",
       "exercises": [
         {
           "name": "Mjuka sidostretchningar",
@@ -524,7 +524,7 @@
     {
       "category": "balance",
       "level": "intermediate",
-      "name": "Stärkande Övningar för Hållning",
+      "name": "Stärkande övningar för hållning",
       "exercises": [
         {
           "name": "Diagonal balans",
@@ -543,7 +543,7 @@
     {
       "category": "balance",
       "level": "intermediate",
-      "name": "Rörlighet och Smidighet",
+      "name": "Rörlighet och smidighet",
       "exercises": [
         {
           "name": "Cirklar med fotleder",
@@ -562,7 +562,7 @@
     {
       "category": "balance",
       "level": "advanced",
-      "name": "Balans och Styrka",
+      "name": "Balans och styrka",
       "exercises": [
         {
           "name": "Enbensknäböj mot stol",
@@ -581,7 +581,7 @@
     {
       "category": "balance",
       "level": "advanced",
-      "name": "Dynamisk Balans",
+      "name": "Dynamisk balans",
       "exercises": [
         {
           "name": "Gång i osynlig linje",
