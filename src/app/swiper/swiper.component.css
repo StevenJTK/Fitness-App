@@ -16,23 +16,21 @@
 
 /* pil som pekar åt höger */
 .arrowRight {
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-left: 40px solid #310b02;
   cursor: pointer;
+  width: 50px;
+  height: 50px;
+  background-color: #310b02;
+  clip-path: path("M0.000,10.500 Q0,0 9.3915,4.6955L40.6085,20.3045 Q50,25 40.6085,29.6955L9.3915,45.3045 Q0,50 0.000,39.500Z");
 }
 
 /* pil som pekar åt vänster */
 .arrowLeft {
-  width: 0;
-  height: 0;
-  border-top: 20px solid transparent;
-  border-bottom: 20px solid transparent;
-  border-right: 40px solid #310b02;
   cursor: pointer;
   visibility: hidden;
+  width: 50px;
+  height: 50px;
+  background-color: #310b02;
+  clip-path: path("M50.000,10.500 Q50,0 40.6085,4.6955L9.3915,20.3045 Q0,25 9.3915,29.6955L40.6085,45.3045 Q50,50 50.000,39.500Z");
 }
 
 /* centrerade innehållet emellan pilarna */
@@ -88,4 +86,23 @@
 .waitingContent {
   position: absolute;
   transform: translateX(350px);
+}
+
+
+.dotsContainer {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 75px;
+}
+
+.dot {
+  width: 15px;
+  height: 15px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+
+.dotSelected {
+  background-color: #415338 !important;
 }

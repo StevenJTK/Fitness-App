@@ -1,4 +1,5 @@
 import { Exercise } from './Exercise';
+import { Translator } from './Translator';
 
 export class jsonConnector {
   private static workouts: Exercise[] = [];
@@ -16,7 +17,12 @@ export class jsonConnector {
     console.log("API retrival done");
   }
 
+  
+
   static async getExercises(difficulty: string, category: string): Promise<Exercise[]> {
+
+    difficulty = Translator.svToEngTranslate(difficulty);
+
     //incase json data is not retrieved (first call since page load)
     if(!jsonConnector.classInitialized){
       await(this.initialize());

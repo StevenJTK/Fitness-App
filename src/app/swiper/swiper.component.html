@@ -8,6 +8,9 @@
   <div class="contentMask">
     <div class="selectedContent">{{displayText[value]}}</div>
     <div class="waitingContent selectedContent">{{displayText[value]}}</div>
+    <div class="dotsContainer">
+      <div class="dot" [ngClass]="{ dotSelected: value >= i }" *ngFor="let n of displayText; let i = index"></div>
+    </div>
   </div>
 
   <div class="arrowRight" (click)="swipeOnClick(1)"></div>

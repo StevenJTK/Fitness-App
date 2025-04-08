@@ -3,6 +3,7 @@ import { Exercise, Exercises } from '../types/Exercise';
 import { jsonConnector } from '../types/jsonConnector';
 import { CommonModule } from '@angular/common';
 import { SwiperComponent } from '../swiper/swiper.component';
+import { Translator} from '../types/Translator';
 import { WorkoutCardComponent } from "../workout-card/workout-card.component";
 
 @Component({
@@ -38,6 +39,10 @@ export class WorkoutComponent {
     }
     this.filteredExercises = await jsonConnector.getExercises(level, category);
     console.log('exercises loaded');
+  }
+
+  translate(word: string):string{
+    return Translator.engToSvTranslate(word);
   }
 
   jumpToId(id: string) {
