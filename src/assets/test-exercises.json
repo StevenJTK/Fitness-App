@@ -6,7 +6,7 @@
       "name": "Överkropp",
       "time": "10 minuter",
       "win": ["Starkare armar och bröst.", "Förbättrad hållning."],
-      "equipment": [" ", " "],
+      "equipment": [],
       "exercises": [
         {
           "name": "Vägg-armhävningar",
@@ -137,7 +137,10 @@
       "level": "easy",
       "name": "Överkropp",
       "time": "15 minuter",
-      "win": ["Förbättra knästyrka samt stabilitet.", "Ökar axelns flexibilitet."],
+      "win": [
+        "Förbättra knästyrka samt stabilitet.",
+        "Ökar axelns flexibilitet."
+      ],
       "equipment": [" ", " "],
       "exercises": [
         {
@@ -181,7 +184,10 @@
       "level": "beginner",
       "name": "Konditionsrutin",
       "time": "10 minuter",
-      "win": ["Minskad smärta samt ökad styrkning i knän. ", "Minskar artritsmärta."],
+      "win": [
+        "Minskad smärta samt ökad styrkning i knän. ",
+        "Minskar artritsmärta."
+      ],
       "equipment": [" ", " "],
       "exercises": [
         {
@@ -203,7 +209,10 @@
       "level": "beginner",
       "name": "Promenadrutin",
       "time": "10 minuter",
-      "win": ["Förstärkar ben och minskar risken för hjärtsjukdomar samt stroke.", "Hjälper med att hålla en stabil vikt."],
+      "win": [
+        "Förstärkar ben och minskar risken för hjärtsjukdomar samt stroke.",
+        "Hjälper med att hålla en stabil vikt."
+      ],
       "equipment": [" ", " "],
       "exercises": [
         {
@@ -225,7 +234,10 @@
       "level": "easy",
       "name": "Uthållighet för överkroppen",
       "time": "15 minuter",
-      "win": ["Förbättring av stabilitet och balans. ", "Tillåter starkare ben samt förbättrar stabilitet."],
+      "win": [
+        "Förbättring av stabilitet och balans. ",
+        "Tillåter starkare ben samt förbättrar stabilitet."
+      ],
       "equipment": [" ", "Stol"],
       "exercises": [
         {
@@ -247,7 +259,10 @@
       "level": "easy",
       "name": "Uthållighet för underkroppen",
       "time": "15 minuter",
-      "win": ["Ökad höftstyrka.", "Förbättrad vadstyrka och fotledsstabilitet."],
+      "win": [
+        "Ökad höftstyrka.",
+        "Förbättrad vadstyrka och fotledsstabilitet."
+      ],
       "equipment": [" ", " "],
       "exercises": [
         {
@@ -313,7 +328,10 @@
       "level": "advanced",
       "name": "Uthållighet för överkroppen",
       "time": "25 minuter",
-      "win": ["Ökad och förbättrad bentätheten.", "Ökad förstärkning av bröst, axlar och andra muskler."],
+      "win": [
+        "Ökad och förbättrad bentätheten.",
+        "Ökad förstärkning av bröst, axlar och andra muskler."
+      ],
       "equipment": [" ", "Stol eller bänk"],
       "exercises": [
         {
@@ -357,7 +375,10 @@
       "level": "beginner",
       "name": "Vardagsövningar",
       "time": "10 minuter",
-      "win": ["Förstärkar ben och minskar risken för hjärtsjukdomar samt stroke.", " "],
+      "win": [
+        "Förstärkar ben och minskar risken för hjärtsjukdomar samt stroke.",
+        " "
+      ],
       "equipment": [" ", " "],
       "exercises": [
         {
@@ -373,7 +394,10 @@
       "level": "beginner",
       "name": "Rörlighet för överkroppen",
       "time": "10 minuter",
-      "win": ["Hjälper med lindring av spänning i axelmusklarna.", "Tillåter starkare ben samt förbättrar stabilitet."],
+      "win": [
+        "Hjälper med lindring av spänning i axelmusklarna.",
+        "Tillåter starkare ben samt förbättrar stabilitet."
+      ],
       "equipment": [" ", " "],
       "exercises": [
         {
@@ -417,7 +441,10 @@
       "level": "easy",
       "name": "Balans och styrka för underkropp",
       "time": "15 minuter",
-      "win": ["Ökad balans samt flexibelitet.", "Bygga och behålla styrka, flexibilitet."],
+      "win": [
+        "Ökad balans samt flexibelitet.",
+        "Bygga och behålla styrka, flexibilitet."
+      ],
       "equipment": [" ", "Stol"],
       "exercises": [
         {
@@ -455,7 +482,10 @@
       "level": "intermediate",
       "name": "Stretch och rörlighet",
       "time": "20 minuter",
-      "win": ["Riktar till lindring av muskelspänningar. ", "Förbättrar fotleds flexibilitet och förhindrar stelhet."],
+      "win": [
+        "Riktar till lindring av muskelspänningar. ",
+        "Förbättrar fotleds flexibilitet och förhindrar stelhet."
+      ],
       "equipment": [" ", " "],
       "exercises": [
         {
@@ -477,7 +507,10 @@
       "level": "advanced",
       "name": "Uthållighet",
       "time": "25 minuter",
-      "win": ["Ökad ledernas flexibilitet och stabilitet.", "Stimulerar bentillväxt och bygger bentäthet."],
+      "win": [
+        "Ökad ledernas flexibilitet och stabilitet.",
+        "Stimulerar bentillväxt och bygger bentäthet."
+      ],
       "equipment": ["Bord", "Vattenflaskor"],
       "exercises": [
         {
@@ -543,7 +576,10 @@
       "level": "beginner",
       "name": "Rörlighet för överkropp",
       "time": "10 minuter",
-      "win": ["Hjälper med lindring av spänning i axelmusklarna.", "Korrigerar hållning."],
+      "win": [
+        "Hjälper med lindring av spänning i axelmusklarna.",
+        "Korrigerar hållning."
+      ],
       "equipment": [" ", "Stol"],
       "exercises": [
         {
@@ -565,7 +601,10 @@
       "level": "easy",
       "name": "Balansövningar",
       "time": "15 minuter",
-      "win": ["Minskad risk för fall, starkare ben.", "Aktiverar vadmusklerna."],
+      "win": [
+        "Minskad risk för fall, starkare ben.",
+        "Aktiverar vadmusklerna."
+      ],
       "equipment": ["Stol eller bord", " "],
       "exercises": [
         {
@@ -587,7 +626,10 @@
       "level": "easy",
       "name": "Rörlighet för överkropp",
       "time": "15 minuter",
-      "win": ["Hjälper till med reglering av blodsockernivå.", "Förbättrar överkroppens rörlighet."],
+      "win": [
+        "Hjälper till med reglering av blodsockernivå.",
+        "Förbättrar överkroppens rörlighet."
+      ],
       "equipment": [" ", " "],
       "exercises": [
         {
@@ -631,7 +673,10 @@
       "level": "intermediate",
       "name": "Rörlighet och smidighet",
       "time": "20 minuter",
-      "win": ["Starkare och ökad mobilitet av vadmuskel.", "Minskar axelspänning."],
+      "win": [
+        "Starkare och ökad mobilitet av vadmuskel.",
+        "Minskar axelspänning."
+      ],
       "equipment": [" ", " "],
       "exercises": [
         {
@@ -653,7 +698,10 @@
       "level": "advanced",
       "name": "Balans och styrka",
       "time": "25 minuter",
-      "win": ["Stärker muskler i underkroppen.", "Förbättrar styrkan i vadmuskler samt hjälper med plattfot."],
+      "win": [
+        "Stärker muskler i underkroppen.",
+        "Förbättrar styrkan i vadmuskler samt hjälper med plattfot."
+      ],
       "equipment": ["Stol", " "],
       "exercises": [
         {
@@ -675,7 +723,10 @@
       "level": "advanced",
       "name": "Dynamisk balans",
       "time": "25 minuter",
-      "win": ["Ökad balans.", "Hjälper med balans i långsikt samt minskar risker för fall."],
+      "win": [
+        "Ökad balans.",
+        "Hjälper med balans i långsikt samt minskar risker för fall."
+      ],
       "equipment": [" ", " "],
       "exercises": [
         {
