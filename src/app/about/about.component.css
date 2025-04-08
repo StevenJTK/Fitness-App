@@ -1,7 +1,12 @@
 .about-container {
   text-align: center;
   color: #535740;
-  margin-bottom: 150px;
+  position: relative;
+  /*margin-bottom: 150px;*/
+  padding-bottom: 150px;
+  padding-top: 100px;
+  background-color: #F9F3ED;
+  z-index: 1;
 }
 
 .images {
@@ -9,17 +14,23 @@
   position: absolute;
   width: 100vw;
   justify-content: space-between;
-  z-index: -1;
+  translate: 0 -482px;
+  z-index: 0;
+
 }
 
 .textHolder {
   display: flex;
   color: #310b02;
-  font-family: 'Hanken Grotesk';
+  position: relative;
+  z-index: 2;
+  font-family: "Hanken Grotesk";
   text-align: left;
   width: 80%;
   margin-left: 10%;
   gap: 50px;
+
+
 }
 
 .textHolder h2 {
@@ -30,4 +41,67 @@
 .textHolder p {
   font-size: 19px;
   font-weight: bold;
+}
+
+.logoSmall {
+  display: none;
+}
+
+/* mobil */
+@media (max-width: 600px) {
+  .textHolder {
+    flex-direction: column;
+    gap: 20px;
+    width: 90%;
+    margin-left: 5%;
+    text-align: center;
+  }
+
+  .textHolder h2 {
+    font-size: 24px;
+  }
+
+  .textHolder p {
+    font-size: 16px;
+  }
+
+  .images {
+   display: none;
+  }
+
+  .logoSmall {
+    display: block;
+    position: relative;
+    z-index: -1;
+  }
+
+}
+
+/* tablet */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .textHolder {
+    flex-direction: column;
+    gap: 30px;
+    width: 85%;
+    margin-left: 7.5%;
+  }
+
+  .textHolder h2 {
+    font-size: 28px;
+  }
+
+  .textHolder p {
+    font-size: 17px;
+  }
+
+  .images {
+    justify-content: center;
+    /* måste ersättas med annat ? */
+    gap: 330px;
+    
+  }
+
+  .logoSmall {
+    display: none;
+  }
 }

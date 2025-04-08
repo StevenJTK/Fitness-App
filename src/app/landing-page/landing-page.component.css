@@ -72,6 +72,7 @@
   transition: transform 0.1s;
   font-family: "Hanken Grotesk", sans-serif;
   color: #ffffff;
+  padding: 20px;
 }
 
 .exerciseButton:hover {
