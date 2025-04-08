@@ -3,10 +3,11 @@ import { Exercise, Exercises } from '../types/Exercise';
 import { jsonConnector } from '../types/jsonConnector';
 import { CommonModule } from '@angular/common';
 import { SwiperComponent } from '../swiper/swiper.component';
+import { WorkoutCardComponent } from "../workout-card/workout-card.component";
 
 @Component({
   selector: 'app-workout-component',
-  imports: [CommonModule, SwiperComponent],
+  imports: [CommonModule, SwiperComponent, WorkoutCardComponent],
   templateUrl: './workout-component.component.html',
   styleUrl: './workout-component.component.css',
 })

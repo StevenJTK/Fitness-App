@@ -1,0 +1,46 @@
+.workoutCard {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Hanken Grotesk";
+  display: flex;
+  max-width: 60vw;
+  margin: 1.5rem auto;
+  box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.821);
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.workoutImage {
+    width: 50%;
+    height: 205px;
+}
+
+.workoutDescription {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+  width: 50%;
+  gap: 15px;
+}
+
+.workoutDescription h3 {
+    
+
+}
+
+.workoutSpecifics {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    
+    background-color: blueviolet;
+
+
+}
+
+.workoutTags {
+ display: flex;
+ gap: 10px;
+}
+

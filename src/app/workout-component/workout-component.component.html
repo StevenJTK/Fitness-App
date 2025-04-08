@@ -12,14 +12,7 @@ currentValue bestämmer vilken metod som ska köras (och ta emot vilket värde s
     {{ filteredExercises[0].level }}
   </h2>
   <div class="exerciseGrid">
-    <div *ngFor="let exercise of filteredExercises">
-      <div
-        class="exerciseCard"
-        (click)="test(exercise); jumpToId('scrollToChosenExercise')"
-      >
-        <h3 class="exerciseTitle">{{ exercise.name }}</h3>
-      </div>
-    </div>
+    <app-workout-card [workout]="filteredExercises[0]"></app-workout-card>
   </div>
 </div>
 <!--alla övningar från det valda passet-->

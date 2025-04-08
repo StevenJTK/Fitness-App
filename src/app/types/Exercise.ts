@@ -2,11 +2,9 @@ export interface Exercise {
   category: string;
   level: string;
   name: string;
-  description: string;
   time: string;
-  win: string;
-  intensity: string[];
-  equipment: string;
+  win: string[];
+  equipment: string[];
 
   exercises: Exercises[];
 
