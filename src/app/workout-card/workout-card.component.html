@@ -1,0 +1,80 @@
+<div class="workoutCard"  [ngClass]="{ hidden:windowIndex != 0 }" (click)="windowToDisplay(1)">
+  <div class="workoutImage">
+    <!-- img -->
+    <p></p>
+  </div>
+
+  <div class="workoutDescription">
+    <h3>{{ workout.name }}</h3>
+
+    <div class="workoutSpecifics">
+      <div class="workoutTags">
+        <p id="time">20min</p>
+        <p id="level">{{ translate(workout.level) }}</p>
+      </div>
+
+      <div>
+        <i class="workoutArrow down"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="workoutCardExtended" [ngClass]="{ hidden:windowIndex != 1 }">
+  <div class="workoutInfo">
+    <div class="workoutInfoColumn">
+      <div class="imageSizer">
+        <img src="assets/timer.svg" alt="timer" />
+      </div>
+
+      <p>Varaktighet</p>
+      <p id="time">!!!!!!</p>
+    </div>
+
+    <div class="workoutInfoColumn">
+      <div class="imageSizer">
+        <img src="assets/star.svg" alt="star" />
+      </div>
+      <p>Vinst</p>
+      <p id="win">!!!!!!</p>
+    </div>
+
+    <div class="workoutInfoColumn">
+      <div class="imageSizer">
+        <img src="assets/Heart.svg" alt="heart" />
+      </div>
+
+      <p>Intensitet</p>
+      <p id="level">!!!!!!</p>
+    </div>
+
+    <div class="workoutInfoColumn">
+      <div class="imageSizer">
+        <img src="assets/jumping-rope.svg" alt="jumping rope" />
+      </div>
+
+      <p >Utrustning</p>
+      <p id="equipment">!!!!!!</p>
+    </div>
+  </div>
+
+  <div class="exerciseImage">
+    <!-- img -->
+    <p>hej</p>
+  </div>
+
+  <div class="exerciseInfo">
+    <div>
+    <h2>{{ workout.exercises[0].name }}</h2>
+    <h3>Gör såhär:</h3>
+    <p>{{ workout.exercises[0].description }}</p>
+    <h3 id="scrollToChosenExercise">Antal repetitioner eller sekunder:</h3>
+    <p>{{ workout.exercises[0].repetitions }}</p>
+    <h3>Tips!</h3>
+    <p>{{ workout.exercises[0].tips }}</p>
+    </div>
+    <div class="arrowUpHolder" (click)="windowToDisplay(0)">
+        <i class="workoutArrow up"></i>
+      </div>
+  </div>
+</div>

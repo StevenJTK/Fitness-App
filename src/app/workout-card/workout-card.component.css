@@ -1,0 +1,140 @@
+.workoutCard {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: "Hanken Grotesk";
+  display: flex;
+  width: 60vw;
+  margin: 1.5rem auto;
+  box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.821);
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.workoutImage {
+  width: 50%;
+  height: 205px;
+  background-color: #000000;
+  border-radius: 15px;
+}
+
+.workoutDescription {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 10px;
+  width: 50%;
+  gap: 15px;
+}
+
+.workoutDescription h3 {
+}
+
+.workoutSpecifics {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  gap: 50%;
+}
+
+.workoutTags {
+  display: flex;
+  gap: 10px;
+}
+
+#time {
+  background-color: #8391ba;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+#level {
+  background-color: #535740;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+#win {
+  background-color: #f2c778;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+#equipment {
+  background-color: #7f6a58;
+  color: #ffffff;
+  padding: 5px 10px;
+  border-radius: 50px;
+}
+
+.workoutArrow {
+  border: solid #000000;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 7px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+.workoutCardExtended {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  font-family: "Hanken Grotesk";
+  border-radius: 15px;
+  width: 60vw;
+  margin: 1.5rem auto
+}
+
+.exerciseImage {
+  background-color: black;
+}
+
+.workoutInfo {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 20px;
+}
+
+.workoutInfoColumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imageSizer {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.exerciseInfo {
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.arrowUpHolder{
+  margin-right: 100px;
+  cursor:pointer;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+
+.hidden{
+  visibility: hidden;
+  position: absolute;
+}
