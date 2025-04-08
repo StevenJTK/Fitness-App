@@ -9,7 +9,7 @@
 
     <div class="workoutSpecifics">
       <div class="workoutTags">
-        <p id="time">20min</p>
+        <p id="time">{{workout.time}}</p>
         <p id="level">{{ translate(workout.level) }}</p>
       </div>
 
@@ -28,7 +28,7 @@
       </div>
 
       <p>Varaktighet</p>
-      <p id="time">!!!!!!</p>
+      <p id="time">{{workout.time}}</p>
     </div>
 
     <div class="workoutInfoColumn">
@@ -36,7 +36,7 @@
         <img src="assets/star.svg" alt="star" />
       </div>
       <p>Vinst</p>
-      <p id="win">!!!!!!</p>
+      <p id="win" *ngFor="let w of workout.win ">{{w}}</p>
     </div>
 
     <div class="workoutInfoColumn">
@@ -45,7 +45,7 @@
       </div>
 
       <p>Intensitet</p>
-      <p id="level">!!!!!!</p>
+      <p id="level">{{translate(workout.level)}}</p>
     </div>
 
     <div class="workoutInfoColumn">
@@ -54,7 +54,7 @@
       </div>
 
       <p >Utrustning</p>
-      <p id="equipment">!!!!!!</p>
+      <p id="equipment" *ngFor="let e of workout.equipment">{{e}}</p>
     </div>
   </div>
 
@@ -65,16 +65,19 @@
 
   <div class="exerciseInfo">
     <div>
-    <h2>{{ workout.exercises[0].name }}</h2>
+    <h2>{{ workout.exercises[exerciseIndex].name }}</h2>
     <h3>Gör såhär:</h3>
-    <p>{{ workout.exercises[0].description }}</p>
+    <p>{{ workout.exercises[exerciseIndex].description }}</p>
     <h3 id="scrollToChosenExercise">Antal repetitioner eller sekunder:</h3>
-    <p>{{ workout.exercises[0].repetitions }}</p>
+    <p>{{ workout.exercises[exerciseIndex].repetitions }}</p>
     <h3>Tips!</h3>
-    <p>{{ workout.exercises[0].tips }}</p>
+    <p>{{ workout.exercises[exerciseIndex].tips }}</p>
     </div>
     <div class="arrowUpHolder" (click)="windowToDisplay(0)">
         <i class="workoutArrow up"></i>
+      </div>
+      <div class="nextButton" (click)="changeExercise(1)">
+        nästaövning
       </div>
   </div>
 </div>

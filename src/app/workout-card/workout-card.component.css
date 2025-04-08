@@ -32,7 +32,7 @@
   display: flex;
   width: 100%;
   align-items: center;
-  gap: 50%;
+  gap: 20%;
 }
 
 .workoutTags {
@@ -71,6 +71,7 @@
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 7px;
+  margin-left: 50px;
 }
 
 .down {
@@ -137,4 +138,7 @@
 .hidden{
   visibility: hidden;
   position: absolute;
+}
+.nextButton{
+  background-color: aquamarine;
 }

@@ -11,7 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class WorkoutCardComponent {
   @Input() workout!: Exercise;
-
+exerciseIndex:number = 0;
   windowIndex:number = 0;
 
   translate(word: string): string {
@@ -20,5 +20,12 @@ export class WorkoutCardComponent {
 
   windowToDisplay(index: number){
 this.windowIndex = index;
+  }
+  changeExercise(changeValue:number):void{
+    this.exerciseIndex += changeValue;
+    if (this.exerciseIndex > this.workout.exercises.length -1){
+      console.log("du är klar");
+      this.exerciseIndex -= changeValue
+    }
   }
 }
