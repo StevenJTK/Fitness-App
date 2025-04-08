@@ -86,7 +86,7 @@
   font-family: "Hanken Grotesk";
   border-radius: 15px;
   width: 60vw;
-  margin: 1.5rem auto
+  margin: 1.5rem auto;
 }
 
 .exerciseImage {
@@ -119,9 +119,9 @@
   align-items: center;
   justify-content: space-between;
 }
-.arrowUpHolder{
+.arrowUpHolder {
   margin-right: 100px;
-  cursor:pointer;
+  cursor: pointer;
   width: 50px;
   height: 50px;
   display: flex;
@@ -134,11 +134,71 @@
   -webkit-transform: rotate(-135deg);
 }
 
-
-.hidden{
+.hidden {
   visibility: hidden;
   position: absolute;
 }
-.nextButton{
-  background-color: aquamarine;
+
+.navButtons {
+  display: flex;
+
+  justify-content: center;
+  gap: 150px;
+  margin: 25px 25px 50px 25px;
+}
+
+.navButtons div {
+  display: flex;
+  border: 2px solid black;
+  align-items: center;
+  border-radius: 50px;
+  padding: 10px 20px;
+  white-space: nowrap;
+  gap: 10px;
+  cursor: pointer;
+}
+
+#finishButton {
+  border: none;
+  background-color: #f2c778;
+  color: #ffffff;
+}
+
+.workoutFinished {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 15px;
+  width: 40vw;
+  height: 80vh;
+  font-family: "Hanken Grotesk";
+}
+
+.workoutFinished img {
+  width: 250px;
+  height: 250px;
+}
+
+.buttonHolder {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: center;
+}
+
+.buttonHolder div {
+  padding: 15px 90px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#finished {
+  background-color: #f2c778;
+}
+
+#again {
+  background-color: #535740;
+  color: #ffffff;
 }

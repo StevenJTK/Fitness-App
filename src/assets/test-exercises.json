@@ -6,7 +6,7 @@
       "name": "Överkropp",
       "time": "10 minuter",
       "win": ["Starkare armar och bröst", "Förbättrad hållning"],
-      "equipment": [" ", " "],
+      "equipment": [],
       "exercises": [
         {
           "name": "Vägg-armhävningar",
@@ -137,7 +137,10 @@
       "level": "easy",
       "name": "Överkropp",
       "time": "15 minuter",
-      "win": ["Förbättra knästyrka samt stabilitet", "Ökar axelns flexibilitet"],
+      "win": [
+        "Förbättra knästyrka samt stabilitet",
+        "Ökar axelns flexibilitet"
+      ],
       "equipment": [],
       "exercises": [
         {

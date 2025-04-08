@@ -1,4 +1,8 @@
-<div class="workoutCard"  [ngClass]="{ hidden:windowIndex != 0 }" (click)="windowToDisplay(1)">
+<div
+  class="workoutCard"
+  [ngClass]="{ hidden: windowIndex != 0 }"
+  (click)="windowToDisplay(1)"
+>
   <div class="workoutImage">
     <!-- img -->
     <p></p>
@@ -9,7 +13,7 @@
 
     <div class="workoutSpecifics">
       <div class="workoutTags">
-        <p id="time">{{workout.time}}</p>
+        <p id="time">{{ workout.time }}</p>
         <p id="level">{{ translate(workout.level) }}</p>
       </div>
 
@@ -20,7 +24,7 @@
   </div>
 </div>
 
-<div class="workoutCardExtended" [ngClass]="{ hidden:windowIndex != 1 }">
+<div class="workoutCardExtended" [ngClass]="{ hidden: windowIndex != 1 }">
   <div class="workoutInfo">
     <div class="workoutInfoColumn">
       <div class="imageSizer">
@@ -28,7 +32,7 @@
       </div>
 
       <p>Varaktighet</p>
-      <p id="time">{{workout.time}}</p>
+      <p id="time">{{ workout.time }}</p>
     </div>
 
     <div class="workoutInfoColumn">
@@ -36,7 +40,7 @@
         <img src="assets/star.svg" alt="star" />
       </div>
       <p>Vinst</p>
-      <p id="win" *ngFor="let w of workout.win ">{{w}}</p>
+      <p id="win" *ngFor="let w of workout.win">{{ w }}</p>
     </div>
 
     <div class="workoutInfoColumn">
@@ -45,7 +49,7 @@
       </div>
 
       <p>Intensitet</p>
-      <p id="level">{{translate(workout.level)}}</p>
+      <p id="level">{{ translate(workout.level) }}</p>
     </div>
 
     <div class="workoutInfoColumn">
@@ -53,8 +57,8 @@
         <img src="assets/jumping-rope.svg" alt="jumping rope" />
       </div>
 
-      <p >Utrustning</p>
-      <p id="equipment" *ngFor="let e of workout.equipment">{{e}}</p>
+      <p>Utrustning</p>
+      <p id="equipment" *ngFor="let e of workout.equipment">{{ e }}</p>
     </div>
   </div>
 
@@ -65,19 +69,47 @@
 
   <div class="exerciseInfo">
     <div>
-    <h2>{{ workout.exercises[exerciseIndex].name }}</h2>
-    <h3>Gör såhär:</h3>
-    <p>{{ workout.exercises[exerciseIndex].description }}</p>
-    <h3 id="scrollToChosenExercise">Antal repetitioner eller sekunder:</h3>
-    <p>{{ workout.exercises[exerciseIndex].repetitions }}</p>
-    <h3>Tips!</h3>
-    <p>{{ workout.exercises[exerciseIndex].tips }}</p>
+      <h2>{{ workout.exercises[exerciseIndex].name }}</h2>
+      <h3>Gör såhär:</h3>
+      <p>{{ workout.exercises[exerciseIndex].description }}</p>
+      <h3 id="scrollToChosenExercise">Antal repetitioner:</h3>
+      <p>{{ workout.exercises[exerciseIndex].repetitions }}</p>
+      <h3>Tips!</h3>
+      <p>{{ workout.exercises[exerciseIndex].tips }}</p>
     </div>
     <div class="arrowUpHolder" (click)="windowToDisplay(0)">
-        <i class="workoutArrow up"></i>
-      </div>
-      <div class="nextButton" (click)="changeExercise(1)">
-        nästaövning
-      </div>
+      <i class="workoutArrow up"></i>
+    </div>
+  </div>
+  <div class="navButtons">
+    <div
+      (click)="changeExercise(-1)"
+      [ngClass]="{ hidden: exerciseIndex === 0 }"
+    >
+      <img src="../../assets/arrow-back.svg" alt="arrow back" />
+      <p>Föregående övning</p>
+    </div>
+    <div
+      id="finishButton"
+      (click)="windowToDisplay(0); changeExercise(-exerciseIndex)"
+    >
+      <p>Avsluta pass</p>
+
+      <img src="../../assets/x.svg" alt="X" />
+    </div>
+    <div (click)="changeExercise(1)">
+      <p>Nästa övning</p>
+      <img src="../../assets/arrow-forward.svg" alt="arrow forward" />
+    </div>
+  </div>
+</div>
+
+<div class="workoutFinished" [ngClass]="{ hidden: windowIndex != 2 }">
+  <img src="../../assets/animation.gif" alt="happy stars gif" />
+  <p>Du gjorde det!</p>
+  <p>Din insats idag gör skillnad imorgon.</p>
+  <div class="buttonHolder">
+    <div id="finished" (click)="windowToDisplay(0); changeExercise(-exerciseIndex)">AVSLUTA PASS</div>
+    <div id="again" (click)="windowToDisplay(1); changeExercise(-exerciseIndex)">TRÄNA IGEN</div>
   </div>
 </div>
