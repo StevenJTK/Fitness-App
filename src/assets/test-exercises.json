@@ -4,8 +4,8 @@
       "category": "strength",
       "level": "beginner",
       "name": "Överkropp",
-      "time": "",
-      "win": [" ", " "],
+      "time": "10 minuter",
+      "win": ["Starkare armar och bröst.", "Förbättrad hållning."],
       "equipment": [" ", " "],
       "exercises": [
         {
@@ -26,9 +26,9 @@
       "category": "strength",
       "level": "beginner",
       "name": "Underkropp",
-      "time": "",
-      "win": [" ", " "],
-      "equipment": [" ", " "],
+      "time": "10 minuter",
+      "win": ["Lindra ryggsmärtor.", "Starkare fotleden."],
+      "equipment": ["Stol", " "],
       "exercises": [
         {
           "name": "Knäböj till stol",
@@ -48,8 +48,8 @@
       "category": "strength",
       "level": "intermediate",
       "name": "Överkropp",
-      "time": "",
-      "win": [" ", " "],
+      "time": "20 minuter",
+      "win": ["Starkare bröst.", "Ökad uthållighet."],
       "equipment": [" ", " "],
       "exercises": [
         {
@@ -70,9 +70,9 @@
       "category": "strength",
       "level": "intermediate",
       "name": "Underkropp",
-      "time": "",
-      "win": [" ", " "],
-      "equipment": [" ", " "],
+      "time": "20 minuter",
+      "win": ["Förbättrad knä stabilitet.", "Lindring av ryggsmärta."],
+      "equipment": ["Gummiband", " "],
       "exercises": [
         {
           "name": "Sidosteg med gummiband",
@@ -92,9 +92,9 @@
       "category": "strength",
       "level": "advanced",
       "name": "Överkropp",
-      "time": "",
-      "win": [" ", " "],
-      "equipment": [" ", " "],
+      "time": "25 minuter",
+      "win": ["Ökad och förbättrad bentätheten.", "Förstärkning av bröstet."],
+      "equipment": ["Stol", ""],
       "exercises": [
         {
           "name": "Armhävningar",
@@ -114,9 +114,9 @@
       "category": "strength",
       "level": "advanced",
       "name": "Underkropp",
-      "time": "",
-      "win": [" ", " "],
-      "equipment": [" ", " "],
+      "time": "25 minuter",
+      "win": ["Förbättrar rörlighet.", "Ökad balans och förbättrad fothälsa."],
+      "equipment": ["", "Trappa"],
       "exercises": [
         {
           "name": "Sidosteg med hopp",
@@ -136,8 +136,8 @@
       "category": "strength",
       "level": "easy",
       "name": "Överkropp",
-      "time": "",
-      "win": [" ", " "],
+      "time": "15 minuter",
+      "win": ["Förbättra knästyrka samt stabilitet.", "Ökar axelns flexibilitet."],
       "equipment": [" ", " "],
       "exercises": [
         {
@@ -158,9 +158,9 @@
       "category": "strength",
       "level": "easy",
       "name": "Underkropp",
-      "time": "",
-      "win": [" ", " "],
-      "equipment": [" ", " "],
+      "time": "15 minuter",
+      "win": ["Ökad styrka och viktminskning.", "Minskning av muskeltäthet."],
+      "equipment": ["Stol", " "],
       "exercises": [
         {
           "name": "Stols-steg",
@@ -180,8 +180,8 @@
       "category": "cardio",
       "level": "beginner",
       "name": "Konditionsrutin",
-      "time": "",
-      "win": [" ", " "],
+      "time": "10 minuter",
+      "win": ["Minskad smärta samt ökad styrkning i knän. ", "Minskar artritsmärta."],
       "equipment": [" ", " "],
       "exercises": [
         {
@@ -202,12 +202,12 @@
       "category": "cardio",
       "level": "beginner",
       "name": "Promenadrutin",
-      "time": "",
-      "win": [" ", " "],
+      "time": "10 minuter",
+      "win": ["Förstärkar ben och minskar risken för hjärtsjukdomar samt stroke.", "Hjälper med att hålla en stabil vikt."],
       "equipment": [" ", " "],
       "exercises": [
         {
-          "name": "Gå på stället",
+          "name": "Gå på plats",
           "description": "Stå på plats och gå långsamt på stället. Lyft knäna i en lugn takt.",
           "repetitions": "1-3 minuter",
           "tips": "Håll en upprätt hållning och andas lugnt och jämnt."
@@ -224,9 +224,9 @@
       "category": "cardio",
       "level": "easy",
       "name": "Uthållighet för överkroppen",
-      "time": "",
-      "win": [" ", " "],
-      "equipment": [" ", " "],
+      "time": "15 minuter",
+      "win": ["Förbättring av stabilitet och balans. ", "Tillåter starkare ben samt förbättrar stabilitet."],
+      "equipment": [" ", "Stol"],
       "exercises": [
         {
           "name": "Armlyft",
@@ -246,8 +246,8 @@
       "category": "cardio",
       "level": "easy",
       "name": "Uthållighet för underkroppen",
-      "time": "",
-      "win": [" ", " "],
+      "time": "15 minuter",
+      "win": ["Ökad höftstyrka.", "Förbättrad vadstyrka och fotledsstabilitet."],
       "equipment": [" ", " "],
       "exercises": [
         {
@@ -268,9 +268,9 @@
       "category": "cardio",
       "level": "intermediate",
       "name": "Uthållighet för överkroppen",
-      "time": "",
-      "win": [" ", " "],
-      "equipment": [" ", " "],
+      "time": "20 minuter",
+      "win": ["Ökar axelns flexibilitet.", "Starkare armar och bröst."],
+      "equipment": ["", " "],
       "exercises": [
         {
           "name": "Armcirklar",
@@ -290,9 +290,9 @@
       "category": "cardio",
       "level": "intermediate",
       "name": "Uthållighet för underkroppen",
-      "time": "",
-      "win": [" ", " "],
-      "equipment": [" ", " "],
+      "time": "20 minuter",
+      "win": ["Skyddar din nedre rygg.", "Förstärkning av rumpmuskler. "],
+      "equipment": ["Stol eller trappsteg ", " "],
       "exercises": [
         {
           "name": "Step-Ups",
@@ -312,9 +312,9 @@
       "category": "cardio",
       "level": "advanced",
       "name": "Uthållighet för överkroppen",
-      "time": "",
-      "win": [" ", " "],
-      "equipment": [" ", " "],
+      "time": "25 minuter",
+      "win": ["Ökad och förbättrad bentätheten.", "Ökad förstärkning av bröst, axlar och andra muskler."],
+      "equipment": [" ", "Stol eller bänk"],
       "exercises": [
         {
           "name": "Armhävningar",
@@ -334,8 +334,8 @@
       "category": "cardio",
       "level": "advanced",
       "name": "Uthållighet för underkroppen",
-      "time": "",
-      "win": [" ", " "],
+      "time": "25 minuter",
+      "win": ["Inre och yttrelår träning.", "Stärkning av anklar och vader."],
       "equipment": [" ", " "],
       "exercises": [
         {
@@ -356,13 +356,13 @@
       "category": "everydayExercise",
       "level": "beginner",
       "name": "Vardagsövningar",
-      "time": "",
-      "win": [" ", " "],
+      "time": "10 minuter",
+      "win": ["Förstärkar ben och minskar risken för hjärtsjukdomar samt stroke.", " "],
       "equipment": [" ", " "],
       "exercises": [
         {
-          "name": "Gå på stället",
-          "description": "Gå på stället med mjuka rörelser.",
+          "name": "Gå på plats",
+          "description": "Gå på plats med mjuka rörelser.",
           "repetitions": "30 sekunder",
           "tips": "Håll en upprätt hållning och andas lugnt."
         }
@@ -372,8 +372,8 @@
       "category": "everydayExercise",
       "level": "beginner",
       "name": "Rörlighet för överkroppen",
-      "time": "",
-      "win": [" ", " "],
+      "time": "10 minuter",
+      "win": ["Hjälper med lindring av spänning i axelmusklarna.", "Tillåter starkare ben samt förbättrar stabilitet."],
       "equipment": [" ", " "],
       "exercises": [
         {
@@ -394,8 +394,8 @@
       "category": "everydayExercise",
       "level": "easy",
       "name": "Balans och smidighet",
-      "time": "",
-      "win": [" ", " "],
+      "time": "15 minuter",
+      "win": ["Förbättrad styrka och stabilitet.", "Ökad balansstyrka."],
       "equipment": [" ", " "],
       "exercises": [
         {
@@ -416,9 +416,9 @@
       "category": "everydayExercise",
       "level": "easy",
       "name": "Balans och styrka för underkropp",
-      "time": "",
-      "win": [" ", " "],
-      "equipment": [" ", " "],
+      "time": "15 minuter",
+      "win": ["Ökad balans samt flexibelitet.", "Bygga och behålla styrka, flexibilitet."],
+      "equipment": [" ", "Stol"],
       "exercises": [
         {
           "name": "Sidosteg med stöd",
@@ -438,9 +438,9 @@
       "category": "everydayExercise",
       "level": "intermediate",
       "name": "Vardagsövningar",
-      "time": "",
-      "win": [" ", " "],
-      "equipment": [" ", " "],
+      "time": "20 minuter",
+      "win": ["Bättre handmuskelstyrka och balans.", " "],
+      "equipment": ["Gummiband ", " "],
       "exercises": [
         {
           "name": "Sidosteg med gummiband",
@@ -454,8 +454,8 @@
       "category": "everydayExercise",
       "level": "intermediate",
       "name": "Stretch och rörlighet",
-      "time": "",
-      "win": [" ", " "],
+      "time": "20 minuter",
+      "win": ["Riktar till lindring av muskelspänningar. ", "Förbättrar fotleds flexibilitet och förhindrar stelhet."],
       "equipment": [" ", " "],
       "exercises": [
         {
@@ -476,9 +476,9 @@
       "category": "everydayExercise",
       "level": "advanced",
       "name": "Uthållighet",
-      "time": "",
-      "win": [" ", " "],
-      "equipment": [" ", " "],
+      "time": "25 minuter",
+      "win": ["Ökad ledernas flexibilitet och stabilitet.", "Stimulerar bentillväxt och bygger bentäthet."],
+      "equipment": ["Bord", "Vattenflaskor"],
       "exercises": [
         {
           "name": "Armhävningar mot bord",
@@ -498,8 +498,8 @@
       "category": "everydayExercise",
       "level": "advanced",
       "name": "Balans och Koordination",
-      "time": "",
-      "win": [" ", " "],
+      "time": "25 minuter",
+      "win": ["Hjälper med att hålla rätt balans.", "Ökad balans."],
       "equipment": [" ", " "],
       "exercises": [
         {
@@ -520,9 +520,9 @@
       "category": "balance",
       "level": "beginner",
       "name": "Balansövningar",
-      "time": "",
-      "win": [" ", " "],
-      "equipment": [" ", " "],
+      "time": "10 minuter",
+      "win": ["Ökad balans.", "Stärker stora musklarna i underkroppen."],
+      "equipment": [" ", "Stol eller bord"],
       "exercises": [
         {
           "name": "Häl-till-tå-gång",
@@ -542,9 +542,9 @@
       "category": "balance",
       "level": "beginner",
       "name": "Rörlighet för överkropp",
-      "time": "",
-      "win": [" ", " "],
-      "equipment": [" ", " "],
+      "time": "10 minuter",
+      "win": ["Hjälper med lindring av spänning i axelmusklarna.", "Korrigerar hållning."],
+      "equipment": [" ", "Stol"],
       "exercises": [
         {
           "name": "Axelrullningar",
@@ -564,9 +564,9 @@
       "category": "balance",
       "level": "easy",
       "name": "Balansövningar",
-      "time": "",
-      "win": [" ", " "],
-      "equipment": [" ", " "],
+      "time": "15 minuter",
+      "win": ["Minskad risk för fall, starkare ben.", "Aktiverar vadmusklerna."],
+      "equipment": ["Stol eller bord", " "],
       "exercises": [
         {
           "name": "Stå på ett ben med stöd",
@@ -586,8 +586,8 @@
       "category": "balance",
       "level": "easy",
       "name": "Rörlighet för överkropp",
-      "time": "",
-      "win": [" ", " "],
+      "time": "15 minuter",
+      "win": ["Hjälper till med reglering av blodsockernivå.", "Förbättrar överkroppens rörlighet."],
       "equipment": [" ", " "],
       "exercises": [
         {
@@ -608,9 +608,9 @@
       "category": "balance",
       "level": "intermediate",
       "name": "Stärkande övningar för hållning",
-      "time": "",
-      "win": [" ", " "],
-      "equipment": [" ", " "],
+      "time": "20 minuter",
+      "win": ["Undvika fall.", "Förbättrar överkroppens rörlighet."],
+      "equipment": [" ", "Stol"],
       "exercises": [
         {
           "name": "Diagonal balans",
@@ -630,8 +630,8 @@
       "category": "balance",
       "level": "intermediate",
       "name": "Rörlighet och smidighet",
-      "time": "",
-      "win": [" ", " "],
+      "time": "20 minuter",
+      "win": ["Starkare och ökad mobilitet av vadmuskel.", "Minskar axelspänning."],
       "equipment": [" ", " "],
       "exercises": [
         {
@@ -652,9 +652,9 @@
       "category": "balance",
       "level": "advanced",
       "name": "Balans och styrka",
-      "time": "",
-      "win": [" ", " "],
-      "equipment": [" ", " "],
+      "time": "25 minuter",
+      "win": ["Stärker muskler i underkroppen.", "Förbättrar styrkan i vadmuskler samt hjälper med plattfot."],
+      "equipment": ["Stol", " "],
       "exercises": [
         {
           "name": "Enbensknäböj mot stol",
@@ -674,8 +674,8 @@
       "category": "balance",
       "level": "advanced",
       "name": "Dynamisk balans",
-      "time": "",
-      "win": [" ", " "],
+      "time": "25 minuter",
+      "win": ["Ökad balans.", "Hjälper med balans i långsikt samt minskar risker för fall."],
       "equipment": [" ", " "],
       "exercises": [
         {
