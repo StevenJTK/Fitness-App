@@ -4,7 +4,9 @@
       "category": "strength",
       "level": "beginner",
       "name": "Överkropp",
-
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Vägg-armhävningar",
@@ -24,6 +26,9 @@
       "category": "strength",
       "level": "beginner",
       "name": "Underkropp",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Knäböj till stol",
@@ -43,6 +48,9 @@
       "category": "strength",
       "level": "intermediate",
       "name": "Överkropp",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Armhävningar på knä",
@@ -62,6 +70,9 @@
       "category": "strength",
       "level": "intermediate",
       "name": "Underkropp",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Sidosteg med gummiband",
@@ -81,6 +92,9 @@
       "category": "strength",
       "level": "advanced",
       "name": "Överkropp",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Armhävningar",
@@ -100,9 +114,12 @@
       "category": "strength",
       "level": "advanced",
       "name": "Underkropp",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
-          "name": "Sidosteg med hoppsidosteg",
+          "name": "Sidosteg med hopp",
           "description": "Ta ett stort sidosteg och hoppa till nästa steg på motsatt sida. Upprepa utan att stanna.",
           "repetitions": "8-12 per sida",
           "tips": "Håll ett bra tempo och landa mjukt för att minska belastning på knäna."
@@ -119,6 +136,9 @@
       "category": "strength",
       "level": "easy",
       "name": "Överkropp",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Stående knälyft",
@@ -138,6 +158,9 @@
       "category": "strength",
       "level": "easy",
       "name": "Underkropp",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Stols-steg",
@@ -157,6 +180,9 @@
       "category": "cardio",
       "level": "beginner",
       "name": "Konditionsrutin",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Lätt jogging på plats",
@@ -176,9 +202,12 @@
       "category": "cardio",
       "level": "beginner",
       "name": "Promenadrutin",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
-          "name": "Marschera på plats",
+          "name": "Gå på stället",
           "description": "Stå på plats och gå långsamt på stället. Lyft knäna i en lugn takt.",
           "repetitions": "1-3 minuter",
           "tips": "Håll en upprätt hållning och andas lugnt och jämnt."
@@ -195,6 +224,9 @@
       "category": "cardio",
       "level": "easy",
       "name": "Uthållighet för överkroppen",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Armlyft",
@@ -214,6 +246,9 @@
       "category": "cardio",
       "level": "easy",
       "name": "Uthållighet för underkroppen",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Stående benlyft",
@@ -233,6 +268,9 @@
       "category": "cardio",
       "level": "intermediate",
       "name": "Uthållighet för överkroppen",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Armcirklar",
@@ -252,6 +290,9 @@
       "category": "cardio",
       "level": "intermediate",
       "name": "Uthållighet för underkroppen",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Step-Ups",
@@ -271,6 +312,9 @@
       "category": "cardio",
       "level": "advanced",
       "name": "Uthållighet för överkroppen",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Armhävningar",
@@ -290,9 +334,12 @@
       "category": "cardio",
       "level": "advanced",
       "name": "Uthållighet för underkroppen",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
-          "name": "Lunges med knälyft",
+          "name": "Utfallssteg med knälyft",
           "description": "Ta ett stort steg framåt, sänk dig i en lunge och lyft knäet på det bakre benet mot bröstet när du kommer tillbaka till startpositionen.",
           "repetitions": "8-10 per ben",
           "tips": "Fokusera på att hålla knäet rakt när du lyfter det och engagera bålen för bättre stabilitet."
@@ -309,6 +356,9 @@
       "category": "everydayExercise",
       "level": "beginner",
       "name": "Vardagsövningar",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Gå på stället",
@@ -322,9 +372,12 @@
       "category": "everydayExercise",
       "level": "beginner",
       "name": "Rörlighet för överkroppen",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
-          "name": "Axelrotationer",
+          "name": "Axelrullningar",
           "description": "Sitt eller stå upprätt. Rulla långsamt axlarna framåt i en cirkulär rörelse, och vänd sedan riktning efter 10-15 sekunder.",
           "repetitions": "10-15 rotationer i varje riktning",
           "tips": "Fokusera på att göra rörelserna långsamt och jämnt för att lindra eventuell spänning."
@@ -341,6 +394,9 @@
       "category": "everydayExercise",
       "level": "easy",
       "name": "Balans och smidighet",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Enkel viktförflyttning",
@@ -360,6 +416,9 @@
       "category": "everydayExercise",
       "level": "easy",
       "name": "Balans och styrka för underkropp",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Sidosteg med stöd",
@@ -379,6 +438,9 @@
       "category": "everydayExercise",
       "level": "intermediate",
       "name": "Vardagsövningar",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Sidosteg med gummiband",
@@ -392,6 +454,9 @@
       "category": "everydayExercise",
       "level": "intermediate",
       "name": "Stretch och rörlighet",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Axelstretch",
@@ -400,7 +465,7 @@
           "tips": "Slappna av i axlarna och andas lugnt."
         },
         {
-          "name": "Fotledscirklar",
+          "name": "Cirklar med fotleder",
           "description": "Sitt eller stå och rotera fotlederna i cirklar.",
           "repetitions": "5 cirklar per riktning",
           "tips": "Gör rörelsen långsamt och kontrollerat."
@@ -411,6 +476,9 @@
       "category": "everydayExercise",
       "level": "advanced",
       "name": "Uthållighet",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Armhävningar mot bord",
@@ -430,6 +498,9 @@
       "category": "everydayExercise",
       "level": "advanced",
       "name": "Balans och Koordination",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Enbensstående",
@@ -438,7 +509,7 @@
           "tips": "Titta på en fast punkt för bättre balans."
         },
         {
-          "name": "Gång med häl-tå kontakt",
+          "name": "Häl-till-tå-gång",
           "description": "Gå framåt genom att placera hälen på ena foten direkt framför tårna på den andra.",
           "repetitions": "10 steg per sida",
           "tips": "Använd armarna för balans om det behövs."
@@ -449,6 +520,9 @@
       "category": "balance",
       "level": "beginner",
       "name": "Balansövningar",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Häl-till-tå-gång",
@@ -468,6 +542,9 @@
       "category": "balance",
       "level": "beginner",
       "name": "Rörlighet för överkropp",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Axelrullningar",
@@ -476,7 +553,7 @@
           "tips": "Håll rörelsen mjuk och andas lugnt."
         },
         {
-          "name": "Sittande ryggvridning",
+          "name": "Rotera överkroppen",
           "description": "Sitt på en stol och vrid överkroppen åt sidan medan du håller i stolens ryggstöd. Byt sida.",
           "repetitions": "5 per sida",
           "tips": "Andas ut när du vrider och håll rörelsen kontrollerad."
@@ -487,6 +564,9 @@
       "category": "balance",
       "level": "easy",
       "name": "Balansövningar",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Stå på ett ben med stöd",
@@ -506,6 +586,9 @@
       "category": "balance",
       "level": "easy",
       "name": "Rörlighet för överkropp",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Mjuka sidostretchningar",
@@ -525,6 +608,9 @@
       "category": "balance",
       "level": "intermediate",
       "name": "Stärkande övningar för hållning",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Diagonal balans",
@@ -533,7 +619,7 @@
           "tips": "Försök att inte svaja, och spänn bålen för extra stabilitet."
         },
         {
-          "name": "Sittande twist",
+          "name": "Rotera överkroppen",
           "description": "Sitt på en stol, vrid överkroppen långsamt åt ena sidan och håll i några sekunder, byt sedan sida.",
           "repetitions": "8-10 per sida",
           "tips": "Håll höfterna stilla och vrid endast överkroppen."
@@ -544,6 +630,9 @@
       "category": "balance",
       "level": "intermediate",
       "name": "Rörlighet och smidighet",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Cirklar med fotleder",
@@ -563,6 +652,9 @@
       "category": "balance",
       "level": "advanced",
       "name": "Balans och styrka",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
           "name": "Enbensknäböj mot stol",
@@ -582,9 +674,12 @@
       "category": "balance",
       "level": "advanced",
       "name": "Dynamisk balans",
+      "time": "",
+      "win": [" ", " "],
+      "equipment": [" ", " "],
       "exercises": [
         {
-          "name": "Gång i osynlig linje",
+          "name": "Häl-till-tå-gång",
           "description": "Gå framåt genom att sätta hälen direkt framför tårna på det andra foten, som om du gick på en smal linje.",
           "repetitions": "10-12 steg framåt och tillbaka",
           "tips": "Sträck ut armarna åt sidan om du behöver bättre balans."

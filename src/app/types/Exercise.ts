@@ -1,13 +1,14 @@
 export interface Exercise {
-  category:string;
-  level:string;
-  name:string;
-  description:string;
-  backgroundIcon:string;
-  estTime:string;
-  categoryItems:string[];
+  category: string;
+  level: string;
+  name: string;
+  description: string;
+  time: string;
+  win: string;
+  intensity: string[];
+  equipment: string;
 
-  exercises:Exercises[]
+  exercises: Exercises[];
 
   /*name: string;
   description: string;
@@ -16,9 +17,9 @@ export interface Exercise {
   level: string;
   category: string;*/
 }
-export interface Exercises{
-  name:string;
-  description:string;
-  repetitions:string;
-  tips:string;
+export interface Exercises {
+  name: string;
+  description: string;
+  repetitions: string;
+  tips: string;
 }

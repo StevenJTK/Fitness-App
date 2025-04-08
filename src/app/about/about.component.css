@@ -1,7 +1,12 @@
 .about-container {
   text-align: center;
   color: #535740;
-  margin-bottom: 150px;
+  position: relative;
+  /*margin-bottom: 150px;*/
+  padding-bottom: 150px;
+  padding-top: 100px;
+  background-color: #F9F3ED;
+  z-index: 1;
 }
 
 .images {
@@ -9,17 +14,23 @@
   position: absolute;
   width: 100vw;
   justify-content: space-between;
-  z-index: -1;
+  translate: 0 -482px;
+  z-index: 0;
+
 }
 
 .textHolder {
   display: flex;
   color: #310b02;
+  position: relative;
+  z-index: 2;
   font-family: "Hanken Grotesk";
   text-align: left;
   width: 80%;
   margin-left: 10%;
   gap: 50px;
+
+
 }
 
 .textHolder h2 {
@@ -56,6 +67,12 @@
 
   .images {
    display: none;
+  }
+
+  .logoSmall {
+    display: block;
+    position: relative;
+    z-index: -1;
   }
 
 }
