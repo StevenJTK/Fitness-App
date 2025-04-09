@@ -33,7 +33,7 @@ export class SwiperComponent {
     );
 
     elements[1].style.transition = 'none';
-    elements[1].style.transform = 'translateX(' + (valueChange * 350) + 'px)';
+    elements[1].style.transform = 'translateX(' + valueChange * 350 + 'px)';
 
     this.emitValue();
 
@@ -50,20 +50,23 @@ export class SwiperComponent {
     this.setArrowVisibility();
   }
   moveObject(slide: HTMLElement, direction: number): void {
-    const newTranslateX = this.getTranslateX(slide) - (350 * direction);
+    const newTranslateX = this.getTranslateX(slide) - 350 * direction;
     slide.style.transition = 'transform ' + this.animSpeed + 's';
     slide.style.transform = 'translateX(' + newTranslateX + 'px)';
-    
   }
 
-  positionHandler(): void{
-    const middleObject = document.getElementsByClassName('selectedContent')[0] as HTMLElement;
-    const sideObject = document.getElementsByClassName('selectedContent')[1] as HTMLElement;
+  positionHandler(): void {
+    const middleObject = document.getElementsByClassName(
+      'selectedContent'
+    )[0] as HTMLElement;
+    const sideObject = document.getElementsByClassName(
+      'selectedContent'
+    )[1] as HTMLElement;
 
     middleObject.style.transition = 'none';
     sideObject.style.transition = 'none';
 
-    sideObject.style.transform = 'translateX(' + this.getTranslateX(middleObject) + 'px)';
+    sideObject.style.transform = 'translateX(-350px)';
     middleObject.style.transform = 'translateX(0px)';
   }
 

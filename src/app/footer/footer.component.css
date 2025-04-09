@@ -1,12 +1,15 @@
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #535740;
   color: white;
-  text-align: center;
   padding: 5px 0;
-  position: fixed;
+  
   bottom: 0;
   left: 0;
   width: 100%;
+  z-index: 1;
 }
 
 .footer.show {
@@ -16,4 +19,3 @@
 .footer p {
   font-family: "Hanken Grotesk";
 }
-

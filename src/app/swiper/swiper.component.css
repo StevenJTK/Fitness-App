@@ -12,15 +12,18 @@
   justify-content: center;
   align-items: center;
   gap: 5vw;
+  width: 99vw;
 }
 
 /* pil som pekar åt höger */
 .arrowRight {
   cursor: pointer;
-  width: 50px;
-  height: 50px;
+  width: 34px;
+  height: 34px;
   background-color: #310b02;
-  clip-path: path("M0.000,10.500 Q0,0 9.3915,4.6955L40.6085,20.3045 Q50,25 40.6085,29.6955L9.3915,45.3045 Q0,50 0.000,39.500Z");
+  clip-path: path(
+    "M0.000,7.000 Q0,0 6.2610,3.1303L27.0723,13.5363 Q33.3333,16.6667 27.0723,19.7970L6.2610,30.2030 Q0,33.3333 0.000,26.3333Z"
+  );
 }
 
 /* pil som pekar åt vänster */
@@ -29,7 +32,9 @@
   width: 50px;
   height: 50px;
   background-color: #310b02;
-  clip-path: path("M50.000,10.500 Q50,0 40.6085,4.6955L9.3915,20.3045 Q0,25 9.3915,29.6955L40.6085,45.3045 Q50,50 50.000,39.500Z");
+  clip-path: path(
+    "M33.333,7.000 Q33.333,0 27.0723,3.1303L6.2610,13.5363 Q0,16.6667 6.2610,19.7970L27.0723,30.2030 Q33.333,33.3333 33.333,26.3333Z"
+  );
 }
 
 /* centrerade innehållet emellan pilarna */
@@ -52,23 +57,17 @@
 }
 /*streck*/
 .line {
-
   position: absolute;
   width: 100%;
-  height: 1px; 
+  height: 1px;
   background-color: black;
-
 }
 .lineUp {
-
   margin-bottom: 120px;
-
 }
 
 .lineBottom {
-
   margin-top: 120px;
-
 }
 
 /* mask innehållet emellan pilarna */
@@ -84,9 +83,8 @@
 /* innehåll som roterar */
 .waitingContent {
   position: absolute;
-  transform: translateX(350px);
+  transform: translateX(-350px);
 }
-
 
 .dotsContainer {
   display: flex;
@@ -99,9 +97,10 @@
   width: 15px;
   height: 15px;
   background-color: #ffffff;
+  border: 2px solid #5c7149;
   border-radius: 50%;
 }
 
 .dotSelected {
-  background-color: #415338 !important;
+  background-color: #5c7149 !important;
 }

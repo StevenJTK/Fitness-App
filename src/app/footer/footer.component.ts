@@ -9,19 +9,19 @@ import { NgIf } from '@angular/common';
   styleUrl: './footer.component.css',
 })
 export class FooterComponent {
-  isVisible: boolean = false;
+  /*isVisible: boolean = false;
 
   @HostListener('window:scroll', [])
   onScroll(): void {
     const scrollY = window.scrollY;
     const windowHeight = window.innerHeight;
     const documentHeight = document.documentElement.scrollHeight;
-
+*/
     /*console.log(
       `ScrollY: ${scrollY}, WindowHeight: ${windowHeight}, DocumentHeight: ${documentHeight}`
     );*/
-
+/*
     // check if it's scrolled to the bottom
     this.isVisible = scrollY + windowHeight >= documentHeight - 10;
-  }
+  }*/
 }

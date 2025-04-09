@@ -28,7 +28,7 @@ export class WorkoutCardComponent {
       this.windowToDisplay(2);
       this.exerciseIndex -= changeValue;
     }
-    if (this.exerciseIndex < 0 ){
+    if (this.exerciseIndex < 0) {
       this.exerciseIndex = 0;
     }
   }
