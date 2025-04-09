@@ -6,7 +6,7 @@
       "name": "Överkropp",
       "time": "10 minuter",
       "win": ["Starkare armar och bröst", "Förbättrad hållning"],
-      "equipment": [" ", " "],
+      "equipment": [],
       "exercises": [
         {
           "name": "Vägg-armhävningar",
@@ -292,7 +292,7 @@
       "name": "Uthållighet för underkroppen",
       "time": "20 minuter",
       "win": ["Skyddar din nedre rygg", "Förstärkning av rumpmuskler"],
-      "equipment": ["Stol eller trappsteg "],
+      "equipment": ["Stol eller trappsteg"],
       "exercises": [
         {
           "name": "Step-Ups",
