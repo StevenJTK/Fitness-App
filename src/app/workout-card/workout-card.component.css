@@ -293,9 +293,10 @@
     height: 80vh;
   }
 
+  /* tillfällig bildfix: minskat px för att få plats inom kortet*/
   .workoutFinished img {
-    width: 250px;
-    height: 250px;
+    width: 100px;
+    height: 100px;
   }
 
   .buttonHolder {
@@ -340,5 +341,8 @@
   .workoutFinished {
     width: 80vw;
     height: 50vh;
+  }
+
+  .workoutFinished img {
   }
 }

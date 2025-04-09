@@ -9,8 +9,7 @@ html {
 }
 
 .hero-image {
-  background-image: 
-    url("assets/header2.png");
+  background-image: url("assets/header2.png");
   height: 50vh;
   width: 100vw;
   background-position: center;
@@ -28,7 +27,6 @@ html {
   top: 10px;
   left: 10px;
 }
-
 
 .logo {
   width: 50px;
@@ -155,5 +153,15 @@ h1 {
 
   h1 {
     font-size: 1rem;
+  }
+
+  /* för att placera knappen */
+  .about-us {
+    padding-right: 1vh;
+  }
+
+  /* minska knappens storlek/font */
+  .about-us button {
+    font-size: large;
   }
 }

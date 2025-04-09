@@ -99,16 +99,35 @@
   background-image: url("/assets/Styrka.png");
 }
 
+.selected.strength {
+  background-image: url("../../assets/Styrka\ selected\ 1.png");
+  color: black;
+}
+
 .cardio {
   background-image: url("/assets/Cardio.png");
+}
+.selected.cardio {
+  background-image: url("../../assets/Uthållighet\ selected\ 1.png");
+  color: black;
 }
 
 .everyday-exercise {
   background-image: url("/assets/Vardagsmotion.png");
 }
 
+.selected.everyday-exercise {
+  background-image: url("../../assets/Vardagsmotion\ selected\ 1.png");
+  color: black;
+}
+
 .balance {
   background-image: url("/assets/Rorlighet.png");
+}
+
+.selected.balance {
+  background-image: url("../../assets/Rörlighet\ selected\ 1.png");
+  color: black;
 }
 
 .choiceButton:hover {
