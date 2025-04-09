@@ -10,7 +10,7 @@
 }
 
 .choiceButton {
-  background-color: #415338;
+  background-color: #5c7149;
   color: #ffffff;
   border: none;
   border-radius: 35px;
@@ -116,9 +116,8 @@
 }
 
 .selected.choiceButton {
-  background-color: rgba(0, 0, 0, 0);
-  border: 5px solid #415338;
-  color: #415338;
+  background-color: #ac94dd;
+  color: black;
   cursor: default;
 }
 
@@ -127,7 +126,7 @@
 }
 
 .selected .dot {
-  background-color: #415338;
+  background-color: black;
 }
 
 .firstText {
@@ -139,6 +138,7 @@
 .firstText h2 {
   font-size: 30px;
   font-weight: lighter;
+  font-style: italic;
 }
 
 .firstText strong {

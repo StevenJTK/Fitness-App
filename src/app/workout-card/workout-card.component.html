@@ -4,7 +4,6 @@
   (click)="windowToDisplay(1)"
 >
   <div class="workoutImage">
-    <!-- img -->
     <p></p>
   </div>
 
@@ -63,8 +62,13 @@
   </div>
 
   <div class="exerciseImage">
-    <!-- img -->
-    <p>hej</p>
+    <img
+      [src]="
+        '../../assets/' +
+        workout.exercises[exerciseIndex].name.toLowerCase() +
+        '.png'
+      "
+    />
   </div>
 
   <div class="exerciseInfo">
@@ -77,8 +81,10 @@
       <h3>Tips!</h3>
       <p>{{ workout.exercises[exerciseIndex].tips }}</p>
     </div>
-    <div class="arrowUpHolder" (click)="windowToDisplay(0)">
-      <i class="workoutArrow up"></i>
+    <div class="arrowUpHolderMobile">
+      <div class="arrowUpHolder" (click)="windowToDisplay(0)">
+        <i class="workoutArrow up"></i>
+      </div>
     </div>
   </div>
   <div class="navButtons">
@@ -109,7 +115,17 @@
   <p>Du gjorde det!</p>
   <p>Din insats idag gör skillnad imorgon.</p>
   <div class="buttonHolder">
-    <div id="finished" (click)="windowToDisplay(0); changeExercise(-exerciseIndex)">AVSLUTA PASS</div>
-    <div id="again" (click)="windowToDisplay(1); changeExercise(-exerciseIndex)">TRÄNA IGEN</div>
+    <div
+      id="finished"
+      (click)="windowToDisplay(0); changeExercise(-exerciseIndex)"
+    >
+      AVSLUTA PASS
+    </div>
+    <div
+      id="again"
+      (click)="windowToDisplay(1); changeExercise(-exerciseIndex)"
+    >
+      TRÄNA IGEN
+    </div>
   </div>
 </div>
