@@ -16,10 +16,13 @@ export class WorkoutComponent {
   filteredExercises: Exercise[] = []; // exercises matching values from form
   selectedExercises: Exercises[] = [];
   selectedCategory: string = '';
+  currentLevel: string = '';
+  swiperChoices:string[]= ['Nybörjare', 'Lätt', 'Medel', 'Utmanande'];
 
   //fetches filtered exercises based on queries
   async fetchExercises(level: string, category: string) {
     this.selectedCategory = category;
+    this.currentLevel = level;
     const btn: Element =
       document.getElementsByClassName('goBackToTopButton')[0];
     if (btn) {
@@ -39,6 +42,17 @@ export class WorkoutComponent {
     }
     this.filteredExercises = await jsonConnector.getExercises(level, category);
     console.log('exercises loaded');
+  }
+
+  getLevelIndex(){
+    for(let i = 0; i < this.swiperChoices.length; i++)
+    {
+      if(this.swiperChoices[i].toLowerCase() == this.translate(this.currentLevel).toLowerCase())
+      {
+        return i;
+      }
+    }
+    return 0;
   }
 
   translate(word: string):string{
