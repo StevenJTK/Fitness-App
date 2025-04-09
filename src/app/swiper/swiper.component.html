@@ -6,10 +6,10 @@
   <div class="arrowLeft" (click)="swipeOnClick(-1)"></div>
 
   <div class="contentMask">
-    <div class="selectedContent">{{displayText[value]}}</div>
-    <div class="waitingContent selectedContent">{{displayText[value]}}</div>
+    <div class="selectedContent">{{displayText[startIndex]}}</div>
+    <div class="waitingContent selectedContent">{{displayText[startIndex]}}</div>
     <div class="dotsContainer">
-      <div class="dot" [ngClass]="{ dotSelected: value >= i }" *ngFor="let n of displayText; let i = index"></div>
+      <div class="dot" [ngClass]="{ dotSelected: startIndex >= i }" *ngFor="let n of displayText; let i = index"></div>
     </div>
   </div>
 

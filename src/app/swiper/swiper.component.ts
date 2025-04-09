@@ -10,16 +10,20 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class SwiperComponent {
 
   @Input() displayText!:string[];
+  @Input() startIndex!:number;
   @Output() currentValue = new EventEmitter<string>();;
-  value: number = 0;
   animSpeed: string = '0.2';
 
   emitValue():void{
-    this.currentValue.emit(this.displayText[this.value]);
+    this.currentValue.emit(this.displayText[this.startIndex]);
+  }
+
+  ngOnInit(){
+    this.setArrowVisibility();
   }
 
   swipeOnClick(valueChange: number): void {
-    this.value += valueChange;
+    this.startIndex += valueChange;
 
     const elements: HTMLElement[] = [];
 
@@ -33,31 +37,17 @@ export class SwiperComponent {
 
     this.emitValue();
 
-    elements[1].innerHTML = this.displayText[this.value];
+    elements[1].innerHTML = this.displayText[this.startIndex];
     elements.forEach(
       (element)=>this.moveObject(element, valueChange)
     );
 
     setTimeout(() => {
-      elements[0].innerHTML = this.displayText[this.value];
+      elements[0].innerHTML = this.displayText[this.startIndex];
       this.positionHandler();
     }, 200);
 
-    if (this.value === 0){
-      (document.getElementsByClassName('arrowLeft')[0] as HTMLElement)
-      .style.visibility = 'hidden';
-
-    } else if (this.value === this.displayText.length-1){
-      (document.getElementsByClassName('arrowRight')[0] as HTMLElement)
-      .style.visibility = 'hidden';
-    }
-    else{
-      (document.getElementsByClassName('arrowLeft')[0] as HTMLElement)
-      .style.visibility = 'visible';
-      (document.getElementsByClassName('arrowRight')[0] as HTMLElement)
-      .style.visibility = 'visible';
-    }
-    
+    this.setArrowVisibility();
   }
   moveObject(slide: HTMLElement, direction: number): void {
     const newTranslateX = this.getTranslateX(slide) - (350 * direction);
@@ -75,6 +65,24 @@ export class SwiperComponent {
 
     sideObject.style.transform = 'translateX(' + this.getTranslateX(middleObject) + 'px)';
     middleObject.style.transform = 'translateX(0px)';
+  }
+
+  setArrowVisibility(){
+    if (this.startIndex === 0){
+      (document.getElementsByClassName('arrowLeft')[0] as HTMLElement)
+      .style.visibility = 'hidden';
+
+    } else if (this.startIndex === this.displayText.length-1){
+      (document.getElementsByClassName('arrowRight')[0] as HTMLElement)
+      .style.visibility = 'hidden';
+    }
+    else{
+      (document.getElementsByClassName('arrowLeft')[0] as HTMLElement)
+      .style.visibility = 'visible';
+      (document.getElementsByClassName('arrowRight')[0] as HTMLElement)
+      .style.visibility = 'visible';
+    }
+    
   }
 
   getTranslateX(element: HTMLElement): number {
