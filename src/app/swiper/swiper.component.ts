@@ -18,6 +18,10 @@ export class SwiperComponent {
     this.currentValue.emit(this.displayText[this.startIndex]);
   }
 
+  ngOnInit(){
+    this.setArrowVisibility();
+  }
+
   swipeOnClick(valueChange: number): void {
     this.startIndex += valueChange;
 
@@ -43,21 +47,7 @@ export class SwiperComponent {
       this.positionHandler();
     }, 200);
 
-    if (this.startIndex === 0){
-      (document.getElementsByClassName('arrowLeft')[0] as HTMLElement)
-      .style.visibility = 'hidden';
-
-    } else if (this.startIndex === this.displayText.length-1){
-      (document.getElementsByClassName('arrowRight')[0] as HTMLElement)
-      .style.visibility = 'hidden';
-    }
-    else{
-      (document.getElementsByClassName('arrowLeft')[0] as HTMLElement)
-      .style.visibility = 'visible';
-      (document.getElementsByClassName('arrowRight')[0] as HTMLElement)
-      .style.visibility = 'visible';
-    }
-    
+    this.setArrowVisibility();
   }
   moveObject(slide: HTMLElement, direction: number): void {
     const newTranslateX = this.getTranslateX(slide) - (350 * direction);
@@ -75,6 +65,24 @@ export class SwiperComponent {
 
     sideObject.style.transform = 'translateX(' + this.getTranslateX(middleObject) + 'px)';
     middleObject.style.transform = 'translateX(0px)';
+  }
+
+  setArrowVisibility(){
+    if (this.startIndex === 0){
+      (document.getElementsByClassName('arrowLeft')[0] as HTMLElement)
+      .style.visibility = 'hidden';
+
+    } else if (this.startIndex === this.displayText.length-1){
+      (document.getElementsByClassName('arrowRight')[0] as HTMLElement)
+      .style.visibility = 'hidden';
+    }
+    else{
+      (document.getElementsByClassName('arrowLeft')[0] as HTMLElement)
+      .style.visibility = 'visible';
+      (document.getElementsByClassName('arrowRight')[0] as HTMLElement)
+      .style.visibility = 'visible';
+    }
+    
   }
 
   getTranslateX(element: HTMLElement): number {
