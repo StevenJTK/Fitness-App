@@ -180,7 +180,6 @@
   white-space: nowrap;
   gap: 10px;
   cursor: pointer;
-  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.15);
   font-weight: bold;
   font-size: 19px;
 }
@@ -189,6 +188,7 @@
   border: none;
   background-color: #f2c778;
   color: black;
+  border: 2px solid black;
 }
 
 .workoutFinished {
@@ -201,6 +201,7 @@
   width: 40vw;
   height: 80vh;
   font-family: "Hanken Grotesk";
+  margin-top: 20px;
   padding-bottom: 50px;
   font-weight: bold;
   font-size: 19px;
@@ -223,6 +224,7 @@
   padding: 15px 90px;
   border-radius: 50px;
   cursor: pointer;
+  border: 2px solid black;
 }
 
 #finished {
