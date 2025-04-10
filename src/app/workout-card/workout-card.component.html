@@ -2,9 +2,13 @@
   class="workoutCard"
   [ngClass]="{ hidden: windowIndex != 0 }"
   (click)="windowToDisplay(1)"
+  id="scrollToWorkoutCardTop"
 >
   <div class="workoutImage">
-    <img [src]="'../../assets/' + workout.exercises[0].name.toLowerCase() + '.png'" alt="">
+    <img
+      [src]="'../../assets/' + workout.exercises[0].name.toLowerCase() + '.png'"
+      alt=""
+    />
   </div>
 
   <div class="workoutDescription">
@@ -82,10 +86,14 @@
       <div class="info">
         <div class="mainInfo">
           <h3>Instruktioner</h3>
-          <p [innerHTML]="formatText(workout.exercises[exerciseIndex].description)"></p>
+          <p
+            [innerHTML]="
+              formatText(workout.exercises[exerciseIndex].description)
+            "
+          ></p>
         </div>
         <div class="sideInfo">
-          <h3 >Antal repetitioner</h3>
+          <h3>Antal repetitioner</h3>
           <p>{{ workout.exercises[exerciseIndex].repetitions }}</p>
           <h3>Tips</h3>
           <p>{{ workout.exercises[exerciseIndex].tips }}</p>
@@ -103,20 +111,43 @@
     </div>
     <div
       id="finishButton"
-      (click)="windowToDisplay(0); changeExercise(-exerciseIndex)"
+      (click)="
+        windowToDisplay(0);
+        changeExercise(-exerciseIndex);
+        jumpToId('scrollToWorkoutCardTop')
+      "
     >
       <p>Avbryt pass</p>
 
       <img src="../../assets/x.svg" alt="X" />
     </div>
-    <div (click)="changeExercise(1)" [ngClass]="{doneBtn: exerciseIndex === workout.exercises.length-1}">
-      <p [innerHTML]="exerciseIndex === workout.exercises.length-1 ? 'Jag är klar':'Nästa övning'"></p>
-      <img [src]="exerciseIndex != workout.exercises.length-1 ?'../../assets/arrow-forward.svg':'../../assets/checkmark.png'" alt="arrow forward" />
+    <div
+      (click)="changeExercise(1)"
+      [ngClass]="{ doneBtn: exerciseIndex === workout.exercises.length - 1 }"
+    >
+      <p
+        [innerHTML]="
+          exerciseIndex === workout.exercises.length - 1
+            ? 'Jag är klar'
+            : 'Nästa övning'
+        "
+      ></p>
+      <img
+        [src]="
+          exerciseIndex != workout.exercises.length - 1
+            ? '../../assets/arrow-forward.svg'
+            : '../../assets/checkmark.png'
+        "
+        alt="arrow forward"
+      />
     </div>
   </div>
 </div>
 
-<div class="workoutFinished finishSlide" [ngClass]="{ hidden: windowIndex != 2 }">
+<div
+  class="workoutFinished finishSlide"
+  [ngClass]="{ hidden: windowIndex != 2 }"
+>
   <img src="../../assets/animation.gif" alt="happy stars gif" />
   <p>Du gjorde det!</p>
   <p>Din insats idag gör skillnad imorgon.</p>
@@ -125,13 +156,13 @@
       id="finished"
       (click)="windowToDisplay(0); changeExercise(-exerciseIndex)"
     >
-      AVSLUTA PASS
+      <p>AVSLUTA PASS</p>
     </div>
     <div
       id="again"
       (click)="windowToDisplay(1); changeExercise(-exerciseIndex)"
     >
-      TRÄNA IGEN
+      <p>TRÄNA IGEN</p>
     </div>
   </div>
 </div>
