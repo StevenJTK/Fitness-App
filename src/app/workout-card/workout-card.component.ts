@@ -13,10 +13,12 @@ import { TriggerService } from '../trigger.service';
 })
 export class WorkoutCardComponent {
   @Input() workout!: Exercise;
+  @Input() cardIndex!: number;
   private sub!: Subscription;
   exerciseIndex: number = 0;
   windowIndex: number = 0;
-
+  slideToFinishWindow: boolean = false;
+  
   constructor(private triggerService:TriggerService) {
   }
 
@@ -39,11 +41,25 @@ export class WorkoutCardComponent {
     this.windowIndex = index;
   }
 
+  ngAfterViewChecked() {
+    if (this.windowIndex == 2 && this.slideToFinishWindow) {
+      this.slideToFinishWindow = false;
+      setTimeout(() => {
+        const scrollElement = document.getElementsByClassName("finishSlide")[this.cardIndex];
+        if (scrollElement) {
+          scrollElement.scrollIntoView({behavior: "smooth", block:"start"});
+
+        }
+      }, 200);
+    }
+  }
+
   changeExercise(changeValue: number): void {
     this.exerciseIndex += changeValue;
     if (this.exerciseIndex > this.workout.exercises.length - 1) {
       this.windowToDisplay(2);
       this.exerciseIndex -= changeValue;
+      this.slideToFinishWindow = true;
     }
     if (this.exerciseIndex < 0) {
       this.exerciseIndex = 0;
