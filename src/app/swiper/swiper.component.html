@@ -1,8 +1,9 @@
 <!-- html för swipe funktion med en container, innehåller h2 pilar och en image -->
 <!--<h2 class="swiperHeader">Välj övning från passbibliotek</h2>-->
-
-<div class="swiperContainer">
+<div>
   <div class="line lineUp"></div>
+<div class="swiperContainer">
+  
   <div class="arrowLeft" [ngClass]="{ hidden: startIndex < 1 }" (click)="swipeOnClick(-1)"></div>
 
   <div class="contentMask">
@@ -16,5 +17,7 @@
     <div class="arrowRight" (click)="swipeOnClick(1)"></div>
   </div>
 
+
+</div>
   <div class="line lineBottom"></div>
 </div>

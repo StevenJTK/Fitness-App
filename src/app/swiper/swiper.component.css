@@ -9,10 +9,11 @@
 /* container som innehåller alla komponenter */
 .swiperContainer {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  gap: 5vw;
-  width: 99vw;
+  /*gap: 5vw;*/
+  width: 98vw;
+  margin-left: 1vw;
 }
 
 /* pil som pekar åt höger */
@@ -33,8 +34,9 @@
   height: 34px;
   background-color: #310b02;
   clip-path: path(
-    "M33.333,7.000 Q33.333,0 27.0723,3.1303L6.2610,13.5363 Q0,16.6667 6.2610,19.7970L27.0723,30.2030 Q33.333,33.3333 33.333,26.3333Z"
+    "M0.000,7.000 Q0,0 6.2610,3.1303L27.0723,13.5363 Q33.3333,16.6667 27.0723,19.7970L6.2610,30.2030 Q0,33.3333 0.000,26.3333Z"
   );
+  transform: scaleX(-1);
 }
 
 /* centrerade innehållet emellan pilarna */
@@ -57,17 +59,10 @@
 }
 /*streck*/
 .line {
-  position: absolute;
+  /*position: absolute;*/
   width: 100%;
   height: 1px;
   background-color: black;
-}
-.lineUp {
-  margin-bottom: 120px;
-}
-
-.lineBottom {
-  margin-top: 120px;
 }
 
 /* mask innehållet emellan pilarna */
@@ -75,9 +70,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 350px;
-  height: 200px;
+  width: 150px;
+  height: 100px;
   margin: 0 10px;
+  margin-bottom: 30px;
   clip-path: inset(0px);
 }
 /* innehåll som roterar */
@@ -105,7 +101,6 @@
   background-color: #5c7149 !important;
 }
 
-
-.hidden{
+.hidden {
   visibility: hidden;
 }
