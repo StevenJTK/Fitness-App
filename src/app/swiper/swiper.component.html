@@ -3,17 +3,16 @@
 
 <div class="swiperContainer">
   <div class="line lineUp"></div>
-  <div class="arrowLeft" (click)="swipeOnClick(-1)"></div>
+  <div class="arrowLeft" [ngClass]="{ hidden: startIndex < 1 }" (click)="swipeOnClick(-1)"></div>
 
   <div class="contentMask">
     <div class="selectedContent">{{displayText[startIndex]}}</div>
-    <div class="waitingContent selectedContent">{{displayText[startIndex]}}</div>
+    <div class="waitingContent selectedContent">{{displayText[startIndex-changeValue]}}</div>
     <div class="dotsContainer">
       <div class="dot" [ngClass]="{ dotSelected: startIndex >= i }" *ngFor="let n of displayText; let i = index"></div>
     </div>
   </div>
-
-  <div class="arrowRightHolder">
+  <div class="arrowRightHolder" [ngClass]="{ hidden: startIndex > displayText.length - 2 }" >
     <div class="arrowRight" (click)="swipeOnClick(1)"></div>
   </div>
 

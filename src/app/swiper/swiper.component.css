@@ -104,3 +104,8 @@
 .dotSelected {
   background-color: #5c7149 !important;
 }
+
+
+.hidden{
+  visibility: hidden;
+}
