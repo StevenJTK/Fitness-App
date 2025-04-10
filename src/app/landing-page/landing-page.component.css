@@ -96,7 +96,7 @@
 }
 
 .strength {
-  background-image: url("/assets/Styrka.png");
+  background-image: url("/assets/styrka.png");
 }
 
 .selected.strength {
@@ -105,7 +105,7 @@
 }
 
 .cardio {
-  background-image: url("/assets/Cardio.png");
+  background-image: url("/assets/uthallighet.png");
 }
 .selected.cardio {
   background-image: url("../../assets/Uthållighet\ selected\ 1.png");
@@ -113,7 +113,7 @@
 }
 
 .everyday-exercise {
-  background-image: url("/assets/Vardagsmotion.png");
+  background-image: url("/assets/vardagsmotion.png");
 }
 
 .selected.everyday-exercise {
@@ -122,11 +122,11 @@
 }
 
 .balance {
-  background-image: url("/assets/Rorlighet.png");
+  background-image: url("/assets/rorlighet.png");
 }
 
 .selected.balance {
-  background-image: url("../../assets/Rörlighet\ selected\ 1.png");
+  background-image: url("../../assets/Rorlighet\ selected\ 1.png");
   color: black;
 }
 

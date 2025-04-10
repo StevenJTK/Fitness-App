@@ -8,6 +8,8 @@
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   border-radius: 15px;
+  font-weight: bold;
+  font-size: 19px;
 }
 
 .workoutImage {
@@ -23,9 +25,6 @@
   padding: 10px 10px;
   width: 50%;
   gap: 15px;
-}
-
-.workoutDescription h3 {
 }
 
 .workoutSpecifics {
@@ -47,7 +46,7 @@
 }
 
 #level {
-  background-color: #535740;
+  background-color: #375637;
   color: #ffffff;
   padding: 5px 10px;
   border-radius: 50px;
@@ -105,6 +104,13 @@
   align-items: center;
   width: 20%;
   text-align: center;
+  font-weight: bold;
+  font-size: 19px;
+}
+
+.workoutInfoColumn p {
+  margin: 2px;
+  margin-bottom: 10px;
 }
 
 .imageSizer {
@@ -121,6 +127,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-weight: bold;
+  font-size: 19px;
 }
 
 .arrowUpHolder {
@@ -159,6 +167,8 @@
   gap: 10px;
   cursor: pointer;
   box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.15);
+  font-weight: bold;
+  font-size: 19px;
 }
 
 #finishButton {
@@ -178,6 +188,8 @@
   height: 80vh;
   font-family: "Hanken Grotesk";
   padding-bottom: 50px;
+  font-weight: bold;
+  font-size: 19px;
 }
 
 .workoutFinished img {
@@ -265,6 +277,7 @@
     gap: 10px;
     display: flex;
     flex-wrap: wrap;
+    padding: 1rem 0;
   }
 
   .workoutInfoColumn {
@@ -273,7 +286,8 @@
   }
 
   .workoutInfoColumn p {
-    font-size: 0.75rem;
+    font-size: 19px;
+    font-weight: bold;
     text-align: center;
     margin: 2px 0;
   }
@@ -281,6 +295,15 @@
   .imageSizer {
     width: 40px;
     height: 40px;
+  }
+
+  .navButtons {
+
+
+  }
+
+  .navButtons div {
+
   }
 
   .navButtons div p {
@@ -341,6 +364,13 @@
   .workoutFinished {
     width: 80vw;
     height: 50vh;
+  }
+
+  .navButtons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
   }
 
   .workoutFinished img {
