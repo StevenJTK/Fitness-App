@@ -20,6 +20,7 @@ export class WorkoutComponent {
   selectedCategory: string = '';
   currentLevel: string = '';
   swiperChoices:string[]= ['Nybörjare', 'Lätt', 'Medel', 'Utmanande'];
+  workoutCards: WorkoutCardComponent[] = [];
 
   //fetches filtered exercises based on queries
   async fetchExercises(level: string, category: string) {
@@ -82,4 +83,15 @@ export class WorkoutComponent {
   recieveIndex(event: number){
     this.newValueSelected.emit(event);
   }
+  ngAfterViewChecked() {
+    this.workoutCards = [];
+    Array.prototype.forEach.call(
+      document.getElementsByClassName("workoutCard"),
+      (card) => /* this.workoutCards.push(card as WorkoutCardComponent) */
+      console.log((card as WorkoutCardComponent).workout)
+    );
+    console.log(this.workoutCards.length);
+  }
 }
+
+
