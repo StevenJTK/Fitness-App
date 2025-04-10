@@ -1,14 +1,19 @@
 <div *ngIf="filteredExercises.length > 0; else noExercises">
+  <h2>Välj pass från passbibliotek</h2>
+
   <!--Man skickar in displayText med alla värden som slidern kan ha och
 currentValue bestämmer vilken metod som ska köras (och ta emot vilket värde som är valt)-->
-<app-swiper [displayText]="swiperChoices" (currentValue)="recieveValue($event)" (currentIndex)="recieveIndex($event)" [startIndex] = "getLevelIndex()">  </app-swiper>
+  <app-swiper
+    [displayText]="swiperChoices"
+    (currentValue)="recieveValue($event)"
+    (currentIndex)="recieveIndex($event)"
+    [startIndex]="getLevelIndex()"
+  >
+  </app-swiper>
 
-  <h2>
-    Pass för {{ translate(filteredExercises[0].level) }} -
-    {{ translate(filteredExercises[0].category) }}
-  </h2>
   <div class="exerciseGrid">
-    <app-workout-card class="workoutCard"
+    <app-workout-card
+      class="workoutCard"
       [workout]="exercise"
       [cardIndex]="i"
       *ngFor="let exercise of filteredExercises; let i = index"
@@ -19,7 +24,10 @@ currentValue bestämmer vilken metod som ska köras (och ta emot vilket värde s
 <ng-template #noExercises>
   <p class="userGuideText">Det finns inga övningar att hämta än</p>
   <div class="goBackToTopButtonHolder">
-    <button class="goBackToTopButton hidden" (click)="jumpToId('scrollToLevelChoice')">
+    <button
+      class="goBackToTopButton hidden"
+      (click)="jumpToId('scrollToLevelChoice')"
+    >
       Välj en svårighetsgrad först
     </button>
   </div>

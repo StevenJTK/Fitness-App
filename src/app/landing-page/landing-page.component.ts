@@ -16,6 +16,7 @@ export class LandingPageComponent {
 
   //jättefin lösning :)
   difficultyValues:string[]=['beginner', 'easy', 'intermediate', 'advanced'];
+  static toggledIndex: number = -1;
 
   constructor(private router: Router, private cdRef: ChangeDetectorRef) {}
 
@@ -36,6 +37,7 @@ export class LandingPageComponent {
   async difficultyChoice(value: string, buttonNumber: number): Promise<void> {
     this.chosenDifficulty = value;
     this.selectedDifficultyIndex = buttonNumber;
+    LandingPageComponent.toggledIndex = buttonNumber;
     await this.fetchExercises();
 
     setTimeout(() => {
@@ -46,6 +48,10 @@ export class LandingPageComponent {
         scrollElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     }, 200);
+  }
+
+  getToggledIndex() {
+    return LandingPageComponent.toggledIndex;
   }
 
   async exerciseTypeChoice(value: string, buttonNumber: number): Promise<void> {
