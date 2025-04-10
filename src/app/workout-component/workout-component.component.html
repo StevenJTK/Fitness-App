@@ -4,11 +4,14 @@ currentValue bestämmer vilken metod som ska köras (och ta emot vilket värde s
 <app-swiper [displayText]="swiperChoices" (currentValue)="receiveValue($event)" [startIndex] = "getLevelIndex()">  </app-swiper>
 
   <h2>
-    Pass för {{ translate(filteredExercises[0].category) }} -
-    {{ translate(filteredExercises[0].level) }}
+    Pass för {{ translate(filteredExercises[0].level) }} -
+    {{ translate(filteredExercises[0].category) }}
   </h2>
   <div class="exerciseGrid">
-    <app-workout-card [workout]="exercise" *ngFor="let exercise of filteredExercises"></app-workout-card>
+    <app-workout-card
+      [workout]="exercise"
+      *ngFor="let exercise of filteredExercises"
+    ></app-workout-card>
   </div>
 </div>
 

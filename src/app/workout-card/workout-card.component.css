@@ -5,7 +5,7 @@
   display: flex;
   width: 60vw;
   margin: 1.5rem auto;
-  box-shadow: 1.5px 1.5px 4px rgba(0, 0, 0, 0.821);
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   border-radius: 15px;
 }
@@ -71,7 +71,6 @@
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 7px;
-  margin-left: 50px;
 }
 
 .down {
@@ -87,15 +86,16 @@
   border-radius: 15px;
   width: 60vw;
   margin: 1.5rem auto;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
-.exerciseImage {
-  background-color: black;
+.exerciseImage img {
+  width: 100%;
 }
 
 .workoutInfo {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   padding-top: 20px;
 }
 
@@ -103,6 +103,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 20%;
+  text-align: center;
 }
 
 .imageSizer {
@@ -115,18 +117,20 @@
 
 .exerciseInfo {
   padding-left: 30px;
+  padding-right: 30px;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .arrowUpHolder {
-  margin-right: 100px;
   cursor: pointer;
-  width: 50px;
-  height: 50px;
+  width: 100%;
+  height: 100%;
   display: flex;
-  align-items: center;
+
   justify-content: center;
+  margin-top: 30px;
 }
 
 .up {
@@ -136,14 +140,12 @@
 
 .hidden {
   visibility: hidden;
-  position: absolute;
+  position: fixed;
 }
 
 .navButtons {
   display: flex;
-
-  justify-content: center;
-  gap: 150px;
+  justify-content: space-around;
   margin: 25px 25px 50px 25px;
 }
 
@@ -156,12 +158,13 @@
   white-space: nowrap;
   gap: 10px;
   cursor: pointer;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.15);
 }
 
 #finishButton {
   border: none;
   background-color: #f2c778;
-  color: #ffffff;
+  color: black;
 }
 
 .workoutFinished {
@@ -174,6 +177,7 @@
   width: 40vw;
   height: 80vh;
   font-family: "Hanken Grotesk";
+  padding-bottom: 50px;
 }
 
 .workoutFinished img {
@@ -201,4 +205,140 @@
 #again {
   background-color: #535740;
   color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .workoutCard {
+    flex-direction: column;
+    width: 95vw;
+  }
+
+  .workoutImage {
+    width: 100%;
+    height: 200px;
+  }
+
+  .workoutDescription {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .workoutDescription h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+
+  .workoutSpecifics {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+  }
+
+  .workoutTags {
+    flex-wrap: wrap;
+    gap: 5px;
+  }
+
+  .workoutArrow {
+    align-self: flex-start;
+  }
+
+  .workoutCardExtended {
+    width: 95vw;
+  }
+
+  .exerciseImage {
+    width: 100%;
+  }
+
+  .exerciseImage img {
+    width: 100%;
+  }
+
+  .workoutInfo {
+    padding: 20px;
+    gap: 10px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .workoutInfoColumn {
+    display: flex;
+    width: 40%;
+  }
+
+  .workoutInfoColumn p {
+    font-size: 0.75rem;
+    text-align: center;
+    margin: 2px 0;
+  }
+
+  .imageSizer {
+    width: 40px;
+    height: 40px;
+  }
+
+  .navButtons div p {
+    visibility: hidden;
+    position: absolute;
+  }
+
+  .workoutFinished {
+    width: 95vw;
+    height: 80vh;
+  }
+
+  .workoutFinished img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .buttonHolder {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .exerciseInfo {
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .arrowUpHolder {
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrowUpHolderMobile {
+    display: flex;
+  }
+}
+
+@media (max-width: 1024px) {
+  .workoutCard {
+    width: 80vw;
+  }
+
+  .workoutCardExtended {
+    width: 80vw;
+  }
+
+  .workoutTags {
+    align-items: center;
+  }
+
+  .workoutFinished {
+    width: 80vw;
+    height: 50vh;
+  }
 }
