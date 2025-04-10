@@ -10,7 +10,8 @@ currentValue bestämmer vilken metod som ska köras (och ta emot vilket värde s
   <div class="exerciseGrid">
     <app-workout-card class="workoutCard"
       [workout]="exercise"
-      *ngFor="let exercise of filteredExercises"
+      [cardIndex]="i"
+      *ngFor="let exercise of filteredExercises; let i = index"
     ></app-workout-card>
   </div>
 </div>
