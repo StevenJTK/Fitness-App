@@ -71,19 +71,25 @@
     />
   </div>
 
-  <div class="exerciseInfo">
-    <div>
-      <h2>{{ workout.exercises[exerciseIndex].name }}</h2>
-      <h3>Gör såhär:</h3>
-      <p>{{ workout.exercises[exerciseIndex].description }}</p>
-      <h3 id="scrollToChosenExercise">Antal repetitioner:</h3>
-      <p>{{ workout.exercises[exerciseIndex].repetitions }}</p>
-      <h3>Tips!</h3>
-      <p>{{ workout.exercises[exerciseIndex].tips }}</p>
-    </div>
-    <div class="arrowUpHolderMobile">
-      <div class="arrowUpHolder" (click)="windowToDisplay(0)">
-        <i class="workoutArrow up"></i>
+  <div class="exerciseInfo" id="scrollToChosenExercise">
+    <div class="content">
+      <div class="headerInfo">
+        <h2>{{ workout.exercises[exerciseIndex].name }}</h2>
+        <div class="arrowUpHolder" (click)="windowToDisplay(0)">
+          <i class="workoutArrow up"></i>
+        </div>
+      </div>
+      <div class="info">
+        <div class="mainInfo">
+          <h3>Instruktioner</h3>
+          <p [innerHTML]="formatText(workout.exercises[exerciseIndex].description)"></p>
+        </div>
+        <div class="sideInfo">
+          <h3 >Antal repetitioner</h3>
+          <p>{{ workout.exercises[exerciseIndex].repetitions }}</p>
+          <h3>Tips</h3>
+          <p>{{ workout.exercises[exerciseIndex].tips }}</p>
+        </div>
       </div>
     </div>
   </div>
@@ -103,9 +109,9 @@
 
       <img src="../../assets/x.svg" alt="X" />
     </div>
-    <div (click)="changeExercise(1)">
-      <p>Nästa övning</p>
-      <img src="../../assets/arrow-forward.svg" alt="arrow forward" />
+    <div (click)="changeExercise(1)" [ngClass]="{doneBtn: exerciseIndex === workout.exercises.length-1}">
+      <p [innerHTML]="exerciseIndex === workout.exercises.length-1 ? 'Jag är klar':'Nästa övning'"></p>
+      <img [src]="exerciseIndex != workout.exercises.length-1 ?'../../assets/arrow-forward.svg':'../../assets/checkmark.png'" alt="arrow forward" />
     </div>
   </div>
 </div>

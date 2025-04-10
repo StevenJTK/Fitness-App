@@ -19,7 +19,7 @@ export class WorkoutComponent {
   selectedExercises: Exercises[] = [];
   selectedCategory: string = '';
   currentLevel: string = '';
-  swiperChoices:string[]= ['Nybörjare', 'Lätt', 'Medel', 'Utmanande'];
+  swiperChoices:string[]= ['Nybörjare', 'Enkel', 'Medel', 'Utmanande'];
   workoutCards: WorkoutCardComponent[] = [];
 
   //fetches filtered exercises based on queries
