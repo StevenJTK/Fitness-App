@@ -96,19 +96,38 @@
 }
 
 .strength {
-  background-image: url("/assets/Styrka.png");
+  background-image: url("/assets/Styrka4.png");
+}
+
+.selected.strength {
+  background-image: url("../../assets/Styrka\ selected\ 1.png");
+  color: black;
 }
 
 .cardio {
-  background-image: url("/assets/Cardio.png");
+  background-image: url("/assets/Uthållighet4.png");
+}
+.selected.cardio {
+  background-image: url("../../assets/Uthållighet\ selected\ 1.png");
+  color: black;
 }
 
 .everyday-exercise {
-  background-image: url("/assets/Vardagsmotion.png");
+  background-image: url("/assets/Vardagsmotion4.png");
+}
+
+.selected.everyday-exercise {
+  background-image: url("../../assets/Vardagsmotion\ selected\ 1.png");
+  color: black;
 }
 
 .balance {
-  background-image: url("/assets/Rorlighet.png");
+  background-image: url("/assets/Rorlighet4.png");
+}
+
+.selected.balance {
+  background-image: url("../../assets/Rorlighet\ selected\ 1.png");
+  color: black;
 }
 
 .choiceButton:hover {
@@ -150,6 +169,47 @@
   margin: 0;
   padding-top: 5rem;
   font-weight: bold;
+}
+
+.startButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: 20px;
+}
+
+.startButton button {
+  font-family: "Hanken Grotesk", sans-serif;
+  color: #310b02;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 19px;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: rotate(45deg) translate(0, 0);
+  }
+  50% {
+    transform: rotate(45deg) translate(-5px, -5px);
+  }
+}
+
+.arrow {
+  border: solid #310b02;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 7px;
+  animation: bounce 1s infinite ease-in-out;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 }
 
 @media (max-width: 768px) {

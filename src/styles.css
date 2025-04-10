@@ -9,8 +9,7 @@ html {
 }
 
 .hero-image {
-  background-image: 
-    url("assets/header2.png");
+  background-image: url("assets/header.jpg");
   height: 50vh;
   width: 100vw;
   background-position: center;
@@ -28,7 +27,6 @@ html {
   top: 10px;
   left: 10px;
 }
-
 
 .logo {
   width: 50px;
@@ -88,46 +86,6 @@ h1 {
   transform-origin: center;
 }
 
-.startButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  top: -20px;
-}
-
-.startButton button {
-  font-family: "Hanken Grotesk", sans-serif;
-  background-color: transparent;
-  border: none;
-  color: #ffffff;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: large;
-}
-
-@keyframes bounce {
-  0%,
-  100% {
-    transform: rotate(45deg) translate(0, 0);
-  }
-  50% {
-    transform: rotate(45deg) translate(-5px, -5px);
-  }
-}
-
-.arrow {
-  border: solid #ffffff;
-  border-width: 0 3px 3px 0;
-  display: inline-block;
-  padding: 7px;
-  animation: bounce 1s infinite ease-in-out;
-}
-
-.down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
-}
 
 @media (max-width: 1024px) {
   .hero-image {
@@ -155,5 +113,15 @@ h1 {
 
   h1 {
     font-size: 1rem;
+  }
+
+  /* för att placera knappen */
+  .about-us {
+    padding-right: 1vh;
+  }
+
+  /* minska knappens storlek/font */
+  .about-us button {
+    font-size: large;
   }
 }
