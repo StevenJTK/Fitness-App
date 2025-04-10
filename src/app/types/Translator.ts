@@ -6,7 +6,7 @@ export class Translator {
 
     switch(wordToTranslateLowerCase){
       case "nybörjare": return "Beginner";
-      case "lätt": return "Easy";
+      case "enkel": return "Easy";
       case "medel": return "Intermediate";
       case "utmanande": return "Advanced";
     }
@@ -24,7 +24,7 @@ export class Translator {
       case "everydayexercise": return "Vardagsmotion";
       case "balance": return "Balans & Rörlighet";
       case "beginner": return "Nybörjare";
-      case "easy": return "Lätt";
+      case "easy": return "Enkel";
       case "intermediate": return "Medel";
       case "advanced": return "Utmanande";
     }

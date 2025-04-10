@@ -4,6 +4,7 @@ import { Translator } from '../types/Translator';
 import { CommonModule } from '@angular/common';
 import { Subscription } from 'rxjs';
 import { TriggerService } from '../trigger.service';
+import { DomSanitizer, SafeHtml } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-workout-card',
@@ -19,7 +20,14 @@ export class WorkoutCardComponent {
   windowIndex: number = 0;
   slideToFinishWindow: boolean = false;
   
-  constructor(private triggerService:TriggerService) {
+  constructor(private triggerService:TriggerService,
+    private sanitizer: DomSanitizer
+  ) {
+  }
+
+  formatText(text: string): SafeHtml {
+    const withBreaks = text.replace(/\n/g, '<br>');
+    return this.sanitizer.bypassSecurityTrustHtml(withBreaks);
   }
 
   ngOnInit() {
