@@ -10,13 +10,19 @@
   border-radius: 15px;
   font-weight: bold;
   font-size: 19px;
+  gap: 20px;
 }
 
 .workoutImage {
-  width: 50%;
-  height: 205px;
-  background-color: antiquewhite;
-  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.workoutImage img {
+  width: 30vw;
+  height: 200px;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
 }
 
 .workoutDescription {
@@ -372,5 +378,4 @@
     align-items: center;
     gap: 5px;
   }
-
 }
