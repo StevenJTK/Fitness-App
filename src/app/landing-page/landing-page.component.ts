@@ -14,6 +14,9 @@ export class LandingPageComponent {
 
   title = 'fitness-app';
 
+  //jättefin lösning :)
+  difficultyValues:string[]=['beginner', 'easy', 'intermediate', 'advanced'];
+
   constructor(private router: Router, private cdRef: ChangeDetectorRef) {}
 
   chosenDifficulty: string = '';
@@ -24,6 +27,11 @@ export class LandingPageComponent {
 
   //för timern som väntar innan den skrollar
   waitTimer: number = 200;
+
+  updateSelectedDifficulty(event: number){
+    this.selectedDifficultyIndex = event+1;
+    this.chosenDifficulty = this.difficultyValues[event];
+  }
   
   async difficultyChoice(value: string, buttonNumber: number): Promise<void> {
     this.chosenDifficulty = value;

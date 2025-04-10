@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { Exercise, Exercises } from '../types/Exercise';
 import { jsonConnector } from '../types/jsonConnector';
 import { CommonModule } from '@angular/common';
@@ -13,6 +13,8 @@ import { WorkoutCardComponent } from "../workout-card/workout-card.component";
   styleUrl: './workout-component.component.css',
 })
 export class WorkoutComponent {
+ @Output() newValueSelected = new EventEmitter<number>();
+
   filteredExercises: Exercise[] = []; // exercises matching values from form
   selectedExercises: Exercises[] = [];
   selectedCategory: string = '';
@@ -74,8 +76,10 @@ export class WorkoutComponent {
     this.selectedExercises = exercise.exercises;
   }
   //det är så här man gör för att få värdet som slider byter till
-  receiveValue(event: string) {
+  recieveValue(event: string) {
     this.fetchExercises(event, this.selectedCategory);
-    console.log(event);
+  }
+  recieveIndex(event: number){
+    this.newValueSelected.emit(event);
   }
 }

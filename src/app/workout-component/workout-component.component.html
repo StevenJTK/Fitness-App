@@ -1,7 +1,7 @@
 <div *ngIf="filteredExercises.length > 0; else noExercises">
   <!--Man skickar in displayText med alla värden som slidern kan ha och
 currentValue bestämmer vilken metod som ska köras (och ta emot vilket värde som är valt)-->
-<app-swiper [displayText]="swiperChoices" (currentValue)="receiveValue($event)" [startIndex] = "getLevelIndex()">  </app-swiper>
+<app-swiper [displayText]="swiperChoices" (currentValue)="recieveValue($event)" (currentIndex)="recieveIndex($event)" [startIndex] = "getLevelIndex()">  </app-swiper>
 
   <h2>
     Pass för {{ translate(filteredExercises[0].level) }} -
