@@ -404,6 +404,19 @@
   .arrowUpHolderMobile {
     display: flex;
   }
+
+  .info {
+    display: flex;
+    gap: 10px;
+    padding: 0 15px;
+  }
+
+  .headerInfo {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    padding: 0 10px;
+  }
 }
 
 @media (max-width: 1024px) {
